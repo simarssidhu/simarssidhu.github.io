@@ -2,6 +2,6 @@
 
 My personal github webpage.
 
-[simarssidhu.github.io](simarssidhu.github.io)
+[simarssidhu.github.io](https://simarssidhu.github.io/)
 
 Simarjot Sidhu
