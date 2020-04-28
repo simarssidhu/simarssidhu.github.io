@@ -5,14 +5,10 @@ html {
     height: 100%;
     overflow: hidden;
     font-family: "Monument Extended", Arial, Helvetica, sans-serif;
-    
-    /* for controlling scrollbar */
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 body {
-    color: #ffffff;
+    color: white;
     margin: 0;
     padding: 0;
     perspective: 1px;
@@ -41,40 +37,25 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
-header h2 {
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-header, header:before {
+header,
+header:before {
     background: 50% 50% / cover;
 }
 
 header::before {
-    bottom: 0;
     content: "";
-    left: 0;
     position: absolute;
-    right: 0;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: block;
-    background-image: url(img/background.jpg);
+    background: url(img/background.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
     min-height: 100vh;
-}
-
-header * {
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin: 0;
-    padding: 1em 0;
 }
 
 .container {
@@ -86,20 +67,4 @@ header * {
     font-weight: lighter;
     padding: 40px;
     color: grey;
-}
-
-/* make hyperlink resemble text */
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: white;
-}
-
-/* make scrollbar transparent */
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
 }
