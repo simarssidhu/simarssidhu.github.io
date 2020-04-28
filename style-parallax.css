@@ -61,7 +61,7 @@ header::before {
     right: 0;
     top: 0;
     display: block;
-    background-image: url(img/background.jpg);
+    background-image: url(img/background.jpg); /* Artist Credits: Andreas Gücklhorn (https://unsplash.com/@draufsicht) */
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
