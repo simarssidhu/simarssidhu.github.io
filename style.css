@@ -31,6 +31,14 @@
   line-height: 24px;
 }
 
-.img-me {
+.img-leaf {
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-banner {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
