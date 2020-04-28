@@ -35,6 +35,16 @@
   width: 100%;
 }
 
+/* make hyperlink resemble text */
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   .img-banner {
     display: block;
