@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #c0e4a4; /* Light green background */
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      background-color: #61a73d; /* Dark green button color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 8px; /* Rounded corners */
+      transition: all 0.5s ease; /* Apply transition to all properties */
+    }
+
+    button:hover {
+      background-color: #77c55e; /* Lighter green on hover */
+    }
+
+    #noButton {
+      position: absolute;
+      left: 120px; /* Adjust the initial position */
+    }
+
+    #imageAboveYes {
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+    function moveNoButton() {
+      var noButton = document.getElementById('noButton');
+      var maxX = window.innerWidth - noButton.clientWidth;
+      var maxY = window.innerHeight - noButton.clientHeight;
+
+      var newX = Math.floor(Math.random() * maxX);
+      var newY = Math.floor(Math.random() * maxY);
+
+      noButton.style.left = newX + 'px';
+      noButton.style.top = newY + 'px';
+    }
+
+    function redirectToAnotherPage() {
+      window.location.href = "parallax.html"; // Replace with the desired URL
+    }
+  </script>
+</head>
+<body>
+  <img id="imageAboveYes" src="https://via.placeholder.com/150" alt="Nature Image"> <!-- Replace with your image URL -->
+  <button onclick="redirectToAnotherPage()">Yes</button>
+  <button id="noButton" onclick="alert('No')" onmouseover="moveNoButton()">No</button>
+</body>
+</html>
