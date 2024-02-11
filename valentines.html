@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #c0e4a4; /* Light green background */
+    }
+
+    #buttonsContainer {
+      position: relative; /* Needed for absolute positioning */
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      background-color: #61a73d; /* Dark green button color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 8px; /* Rounded corners */
+      transition: all 0.5s ease; /* Apply transition to all properties */
+    }
+
+    button:hover {
+      background-color: #77c55e; /* Lighter green on hover */
+    }
+
+    #noButton {
+      position: absolute; /* Position relative to buttonsContainer */
+    }
+
+    #yesButton {
+      margin-right: 20px; /* Fixed position */
+    }
+
+    #imageAboveYes {
+      margin-bottom: 20px;
+    }
+
+    #valentinesText{
+      font-size: 40px;
+      color: #44742c;
+      margin-bottom: 10px;
+    }
+
+    #amesText{
+      font-size: 50px;
+      color: #44742c;
+      margin-bottom: 10px;
+    }
+
+  </style>
+  <script>
+    function moveNoButton() {
+      var noButton = document.getElementById('noButton');
+      var windowWidth = window.innerWidth;
+      var windowHeight = window.innerHeight;
+
+      var maxX = windowWidth - noButton.offsetWidth;
+      var maxY = windowHeight - noButton.offsetHeight;
+
+      var newX = Math.floor(Math.random() * maxX);
+      var newY = Math.floor(Math.random() * maxY);
+
+      var negX;
+      var negY;
+
+      if(Math.random() > 0.5)
+        negX = -1;
+      else
+        negX = 1;
+
+      if(Math.random() > 0.5)
+        negY = -1;
+      else
+        negY = 1;
+
+      // Ensure the button stays within the visible area
+      newX = Math.max(0, newX);
+      newY = Math.max(0, newY);
+
+      noButton.style.left = (negX * newX)*0.35 + 'px';
+      noButton.style.top = (negY * newY)*0.35 + 'px';
+    }
+
+    function redirectToAnotherPage() {
+      window.location.href = "shesaidyes.html";
+    }
+  </script>
+</head>
+<body>
+  <div id="amesText">Ames,</div>
+  <div id="valentinesText">Will you be my</div>
+  <div id="amesText">Valentines? <3</div>
+  <img id="imageAboveYes" src="img/ducky_mushroom.png" alt="Nature Image" width="360px">
+  <div id="buttonsContainer">
+    <button id="yesButton" onclick="redirectToAnotherPage()">Yes</button>
+    <button id="noButton" onclick="alert('No')" onmouseover="moveNoButton()">No</button>
+  </div>
+</body>
+</html>
