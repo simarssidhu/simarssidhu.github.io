@@ -55,15 +55,28 @@
       var maxX = windowWidth - noButton.offsetWidth;
       var maxY = windowHeight - noButton.offsetHeight;
 
-      var newX = Math.floor(Math.random() * maxX/2);
-      var newY = Math.floor(Math.random() * maxY/2);
+      var newX = Math.floor(Math.random() * maxX);
+      var newY = Math.floor(Math.random() * maxY);
+
+      var negX;
+      var negY;
+
+      if(Math.random() > 0.5)
+        negX = -1;
+      else
+        negX = 1;
+
+      if(Math.random() > 0.5)
+        negY = -1;
+      else
+        negY = 1;
 
       // Ensure the button stays within the visible area
       newX = Math.max(0, newX);
       newY = Math.max(0, newY);
 
-      noButton.style.left = newX + 'px';
-      noButton.style.top = newY + 'px';
+      noButton.style.left = (negX * newX)*0.4 + 'px';
+      noButton.style.top = (negY * newY)*0.4 + 'px';
     }
 
     function redirectToAnotherPage() {
