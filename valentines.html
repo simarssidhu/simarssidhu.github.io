@@ -14,6 +14,10 @@
       background-color: #c0e4a4; /* Light green background */
     }
 
+    #buttonsContainer {
+      position: relative; /* Needed for absolute positioning */
+    }
+
     button {
       padding: 10px 20px;
       font-size: 16px;
@@ -31,8 +35,11 @@
     }
 
     #noButton {
-      position: absolute;
-      left: 120px; /* Adjust the initial position */
+      position: absolute; /* Position relative to buttonsContainer */
+    }
+
+    #yesButton {
+      margin-right: 20px; /* Fixed position */
     }
 
     #imageAboveYes {
@@ -42,11 +49,18 @@
   <script>
     function moveNoButton() {
       var noButton = document.getElementById('noButton');
-      var maxX = window.innerWidth - noButton.clientWidth;
-      var maxY = window.innerHeight - noButton.clientHeight;
+      var windowWidth = window.innerWidth;
+      var windowHeight = window.innerHeight;
 
-      var newX = Math.floor(Math.random() * maxX);
-      var newY = Math.floor(Math.random() * maxY);
+      var maxX = windowWidth - noButton.offsetWidth;
+      var maxY = windowHeight - noButton.offsetHeight;
+
+      var newX = Math.floor(Math.random() * maxX/2);
+      var newY = Math.floor(Math.random() * maxY/2);
+
+      // Ensure the button stays within the visible area
+      newX = Math.max(0, newX);
+      newY = Math.max(0, newY);
 
       noButton.style.left = newX + 'px';
       noButton.style.top = newY + 'px';
@@ -59,7 +73,9 @@
 </head>
 <body>
   <img id="imageAboveYes" src="img/ducky_mushroom.png" alt="Nature Image" width="360px">
-  <button onclick="redirectToAnotherPage()">Yes</button>
-  <button id="noButton" onclick="alert('No')" onmouseover="moveNoButton()">No</button>
+  <div id="buttonsContainer">
+    <button id="yesButton" onclick="redirectToAnotherPage()">Yes</button>
+    <button id="noButton" onclick="alert('No')" onmouseover="moveNoButton()">No</button>
+  </div>
 </body>
 </html>
