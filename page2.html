@@ -50,12 +50,14 @@
       font-size: 40px;
       color: #44742c;
       margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     #amesText{
       font-size: 50px;
       color: #44742c;
       margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
   </style>
@@ -75,21 +77,21 @@
       var negY;
 
       if(Math.random() > 0.5)
-        negX = -1;
+        negX = -0.5;
       else
-        negX = 1;
+        negX = 0.5;
 
       if(Math.random() > 0.5)
-        negY = -1;
+        negY = -0.75;
       else
-        negY = 1;
+        negY = 0.2;
 
       // Ensure the button stays within the visible area
       newX = Math.max(0, newX);
       newY = Math.max(0, newY);
 
-      noButton.style.left = (negX * newX)*0.35 + 'px';
-      noButton.style.top = (negY * newY)*0.35 + 'px';
+      noButton.style.left = (negX * newX) + 'px';
+      noButton.style.top = (negY * newY) + 'px';
     }
 
     function redirectToAnotherPage() {
