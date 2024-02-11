@@ -45,6 +45,19 @@
     #imageAboveYes {
       margin-bottom: 20px;
     }
+
+    #valentinesText{
+      font-size: 40px;
+      color: #44742c;
+      margin-bottom: 10px;
+    }
+
+    #amesText{
+      font-size: 50px;
+      color: #44742c;
+      margin-bottom: 10px;
+    }
+
   </style>
   <script>
     function moveNoButton() {
@@ -75,8 +88,8 @@
       newX = Math.max(0, newX);
       newY = Math.max(0, newY);
 
-      noButton.style.left = (negX * newX)*0.4 + 'px';
-      noButton.style.top = (negY * newY)*0.4 + 'px';
+      noButton.style.left = (negX * newX)*0.35 + 'px';
+      noButton.style.top = (negY * newY)*0.35 + 'px';
     }
 
     function redirectToAnotherPage() {
@@ -85,6 +98,9 @@
   </script>
 </head>
 <body>
+  <div id="amesText">Ames,</div>
+  <div id="valentinesText">Will you be my</div>
+  <div id="amesText">Valentines? <3</div>
   <img id="imageAboveYes" src="img/ducky_mushroom.png" alt="Nature Image" width="360px">
   <div id="buttonsContainer">
     <button id="yesButton" onclick="redirectToAnotherPage()">Yes</button>
