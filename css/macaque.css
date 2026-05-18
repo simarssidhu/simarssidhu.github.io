@@ -509,3 +509,16 @@ button {
     font-size: 0.95rem;
     font-weight: 600;
 }
+
+/* Tracker button review statuses */
+.tracker-btn.correct {
+    background-color: var(--correct-bg) !important;
+    color: var(--correct-text) !important;
+    border-color: var(--correct-border) !important;
+}
+
+.tracker-btn.incorrect {
+    background-color: var(--incorrect-bg) !important;
+    color: var(--incorrect-text) !important;
+    border-color: var(--incorrect-border) !important;
+}

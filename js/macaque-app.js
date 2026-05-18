@@ -79,7 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
             els.ongoingSessionContainer.classList.remove('hidden');
 
             const modeLabel = state.mode === 'practice' ? 'Practice Mode' : 'Test Mode';
-            const progressInfo = `Question ${state.currentQuestionIndex + 1} of ${state.questions.length}`;
+            let progressInfo = '';
+            if (state.mode === 'practice') {
+                const { correctCount, answeredCount } = getPracticeScore();
+                progressInfo = `Question ${state.currentQuestionIndex + 1} • Score: ${correctCount}/${answeredCount}`;
+            } else {
+                progressInfo = `Question ${state.currentQuestionIndex + 1} of ${state.questions.length}`;
+            }
             els.ongoingSessionText.innerHTML = `You have an active <strong>${modeLabel}</strong> session in progress (${progressInfo}).`;
         } else {
             // Show standard clean selection dashboard
@@ -163,12 +169,31 @@ document.addEventListener('DOMContentLoaded', () => {
         loadQuestion();
     }
 
+    // Practice Mode Score Helper
+    function getPracticeScore() {
+        let correctCount = 0;
+        let answeredCount = 0;
+        Object.entries(state.userAnswers).forEach(([qIdx, ansIdx]) => {
+            const q = state.questions[parseInt(qIdx, 10)];
+            if (q && q.options[ansIdx] && q.options[ansIdx].isCorrect) {
+                correctCount++;
+            }
+            answeredCount++;
+        });
+        return { correctCount, answeredCount };
+    }
+
     // Quiz Rendering Logic
     function loadQuestion() {
         const q = state.questions[state.currentQuestionIndex];
         
         els.category.textContent = q.category;
-        els.counter.textContent = `Question ${state.currentQuestionIndex + 1} / ${state.questions.length}`;
+        if (state.mode === 'practice') {
+            const { correctCount, answeredCount } = getPracticeScore();
+            els.counter.textContent = `Question ${state.currentQuestionIndex + 1} • Score: ${correctCount}/${answeredCount}`;
+        } else {
+            els.counter.textContent = `Question ${state.currentQuestionIndex + 1} / ${state.questions.length}`;
+        }
         els.qText.textContent = q.text;
         
         els.optionsContainer.innerHTML = '';
@@ -220,6 +245,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (state.userAnswers[state.currentQuestionIndex] !== undefined) return;
             state.userAnswers[state.currentQuestionIndex] = selectedIndex;
             
+            // Instantly update counter with new practice score
+            const { correctCount, answeredCount } = getPracticeScore();
+            els.counter.textContent = `Question ${state.currentQuestionIndex + 1} • Score: ${correctCount}/${answeredCount}`;
+            
             const options = Array.from(els.optionsContainer.children);
             options.forEach((optDiv, idx) => {
                 optDiv.classList.add('disabled', 'show-explanation');
@@ -260,15 +289,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (state.mode === 'practice') {
             els.btnPrev.classList.add('hidden');
             els.btnSubmit.classList.add('hidden');
-            if (state.userAnswers[state.currentQuestionIndex] !== undefined && state.currentQuestionIndex < state.questions.length - 1) {
+            if (state.userAnswers[state.currentQuestionIndex] !== undefined) {
                 els.btnNext.classList.remove('hidden');
             } else {
                 els.btnNext.classList.add('hidden');
-            }
-            if (state.currentQuestionIndex === state.questions.length - 1 && state.userAnswers[state.currentQuestionIndex] !== undefined) {
-                // Practice mode finished
-                els.btnSubmit.textContent = "Finish Practice";
-                els.btnSubmit.classList.remove('hidden');
             }
         } else if (state.mode === 'test') {
             els.btnPrev.classList.toggle('hidden', state.currentQuestionIndex === 0);
@@ -288,6 +312,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     els.btnNext.addEventListener('click', () => {
+        if (state.mode === 'practice' && state.currentQuestionIndex === state.questions.length - 1) {
+            // Append a new random compiled question to allow infinite scroll!
+            const randomTemplate = baseTemplates[Math.floor(Math.random() * baseTemplates.length)];
+            const compiled = compileQuestionTemplate(randomTemplate, state.questions.length);
+            state.questions.push(compiled);
+        }
+
         if (state.currentQuestionIndex < state.questions.length - 1) {
             state.currentQuestionIndex++;
             loadQuestion();
@@ -328,12 +359,24 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateTrackerHighlight() {
         const btns = Array.from(els.tracker.children);
         btns.forEach((btn, idx) => {
-            btn.classList.remove('current');
-            if (state.userAnswers[idx] !== undefined) {
-                btn.classList.add('answered');
+            btn.classList.remove('current', 'correct', 'incorrect', 'answered');
+            
+            if (state.isReviewing) {
+                const q = state.questions[idx];
+                const userAnsIdx = state.userAnswers[idx];
+                const isCorrect = userAnsIdx !== undefined && q.options[userAnsIdx].isCorrect;
+                
+                if (isCorrect) {
+                    btn.classList.add('correct');
+                } else {
+                    btn.classList.add('incorrect');
+                }
             } else {
-                btn.classList.remove('answered');
+                if (state.userAnswers[idx] !== undefined) {
+                    btn.classList.add('answered');
+                }
             }
+            
             if (idx === state.currentQuestionIndex) {
                 btn.classList.add('current');
             }
