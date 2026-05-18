@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Macaque - A smart interactive practice application designed to help medical graduates prepare for the Medical Council of Canada Qualifying Examination (MCCQE) Part I.">
+    <title>Macaque - MCCQE Practice Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/macaque.css">
+    <link rel="icon" type="image/png" href="img/macaque_icon.png">
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="logo-container" id="logo-home">
+            <img src="img/macaque_icon.png" alt="Macaque Icon" class="logo-icon">
+            <h1>Macaque</h1>
+        </div>
+        <div class="controls">
+            <button id="btn-theme" class="secondary-btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="app-container">
+
+        <!-- Screen: Start -->
+        <section id="screen-start" class="screen active">
+            <h2>Welcome to Macaque</h2>
+            <p class="app-description">
+                Macaque is an interactive practice portal designed to help medical graduates master the
+                <strong>Medical Council of Canada Qualifying Examination (MCCQE) Part I</strong>.
+                Test your clinical knowledge, review high-yield questions, and understand the rationale behind every
+                clinical decision.
+            </p>
+
+            <div class="mode-selection">
+                <div class="mode-card" id="btn-practice-mode">
+                    <h3>Practice Mode</h3>
+                    <p>Immediate feedback and detailed explanations after every question.</p>
+                </div>
+                <div class="mode-card" id="btn-test-mode">
+                    <h3>Test Mode</h3>
+                    <p>Simulate the actual MCCQE exam. Auto-advances. Complete a full review at the end.</p>
+                </div>
+            </div>
+
+            <div id="test-setup-container" class="hidden">
+                <label for="num-questions">How many questions would you like to answer? (Max 115)</label>
+                <div class="input-group">
+                    <input type="number" id="num-questions" min="1" max="115" value="10">
+                    <button id="btn-start-test" class="primary-btn">Start Test</button>
+                </div>
+            </div>
+
+            <!-- Screen: Start - Ongoing Session Menu -->
+            <div id="ongoing-session-container" class="hidden">
+                <div class="ongoing-notice-card">
+                    <h3>Ongoing Practice / Test Session</h3>
+                    <p id="ongoing-session-text">You have an active session in progress.</p>
+                    <div class="ongoing-actions">
+                        <button id="btn-resume-session" class="primary-btn">Resume Active Session</button>
+                        <div class="new-session-split">
+                            <button id="btn-new-practice" class="secondary-btn">New Practice Mode</button>
+                            <button id="btn-new-test" class="secondary-btn">New Test Mode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen: Quiz -->
+        <section id="screen-quiz" class="screen">
+            <div class="quiz-header">
+                <span id="question-category" class="category-tag">Category</span>
+                <span id="question-counter" class="counter">Question 1/10</span>
+            </div>
+
+            <!-- Tracker (Test Mode only) -->
+            <div id="question-tracker" class="tracker hidden">
+                <!-- Buttons will be generated here -->
+            </div>
+
+            <div class="question-container">
+                <h3 id="question-text">Question text goes here...</h3>
+            </div>
+
+            <div id="options-container" class="options-container">
+                <!-- Options will be generated here -->
+            </div>
+
+            <div class="quiz-footer">
+                <button id="btn-prev" class="secondary-btn hidden">Previous</button>
+                <button id="btn-next" class="primary-btn hidden">Next</button>
+                <button id="btn-submit-test" class="primary-btn hidden">Submit Test</button>
+            </div>
+        </section>
+
+        <!-- Screen: Results -->
+        <section id="screen-results" class="screen">
+            <h2>Test Complete!</h2>
+            <div class="score-container">
+                <span class="score-label">Your Score</span>
+                <span id="final-score" class="score-value">0/0</span>
+            </div>
+            <div class="results-actions">
+                <button id="btn-review" class="primary-btn">Review Answers</button>
+                <button id="btn-restart" class="secondary-btn">Go Home</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/macaque-questions.js"></script>
+    <script src="js/macaque-app.js"></script>
+</body>
+
+</html>
