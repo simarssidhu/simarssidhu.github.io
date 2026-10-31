@@ -565,7 +565,7 @@ function doGet(e) {
       })).setMimeType(ContentService.MimeType.JSON);
     }
 
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    // ss already declared above — reuse it
     const sim = parseSimData(ss);
     const alex = parseAlexData(ss);
     const chris = parseChrisData(ss);
