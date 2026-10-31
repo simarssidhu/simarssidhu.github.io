@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Portfolio Dashboard | Wealthsimple Style</title>
+  <meta name="description" content="Modern Wealthsimple-inspired multi-user portfolio viewer dashboard with interactive scrub, two-finger range profit inspection, light/dark themes, and dynamic comparison.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Wealthsimple Navbar -->
+    <header class="ws-navbar">
+      <a href="projects.html" class="ws-nav-btn" aria-label="Go Back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+
+      <div class="ws-nav-title-group">
+        <div class="ws-nav-title">Portfolio Performance</div>
+        <div class="ws-nav-subtitle">Multi-User Viewer</div>
+      </div>
+
+      <div class="ws-nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="ws-nav-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          ☀️
+        </button>
+        <!-- Google Sheet Sync Badge -->
+        <div class="ws-sync-badge" id="syncBadge" title="Data Source: Apps Script Backfilled Data">
+          <div class="ws-pulse-dot fallback"></div>
+          <span>Sync</span>
+        </div>
+        <!-- Settings Modal Button -->
+        <button class="ws-nav-btn" id="openSettingsBtn" aria-label="Google Sheet Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Metrics Section: Separate Per-User Displays -->
+    <section class="ws-hero">
+      <div class="ws-hero-header-row">
+        <span class="ws-hero-label">Active Users Overview</span>
+        <span class="ws-currency-pill" id="currencyPill">CAD</span>
+      </div>
+
+      <!-- Separate per-user value & return cards -->
+      <div class="ws-hero-users-list" id="heroUsersList"></div>
+
+      <div class="ws-hero-date" id="heroDate">--</div>
+
+      <!-- Wealthsimple Two-Finger Touch Range Delta Banner -->
+      <div class="ws-range-banner" id="rangeBanner">
+        <div class="ws-range-banner-title">
+          <span>Range Inspection:</span>
+          <span id="rangeDates" style="margin-left: 6px; color: var(--text-primary);">--</span>
+        </div>
+        <div class="ws-range-users-grid" id="rangeUsersGrid"></div>
+      </div>
+    </section>
+
+    <!-- SVG Interactive Chart Container -->
+    <div class="ws-chart-card" id="chartContainer"></div>
+
+    <!-- Timeframe Navigation Capsule -->
+    <nav class="ws-timeframe-bar" id="timeframeBar">
+      <button class="ws-tf-btn" data-timeframe="1D">1D</button>
+      <button class="ws-tf-btn" data-timeframe="1W">1W</button>
+      <button class="ws-tf-btn active" data-timeframe="1M">1M</button>
+      <button class="ws-tf-btn" data-timeframe="3M">3M</button>
+      <button class="ws-tf-btn" data-timeframe="6M">6M</button>
+      <button class="ws-tf-btn" data-timeframe="1Y">1Y</button>
+      <button class="ws-tf-btn" data-timeframe="ALL">ALL</button>
+    </nav>
+
+    <!-- Controls Section: Mode Switcher & User Toggles -->
+    <div class="ws-controls-section">
+      <!-- Mode Switcher -->
+      <div class="ws-mode-switch-wrapper">
+        <span class="ws-mode-label">Display Mode</span>
+        <div class="ws-mode-pills">
+          <button class="ws-mode-btn active" id="modeValueBtn">Absolute ($)</button>
+          <button class="ws-mode-btn" id="modePercentBtn">Normalized (%)</button>
+        </div>
+      </div>
+
+      <!-- User Toggles -->
+      <div class="ws-users-grid">
+        <!-- Alex -->
+        <div class="ws-user-card active alex" data-user="alex">
+          <div class="ws-user-header">
+            <span class="ws-user-dot" style="background-color: var(--color-alex);"></span>
+            <span class="ws-user-name">Alex</span>
+            <span class="ws-user-check" style="color: var(--color-alex);">✓</span>
+          </div>
+          <div class="ws-user-val">$1.01M</div>
+          <div class="ws-user-change" style="color: var(--color-green);">+40.28% 1y</div>
+        </div>
+
+        <!-- Chris -->
+        <div class="ws-user-card active chris" data-user="chris">
+          <div class="ws-user-header">
+            <span class="ws-user-dot" style="background-color: var(--color-chris);"></span>
+            <span class="ws-user-name">Chris</span>
+            <span class="ws-user-check" style="color: var(--color-chris);">✓</span>
+          </div>
+          <div class="ws-user-val">$841K</div>
+          <div class="ws-user-change" style="color: var(--color-green);">+179.67% 1y</div>
+        </div>
+
+        <!-- Simarjot -->
+        <div class="ws-user-card active simarjot" data-user="simarjot">
+          <div class="ws-user-header">
+            <span class="ws-user-dot" style="background-color: var(--color-simarjot);"></span>
+            <span class="ws-user-name">Simarjot</span>
+            <span class="ws-user-check" style="color: var(--color-simarjot);">✓</span>
+          </div>
+          <div class="ws-user-val">$84.8K</div>
+          <div class="ws-user-change" style="color: var(--color-green);">+135.55% 1y</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interaction Tip Pill -->
+    <div class="ws-gesture-hint">
+      <span>👆 Drag to scrub • ✌️ <strong>2 fingers</strong> to view profit between points</span>
+    </div>
+
+    <!-- Holdings Breakdown Section -->
+    <section>
+      <div class="ws-section-title">
+        <span id="holdingsTitle">Top Holdings</span>
+      </div>
+      <div class="ws-holdings-list" id="holdingsList">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Settings & Google Sheet Modal -->
+  <div class="ws-modal-overlay" id="settingsModal">
+    <div class="ws-modal">
+      <div class="ws-modal-header">
+        <h3 class="ws-modal-title">Data Source & Live Sync</h3>
+        <button class="ws-modal-close" id="closeSettingsBtn">✕</button>
+      </div>
+      <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
+        Connect directly to your Google Apps Script Web App URL to stream live 1-hour resolution data for Alex, Chris, and Sim without login prompts or CORS restrictions.
+      </p>
+      <div style="margin-bottom: 12px;">
+        <label style="font-size: 12px; color: var(--text-secondary); display: block; margin-bottom: 6px;">Apps Script Web App URL</label>
+        <input type="text" id="sheetUrlInput" class="ws-input" placeholder="https://script.google.com/macros/s/.../exec">
+      </div>
+      <div style="margin-bottom: 12px;">
+        <label style="font-size: 12px; color: var(--text-secondary); display: block; margin-bottom: 6px;">Secret Passphrase / API Key (Optional)</label>
+        <input type="password" id="sheetApiKeyInput" class="ws-input" placeholder="e.g. portfolio2026">
+      </div>
+      <div id="syncStatusText" style="font-size: 12px; min-height: 20px;"></div>
+      <div style="display: flex; gap: 10px; justify-content: flex-end;">
+        <button class="ws-btn-primary" id="testSheetBtn">Connect & Sync Now</button>
+      </div>
+      <div style="font-size: 11px; color: var(--text-muted); line-height: 1.5; border-top: 1px solid var(--border-subtle); padding-top: 12px;">
+        💡 <strong>Quick Setup</strong>: In your Google Sheet, go to <em>Extensions &gt; Apps Script</em>, paste <code>google-apps-script.js</code>, click <em>Deploy &gt; New deployment &gt; Web app</em> (Execute as: Me, Who has access: Anyone), and paste the Web App URL above!
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/portfolio-chart.js"></script>
+  <script src="js/portfolio-app.js"></script>
+</body>
+</html>
