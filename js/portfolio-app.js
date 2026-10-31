@@ -11,6 +11,9 @@
 (function () {
   'use strict';
 
+  // Live Google Apps Script Web App URL (no password hardcoded!)
+  const DEFAULT_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxG26r6e1a4e9Kb_YPZ4yA-MlyKCABOTefUsFGzRKhm_PJW4DCThlQTG-CYQ-39ezKB-Q/exec";
+
   const AppState = {
     theme: localStorage.getItem('theme') || 'dark',
     timeframe: '1M', // '1D', '1W', '1M', '3M', '6M', '1Y', 'ALL'
@@ -21,11 +24,19 @@
     usersConfig: {},
     chart: null,
     isScrubbing: false,
-    isRangeScrubbing: false
+    isRangeScrubbing: false,
+    isAuthenticated: false
   };
 
   // DOM Elements
   const elements = {
+    authOverlay: document.getElementById('authOverlay'),
+    authCard: document.getElementById('authCard'),
+    authForm: document.getElementById('authForm'),
+    authPasswordInput: document.getElementById('authPasswordInput'),
+    authErrorText: document.getElementById('authErrorText'),
+    authSubmitBtn: document.getElementById('authSubmitBtn'),
+    lockPageBtn: document.getElementById('lockPageBtn'),
     themeToggleBtn: document.getElementById('themeToggleBtn'),
     heroUsersList: document.getElementById('heroUsersList'),
     heroDate: document.getElementById('heroDate'),
@@ -50,39 +61,148 @@
   };
 
   function init() {
-    if (!window.PORTFOLIO_DATA) {
-      console.error('PORTFOLIO_DATA not found');
-      return;
-    }
-
-    AppState.rawHistory = window.PORTFOLIO_DATA.history || [];
-    AppState.usersConfig = window.PORTFOLIO_DATA.users || {};
-
     applyTheme(AppState.theme);
     initChart();
     bindUIEvents();
-    updateUserCards();
-    updateUserCardsData();
-    setTimeframe('1M');
 
-    // Check for saved Google Apps Script URL & API Key
-    const savedUrl = localStorage.getItem('ws_apps_script_url');
-    const savedKey = localStorage.getItem('ws_apps_script_key');
-    if (savedKey && elements.sheetApiKeyInput) {
-      elements.sheetApiKeyInput.value = savedKey;
-    }
-    if (savedUrl && elements.sheetUrlInput) {
-      elements.sheetUrlInput.value = savedUrl;
-      fetchRemotePortfolioData(savedUrl, false);
+    if (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.history) {
+      AppState.rawHistory = window.PORTFOLIO_DATA.history;
+      AppState.usersConfig = window.PORTFOLIO_DATA.users || {};
+      updateUserCards();
+      updateUserCardsData();
+      setTimeframe('1M');
     }
 
-    // Auto-refresh every 2 minutes if connected
+    const currentUrl = localStorage.getItem('ws_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
+    if (elements.sheetUrlInput) elements.sheetUrlInput.value = currentUrl;
+
+    // Check Password Authentication Gate (verified directly against Google Sheet)
+    checkAuthStatus(currentUrl);
+
+    // Auto-refresh every 2 minutes if unlocked
     setInterval(() => {
-      const activeUrl = localStorage.getItem('ws_apps_script_url');
-      if (activeUrl) {
+      if (sessionStorage.getItem('ws_auth_unlocked') === 'true') {
+        const activeUrl = localStorage.getItem('ws_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
         fetchRemotePortfolioData(activeUrl, true);
       }
     }, 120000);
+  }
+
+  function checkAuthStatus(url) {
+    const isUnlocked = sessionStorage.getItem('ws_auth_unlocked') === 'true';
+    if (isUnlocked) {
+      if (elements.authOverlay) elements.authOverlay.classList.add('unlocked');
+      fetchRemotePortfolioData(url, false);
+    } else {
+      if (elements.authOverlay) {
+        elements.authOverlay.classList.remove('unlocked');
+        if (elements.authPasswordInput) {
+          setTimeout(() => elements.authPasswordInput.focus(), 100);
+        }
+      }
+    }
+  }
+
+  function handleAuthSubmit(e) {
+    if (e) e.preventDefault();
+    const entered = elements.authPasswordInput.value.trim();
+    if (!entered) return;
+
+    elements.authSubmitBtn.disabled = true;
+    elements.authSubmitBtn.textContent = 'Verifying with Google Sheet...';
+    if (elements.authErrorText) elements.authErrorText.style.display = 'none';
+
+    // Verify passphrase directly against private Google Apps Script endpoint
+    const activeUrl = localStorage.getItem('ws_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
+    const testUrl = activeUrl + (activeUrl.includes('?') ? '&' : '?') + 'key=' + encodeURIComponent(entered);
+
+    fetch(testUrl)
+      .then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        if (data.status === 'success' && data.users && data.history) {
+          // Passphrase matches the Google Sheet! Unlock and render data
+          unlockPage(entered, data);
+        } else {
+          showAuthError();
+        }
+      })
+      .catch(() => {
+        showAuthError();
+      })
+      .finally(() => {
+        elements.authSubmitBtn.disabled = false;
+        elements.authSubmitBtn.textContent = 'Unlock Dashboard';
+      });
+  }
+
+  function unlockPage(validKey, data) {
+    sessionStorage.setItem('ws_auth_unlocked', 'true');
+    sessionStorage.setItem('ws_session_key', validKey);
+
+    if (elements.sheetApiKeyInput) elements.sheetApiKeyInput.value = validKey;
+
+    if (elements.authOverlay) {
+      elements.authOverlay.classList.add('unlocked');
+    }
+    if (elements.authErrorText) {
+      elements.authErrorText.style.display = 'none';
+    }
+
+    if (data && data.users && data.history) {
+      applyPortfolioData(data);
+    } else {
+      const activeUrl = localStorage.getItem('ws_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
+      fetchRemotePortfolioData(activeUrl, false);
+    }
+  }
+
+  function applyPortfolioData(data) {
+    AppState.rawHistory = data.history;
+    AppState.usersConfig = data.users;
+    updateUserCards();
+    updateUserCardsData();
+    setTimeframe(AppState.timeframe);
+    renderHoldings();
+
+    if (elements.syncBadge) {
+      elements.syncBadge.title = `Live Synced with Google Sheets (${data.history.length} points)`;
+      const dot = elements.syncBadge.querySelector('.ws-pulse-dot');
+      if (dot) dot.classList.remove('fallback');
+    }
+  }
+
+  function showAuthError() {
+    if (elements.authErrorText) {
+      elements.authErrorText.style.display = 'block';
+      elements.authErrorText.textContent = 'Incorrect passphrase. Access denied.';
+    }
+    if (elements.authCard) {
+      elements.authCard.classList.remove('shake');
+      void elements.authCard.offsetWidth; // trigger reflow
+      elements.authCard.classList.add('shake');
+    }
+    if (elements.authPasswordInput) {
+      elements.authPasswordInput.select();
+      elements.authPasswordInput.focus();
+    }
+  }
+
+  function lockDashboard() {
+    sessionStorage.removeItem('ws_auth_unlocked');
+    sessionStorage.removeItem('ws_session_key');
+    if (elements.authOverlay) {
+      elements.authOverlay.classList.remove('unlocked');
+    }
+    if (elements.authPasswordInput) {
+      elements.authPasswordInput.value = '';
+      setTimeout(() => elements.authPasswordInput.focus(), 100);
+    }
+    if (elements.authErrorText) {
+      elements.authErrorText.style.display = 'none';
+    }
   }
 
   function applyTheme(theme) {
@@ -116,6 +236,16 @@
   }
 
   function bindUIEvents() {
+    // Auth Form Submit
+    if (elements.authForm) {
+      elements.authForm.addEventListener('submit', handleAuthSubmit);
+    }
+
+    // Lock Dashboard Button
+    if (elements.lockPageBtn) {
+      elements.lockPageBtn.addEventListener('click', lockDashboard);
+    }
+
     // Theme Toggle
     if (elements.themeToggleBtn) {
       elements.themeToggleBtn.addEventListener('click', toggleTheme);
@@ -490,11 +620,11 @@
       elements.syncStatusText.style.color = 'var(--text-secondary)';
     }
 
-    // Attach API key if present
-    const apiKey = (elements.sheetApiKeyInput ? elements.sheetApiKeyInput.value.trim() : '') || localStorage.getItem('ws_apps_script_key') || '';
+    // Use session key (verified against Google Sheet) — never localStorage
+    const sessionKey = sessionStorage.getItem('ws_session_key') || '';
     let finalUrl = url;
-    if (apiKey && !finalUrl.includes('key=')) {
-      finalUrl += (finalUrl.includes('?') ? '&' : '?') + 'key=' + encodeURIComponent(apiKey);
+    if (sessionKey && !finalUrl.includes('key=')) {
+      finalUrl += (finalUrl.includes('?') ? '&' : '?') + 'key=' + encodeURIComponent(sessionKey);
     }
 
     fetch(finalUrl)

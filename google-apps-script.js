@@ -5,7 +5,9 @@
  * Key Features:
  * 1. Sheet Stays 100% RESTRICTED / PRIVATE:
  *    - The Google Sheet sharing is kept strictly "Restricted".
- *    - The Apps Script Web App acts as a secure, read-only bridge with an optional SECRET_API_KEY.
+ *    - The Apps Script Web App acts as a secure, read-only bridge.
+ *    - The passphrase is read dynamically from the Google Sheet (Config tab, cell B1).
+ *    - Nothing sensitive is hardcoded; the passphrase never appears in the public repo.
  * 2. Sim's Historical Data is PRESERVED 100%:
  *    - The backfill script NEVER clears, truncates, or overwrites Sim's dates or Sim's values (Columns A & B).
  *    - It ONLY calculates and populates Alex's (Column C) and Chris's (Column D) historical values.
@@ -21,7 +23,9 @@
 // ==========================================
 // CONFIGURATION & SECURITY
 // ==========================================
-const SECRET_API_KEY = "portfolio2026"; 
+// NOTE: No hardcoded password here! The passphrase is stored in the Google Sheet
+// in a tab named "Config" (cell B1). The doGet() function reads it dynamically via
+// getSheetPassword(). This keeps the public GitHub repo free of any secrets.
 
 // Ticker Map: Maps tickers to verified working Google Finance symbols
 const TICKER_MAP = {
@@ -517,20 +521,48 @@ function backfillAlexChris_step2_populate() {
 }
 
 /**
+ * Reads the passphrase dynamically from the Google Sheet so Alex, Chris, and Sim
+ * can change or view it directly in the spreadsheet without changing any code!
+ * 
+ * Checked in order:
+ * 1. Cell A1 or B1 on a tab named "Config", "Settings", or "Password"
+ * 2. Cell Z1 on "Historical Data"
+ * 3. Default fallback if not set in sheet: "portfolio2026"
+ */
+function getSheetPassword(ss) {
+  const configSheet = getSheetByNames(ss, ["Config", "Settings", "Password"]);
+  if (configSheet) {
+    const valB1 = configSheet.getRange("B1").getValue();
+    const valA1 = configSheet.getRange("A1").getValue();
+    if (valB1) return String(valB1).trim();
+    if (valA1) return String(valA1).trim();
+  }
+
+  const histSheet = getSheetByNames(ss, ["Historical Data", "Historical data", "History"]);
+  if (histSheet) {
+    const z1 = histSheet.getRange("Z1").getValue();
+    if (z1) return String(z1).trim();
+  }
+
+  return "portfolio2026";
+}
+
+/**
  * Secure Web App Endpoint (doGet)
- * Returns JSON only if the client provides the correct ?key=... parameter.
- * Keeps your Google Sheet 100% Restricted to your private Google Account.
+ * Returns JSON ONLY if the client provides the correct passphrase matching the Google Sheet!
+ * Keeps your Google Sheet and data 100% private.
  */
 function doGet(e) {
   try {
-    if (SECRET_API_KEY && SECRET_API_KEY !== "") {
-      const providedKey = (e && e.parameter && e.parameter.key) ? String(e.parameter.key).trim() : "";
-      if (providedKey !== SECRET_API_KEY) {
-        return ContentService.createTextOutput(JSON.stringify({
-          status: "error",
-          message: "Unauthorized: Invalid or missing API security key."
-        })).setMimeType(ContentService.MimeType.JSON);
-      }
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheetPassword = getSheetPassword(ss);
+
+    const providedKey = (e && e.parameter && e.parameter.key) ? String(e.parameter.key).trim() : "";
+    if (!providedKey || providedKey !== sheetPassword) {
+      return ContentService.createTextOutput(JSON.stringify({
+        status: "error",
+        message: "Unauthorized: Invalid or missing API security key."
+      })).setMimeType(ContentService.MimeType.JSON);
     }
 
     const ss = SpreadsheetApp.getActiveSpreadsheet();

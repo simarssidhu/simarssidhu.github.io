@@ -1,282 +1,232 @@
-// Auto-generated historical dataset compiled via Apps Script GOOGLEFINANCE logic
+// Pre-synced live portfolio dataset from Google Apps Script
 window.PORTFOLIO_DATA = {
-  "updatedAt": "2026-09-15T12:00:00-04:00",
-  "source": "Portfolio - Wealthsimple.xlsx & Google Finance Automated Backfill",
-  "googleSheetUrl": "https://docs.google.com/spreadsheets/d/19Q0_6RHniIITnNytfXozP6tjlS2OnUQ0JHM9PfE9rmw/edit?usp=sharing",
+  "status": "success",
+  "updatedAt": "2026-10-30T22:03:48-04:00",
   "users": {
     "alex": {
       "id": "alex",
       "name": "Alex",
       "color": "#3b82f6",
-      "colorMuted": "rgba(59, 130, 246, 0.15)",
-      "colorGlow": "rgba(59, 130, 246, 0.4)",
-      "currentValue": 1010445.53,
-      "initialValue": 1033570.89,
-      "dayChangeDollar": 0.0,
-      "dayChangePercent": 0.0,
-      "totalProfit": -23125.36,
-      "totalReturnPct": -2.24,
+      "currentValue": 356303.9690249825,
+      "initialValue": 401364.04443800007,
+      "totalProfit": -45060.07541301759,
+      "totalReturnPct": -11.226734441574564,
       "holdings": [
         {
+          "ticker": "CLS",
+          "shares": 87,
+          "currentValue": 32130.84,
+          "profit": -11195.16,
+          "returnPct": -25.839357429718874,
+          "price": 369.32,
+          "account": "TFSA"
+        },
+        {
           "ticker": "VFV",
-          "shares": 298.18,
-          "currentValue": 55929.79,
-          "profit": 15699.22,
-          "returnPct": 39.02,
-          "price": 187.57,
+          "shares": 298.1809,
+          "currentValue": 56010.300256,
+          "profit": 15779.733228000005,
+          "returnPct": 39.22324340349838,
+          "price": 187.84,
           "account": "Unregistered"
         },
         {
-          "ticker": "Realized Gains",
-          "shares": 0,
-          "currentValue": 47832.64,
-          "profit": 47832.64,
-          "returnPct": 0,
-          "price": 0,
-          "account": "TFSA"
-        },
-        {
           "ticker": "CLS",
-          "shares": 87.0,
-          "currentValue": 38382.66,
-          "profit": -4943.34,
-          "returnPct": -11.41,
-          "price": 441.18,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "Company RRSP",
-          "shares": 0,
-          "currentValue": 34834.9,
-          "profit": 6616.53,
-          "returnPct": 23.45,
-          "price": 0,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "CLS",
-          "shares": 78.0,
-          "currentValue": 34412.04,
-          "profit": -531.96,
-          "returnPct": -1.52,
-          "price": 441.18,
+          "shares": 78,
+          "currentValue": 28806.96,
+          "profit": -6137.040000000001,
+          "returnPct": -17.562500000000004,
+          "price": 369.32,
           "account": "Unregistered"
         },
         {
           "ticker": "SNDK",
-          "shares": 706.0,
-          "currentValue": 26287.68,
-          "profit": -5199.92,
-          "returnPct": -16.51,
-          "price": 37.23,
+          "shares": 706,
+          "currentValue": 19683.341569767443,
+          "profit": -11804.25843023256,
+          "returnPct": -37.48859370111586,
+          "price": 27.880087209302328,
           "account": "RRSP - IE"
         },
         {
           "ticker": "RDDT",
-          "shares": 1476.0,
-          "currentValue": 22491.7,
-          "profit": -1404.74,
-          "returnPct": -5.88,
-          "price": 15.24,
+          "shares": 1476,
+          "currentValue": 12956.313875598087,
+          "profit": -10940.126124401915,
+          "returnPct": -45.78140561691161,
+          "price": 8.77799043062201,
           "account": "TFSA"
         },
         {
           "ticker": "RDDT",
-          "shares": 1376.0,
-          "currentValue": 20967.87,
-          "profit": 726.91,
-          "returnPct": 3.59,
-          "price": 15.24,
+          "shares": 1376,
+          "currentValue": 12078.514832535886,
+          "profit": -8162.445167464117,
+          "returnPct": -40.32637368713794,
+          "price": 8.77799043062201,
           "account": "Unregistered"
         },
         {
-          "ticker": "Realized Gains - IE",
-          "shares": 0,
-          "currentValue": 20161.62,
-          "profit": 20161.62,
-          "returnPct": 0,
-          "price": 0,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "CLS",
-          "shares": 43.0,
-          "currentValue": 18970.74,
-          "profit": 2630.74,
-          "returnPct": 16.1,
-          "price": 441.18,
-          "account": "TFSA - IE"
-        },
-        {
-          "ticker": "AMD",
-          "shares": 181.0,
-          "currentValue": 16492.13,
-          "profit": 2374.13,
-          "returnPct": 16.82,
-          "price": 91.12,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "DOL",
-          "shares": 95.0,
-          "currentValue": 15583.8,
-          "profit": -1763.2,
-          "returnPct": -10.16,
-          "price": 164.04,
+          "ticker": "SNDK",
+          "shares": 524,
+          "currentValue": 14609.16569767442,
+          "profit": -2965.7943023255793,
+          "returnPct": -16.875112673517208,
+          "price": 27.880087209302328,
           "account": "RRSP"
         },
         {
+          "ticker": "CLS",
+          "shares": 43,
+          "currentValue": 15880.76,
+          "profit": -459.2399999999998,
+          "returnPct": -2.810526315789472,
+          "price": 369.32,
+          "account": "TFSA - IE"
+        },
+        {
           "ticker": "CSU",
-          "shares": 4.0,
-          "currentValue": 11548.0,
-          "profit": -4696.68,
-          "returnPct": -28.91,
-          "price": 2887.0,
+          "shares": 4,
+          "currentValue": 13573.56,
+          "profit": -2671.120000000001,
+          "returnPct": -16.443044738338955,
+          "price": 3393.39,
           "account": "TFSA"
         },
         {
-          "ticker": "VFV",
-          "shares": 58.0,
-          "currentValue": 10879.06,
-          "profit": 3043.98,
-          "returnPct": 38.85,
-          "price": 187.57,
-          "account": "FHSA - IE"
-        },
-        {
-          "ticker": "MSFT",
-          "shares": 300.0,
-          "currentValue": 10516.79,
-          "profit": 562.79,
-          "returnPct": 5.65,
-          "price": 35.06,
-          "account": "Unregistered"
-        },
-        {
-          "ticker": "MU",
-          "shares": 238.0,
-          "currentValue": 9686.2,
-          "profit": -381.2,
-          "returnPct": -3.79,
-          "price": 40.7,
-          "account": "Unregistered"
-        },
-        {
-          "ticker": "CLS",
-          "shares": 21.0,
-          "currentValue": 9264.78,
-          "profit": 1263.78,
-          "returnPct": 15.8,
-          "price": 441.18,
+          "ticker": "AMD",
+          "shares": 181,
+          "currentValue": 16537.339366515836,
+          "profit": 2419.3393665158364,
+          "returnPct": 17.136558765518036,
+          "price": 91.36651583710407,
           "account": "FHSA"
         },
         {
-          "ticker": "UNH",
-          "shares": 400.0,
-          "currentValue": 6912.13,
-          "profit": 1512.13,
-          "returnPct": 28.0,
-          "price": 17.28,
-          "account": "TFSA"
+          "ticker": "MU",
+          "shares": 238,
+          "currentValue": 9259.811785400178,
+          "profit": -807.5882145998221,
+          "returnPct": -8.02181511214238,
+          "price": 38.90677220756377,
+          "account": "Unregistered"
         },
         {
           "ticker": "MDA",
-          "shares": 164.0,
-          "currentValue": 6556.72,
-          "profit": -3447.28,
-          "returnPct": -34.46,
-          "price": 39.98,
+          "shares": 164,
+          "currentValue": 6232,
+          "profit": -3772,
+          "returnPct": -37.704918032786885,
+          "price": 38,
           "account": "TFSA"
         },
         {
           "ticker": "PNG",
-          "shares": 1337.0,
-          "currentValue": 6003.13,
-          "profit": -3997.63,
-          "returnPct": -39.97,
-          "price": 4.49,
+          "shares": 1337,
+          "currentValue": 5053.86,
+          "profit": -4946.900000000001,
+          "returnPct": -49.46524064171123,
+          "price": 3.78,
+          "account": "Unregistered"
+        },
+        {
+          "ticker": "MSFT",
+          "shares": 300,
+          "currentValue": 10941.509433962263,
+          "profit": 987.5094339622628,
+          "returnPct": 9.920729696225266,
+          "price": 36.471698113207545,
           "account": "Unregistered"
         },
         {
           "ticker": "LULU",
-          "shares": 1250.0,
-          "currentValue": 5285.72,
-          "profit": -3889.28,
-          "returnPct": -42.39,
-          "price": 4.23,
+          "shares": 1250,
+          "currentValue": 5854.84328690625,
+          "profit": -3320.15671309375,
+          "returnPct": -36.186994148160764,
+          "price": 4.6838746295249996,
           "account": "TFSA"
         },
         {
-          "ticker": "SMCI",
-          "shares": 280.0,
-          "currentValue": 3293.54,
-          "profit": -550.06,
-          "returnPct": -14.31,
-          "price": 11.76,
+          "ticker": "CLS",
+          "shares": 21,
+          "currentValue": 7755.72,
+          "profit": -245.27999999999975,
+          "returnPct": -3.065616797900259,
+          "price": 369.32,
+          "account": "FHSA"
+        },
+        {
+          "ticker": "VFV",
+          "shares": 58,
+          "currentValue": 10894.72,
+          "profit": 3059.6391999999987,
+          "returnPct": 39.0505124082447,
+          "price": 187.84,
+          "account": "FHSA - IE"
+        },
+        {
+          "ticker": "UNH",
+          "shares": 400,
+          "currentValue": 7339.375853411613,
+          "profit": 1939.3758534116132,
+          "returnPct": 35.91436765577061,
+          "price": 18.348439633529033,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "LAC",
+          "shares": 500,
+          "currentValue": 1415,
+          "profit": -3360,
+          "returnPct": -70.36649214659685,
+          "price": 2.83,
           "account": "TFSA"
         },
         {
           "ticker": "ENB",
-          "shares": 47.63,
-          "currentValue": 3216.22,
-          "profit": 534.37,
-          "returnPct": 19.93,
-          "price": 67.53,
-          "account": "Unregistered"
-        },
-        {
-          "ticker": "INTC",
-          "shares": 50.0,
-          "currentValue": 2769.3,
-          "profit": 2181.8,
-          "returnPct": 371.37,
-          "price": 55.39,
+          "shares": 47.6265,
+          "currentValue": 3291.467415,
+          "profit": 609.6192000000001,
+          "returnPct": 22.73130882614101,
+          "price": 69.11,
           "account": "Unregistered"
         },
         {
           "ticker": "XEQT",
-          "shares": 61.51,
-          "currentValue": 2766.56,
-          "profit": 747.3,
-          "returnPct": 37.01,
-          "price": 44.98,
-          "account": "Unregistered"
-        },
-        {
-          "ticker": "LAC",
-          "shares": 500.0,
-          "currentValue": 1965.0,
-          "profit": -2810.0,
-          "returnPct": -58.85,
-          "price": 3.93,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "DOL",
-          "shares": 7.0,
-          "currentValue": 1148.28,
-          "profit": 148.19,
-          "returnPct": 14.82,
-          "price": 164.04,
-          "account": "Unregistered"
-        },
-        {
-          "ticker": "OPEN",
-          "shares": 18.0,
-          "currentValue": 48.6,
-          "profit": -21.78,
-          "returnPct": -30.95,
-          "price": 2.7,
+          "shares": 61.5065,
+          "currentValue": 2745.65016,
+          "profit": 726.3917650000001,
+          "returnPct": 35.97319524824856,
+          "price": 44.64,
           "account": "Unregistered"
         },
         {
           "ticker": "XNDU",
-          "shares": 100.0,
-          "currentValue": 0,
-          "profit": 0,
-          "returnPct": 0,
-          "price": 0,
+          "shares": 100,
+          "currentValue": 405,
+          "profit": -1520,
+          "returnPct": -78.96103896103897,
+          "price": 4.05,
           "account": "TFSA"
+        },
+        {
+          "ticker": "DOL",
+          "shares": 7,
+          "currentValue": 1452.5,
+          "profit": 452.40999999999997,
+          "returnPct": 45.23692867641912,
+          "price": 207.5,
+          "account": "Unregistered"
+        },
+        {
+          "ticker": "INTC",
+          "shares": 50,
+          "currentValue": 1860.5154922105264,
+          "profit": 1273.0154922105264,
+          "returnPct": 2.166834880358343,
+          "price": 37.21030984421053,
+          "account": "Unregistered"
         }
       ]
     },
@@ -284,383 +234,420 @@ window.PORTFOLIO_DATA = {
       "id": "chris",
       "name": "Chris",
       "color": "#ef4444",
-      "colorMuted": "rgba(239, 68, 68, 0.15)",
-      "colorGlow": "rgba(239, 68, 68, 0.4)",
-      "currentValue": 841050.82,
-      "initialValue": 679088.48,
-      "dayChangeDollar": 0.0,
-      "dayChangePercent": 0.0,
-      "totalProfit": 161962.34,
-      "totalReturnPct": 23.85,
+      "currentValue": 221471.37708797998,
+      "initialValue": 237917.5508,
+      "totalProfit": -16446.173712020012,
+      "totalReturnPct": -6.912551704033435,
       "holdings": [
         {
           "ticker": "GOOG",
-          "shares": 400.24,
-          "currentValue": 21971.14,
-          "profit": 2159.35,
-          "returnPct": 10.9,
-          "price": 54.9,
-          "account": "NASDAQ"
-        },
-        {
-          "ticker": "VFV",
-          "shares": 106.0,
-          "currentValue": 19882.42,
-          "profit": 2074.42,
-          "returnPct": 11.65,
-          "price": 187.57,
-          "account": "TSE"
+          "shares": 400.2381,
+          "currentValue": 17960.36196483871,
+          "profit": -1851.4239851612874,
+          "returnPct": -9.345063538611912,
+          "price": 44.8741935483871,
+          "account": "FHSA",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "MSFT",
-          "shares": 501.76,
-          "currentValue": 17602.16,
-          "profit": -1725.8,
-          "returnPct": -8.93,
-          "price": 35.08,
-          "account": "NASDAQ"
+          "shares": 501.7643,
+          "currentValue": 18300.196073584902,
+          "profit": -1027.7647624150995,
+          "returnPct": -5.3175023021611185,
+          "price": 36.471698113207545,
+          "account": "TFSA",
+          "exchange": "NASDAQ"
         },
         {
-          "ticker": "MDA",
-          "shares": 400.0,
-          "currentValue": 15992.0,
-          "profit": 3812.0,
-          "returnPct": 31.3,
-          "price": 39.98,
-          "account": "TSE"
+          "ticker": "VFV",
+          "shares": 106,
+          "currentValue": 19911.04,
+          "profit": 2103.040000000001,
+          "returnPct": 11.809523809523814,
+          "price": 187.84,
+          "account": "RRSP - IE",
+          "exchange": "TSE"
         },
         {
           "ticker": "CLS",
-          "shares": 30.0,
-          "currentValue": 13235.4,
-          "profit": -2274.6,
-          "returnPct": -14.67,
-          "price": 441.18,
-          "account": "TSE"
-        },
-        {
-          "ticker": "NVDA",
-          "shares": 250.0,
-          "currentValue": 12060.23,
-          "profit": 2272.73,
-          "returnPct": 23.22,
-          "price": 48.24,
-          "account": "NASDAQ"
+          "shares": 62,
+          "currentValue": 22897.84,
+          "profit": -5064.16,
+          "returnPct": -18.110864745011085,
+          "price": 369.32,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
           "ticker": "CSU",
-          "shares": 3.0,
-          "currentValue": 8661.0,
-          "profit": -3612.0,
-          "returnPct": -29.43,
-          "price": 2887.0,
-          "account": "TSE"
+          "shares": 3,
+          "currentValue": 10180.17,
+          "profit": -2092.83,
+          "returnPct": -17.05230994866781,
+          "price": 3393.39,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
-          "ticker": "LLY",
-          "shares": 200.56,
-          "currentValue": 8432.77,
-          "profit": 3813.96,
-          "returnPct": 82.57,
-          "price": 42.05,
-          "account": "NYSE"
+          "ticker": "MDA",
+          "shares": 400,
+          "currentValue": 15200,
+          "profit": 3020,
+          "returnPct": 24.794745484400657,
+          "price": 38,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
-          "ticker": "MU",
-          "shares": 200.0,
-          "currentValue": 8172.01,
-          "profit": -1027.99,
-          "returnPct": -11.17,
-          "price": 40.86,
-          "account": "NASDAQ"
-        },
-        {
-          "ticker": "HUT",
-          "shares": 60.0,
-          "currentValue": 7329.0,
-          "profit": 4185.0,
-          "returnPct": 133.11,
-          "price": 122.15,
-          "account": "TSE"
-        },
-        {
-          "ticker": "XCHP",
-          "shares": 60.0,
-          "currentValue": 7242.0,
-          "profit": -438.0,
-          "returnPct": -5.7,
-          "price": 120.7,
-          "account": "TSE"
+          "ticker": "NVDA",
+          "shares": 250,
+          "currentValue": 11368.888888888889,
+          "profit": 1581.3888888888887,
+          "returnPct": 16.157230026961823,
+          "price": 45.47555555555555,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "PNG",
-          "shares": 1500.0,
-          "currentValue": 6735.0,
-          "profit": -2625.0,
-          "returnPct": -28.04,
-          "price": 4.49,
-          "account": "CVE"
+          "shares": 1500,
+          "currentValue": 5670,
+          "profit": -3690,
+          "returnPct": -39.42307692307692,
+          "price": 3.78,
+          "account": "TFSA",
+          "exchange": "CVE"
+        },
+        {
+          "ticker": "MU",
+          "shares": 200,
+          "currentValue": 7812.273730684327,
+          "profit": -1387.7262693156727,
+          "returnPct": -15.083981188213832,
+          "price": 39.06136865342164,
+          "account": "RRSP",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "RDDT",
-          "shares": 418.0,
-          "currentValue": 6431.14,
-          "profit": -1297.68,
-          "returnPct": -16.79,
-          "price": 15.39,
-          "account": "NYSE"
+          "shares": 418,
+          "currentValue": 3704.6512077294688,
+          "profit": -4024.168792270531,
+          "returnPct": -52.067052826570304,
+          "price": 8.86280193236715,
+          "account": "TFSA",
+          "exchange": "NYSE"
         },
         {
-          "ticker": "UNH",
-          "shares": 354.73,
-          "currentValue": 6306.55,
-          "profit": 1560.21,
-          "returnPct": 32.87,
-          "price": 17.78,
-          "account": "NYSE"
+          "ticker": "XCHP",
+          "shares": 60,
+          "currentValue": 6864,
+          "profit": -816,
+          "returnPct": -10.625,
+          "price": 114.4,
+          "account": "Unregistered",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "XNDU",
+          "shares": 414,
+          "currentValue": 1676.6999999999998,
+          "profit": -5402.700000000001,
+          "returnPct": -76.31578947368422,
+          "price": 4.05,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
           "ticker": "QCOM",
-          "shares": 250.0,
-          "currentValue": 6191.41,
-          "profit": -433.59,
-          "returnPct": -6.54,
-          "price": 24.77,
-          "account": "NASDAQ"
-        },
-        {
-          "ticker": "GRGD",
-          "shares": 100.0,
-          "currentValue": 5495.0,
-          "profit": 95.0,
-          "returnPct": 1.76,
-          "price": 54.95,
-          "account": "TSE"
-        },
-        {
-          "ticker": "SHOP",
-          "shares": 30.0,
-          "currentValue": 5481.9,
-          "profit": 613.2,
-          "returnPct": 12.59,
-          "price": 182.73,
-          "account": "TSE"
-        },
-        {
-          "ticker": "AAPL",
-          "shares": 100.3,
-          "currentValue": 4797.68,
-          "profit": 1812.75,
-          "returnPct": 60.73,
-          "price": 47.83,
-          "account": "NASDAQ"
-        },
-        {
-          "ticker": "COST",
-          "shares": 115.13,
-          "currentValue": 4705.04,
-          "profit": 284.05,
-          "returnPct": 6.42,
-          "price": 40.87,
-          "account": "NASDAQ"
+          "shares": 250,
+          "currentValue": 5297.331176303399,
+          "profit": -1327.668823696601,
+          "returnPct": -20.040284131269452,
+          "price": 21.189324705213597,
+          "account": "FHSA",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "NVO",
           "shares": 1023.48,
-          "currentValue": 4554.49,
-          "profit": -1361.23,
-          "returnPct": -23.01,
-          "price": 4.45,
-          "account": "NYSE"
+          "currentValue": 4264.5,
+          "profit": -1651.2144000000008,
+          "returnPct": -27.912341407151104,
+          "price": 4.166666666666667,
+          "account": "Unregistered",
+          "exchange": "NYSE"
         },
         {
-          "ticker": "MFC",
-          "shares": 75.0,
-          "currentValue": 4544.25,
-          "profit": 681.75,
-          "returnPct": 17.65,
-          "price": 60.59,
-          "account": "TSE"
+          "ticker": "GRGD",
+          "shares": 100,
+          "currentValue": 5762,
+          "profit": 362,
+          "returnPct": 6.703703703703703,
+          "price": 57.62,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
-          "ticker": "SNDK",
-          "shares": 115.0,
-          "currentValue": 4320.87,
-          "profit": 215.37,
-          "returnPct": 5.25,
-          "price": 37.57,
-          "account": "NASDAQ"
+          "ticker": "SHOP",
+          "shares": 30,
+          "currentValue": 6611.1,
+          "profit": 1742.4000000000005,
+          "returnPct": 35.787787294349634,
+          "price": 220.37,
+          "account": "Unregistered",
+          "exchange": "TSE"
         },
         {
-          "ticker": "KEEL",
-          "shares": 800.0,
-          "currentValue": 3718.99,
-          "profit": -49.01,
-          "returnPct": -1.3,
-          "price": 4.65,
-          "account": "NASDAQ"
+          "ticker": "UNH",
+          "shares": 354.7343,
+          "currentValue": 6446.436024736662,
+          "profit": 1700.0910907366615,
+          "returnPct": 35.81895362383414,
+          "price": 18.17257599486901,
+          "account": "Unregistered",
+          "exchange": "NYSE"
         },
         {
-          "ticker": "CCO",
-          "shares": 25.0,
-          "currentValue": 3186.75,
-          "profit": -636.25,
-          "returnPct": -16.64,
-          "price": 127.47,
-          "account": "TSE"
+          "ticker": "LLY",
+          "shares": 200.556,
+          "currentValue": 10506.253909681625,
+          "profit": 5887.449229681625,
+          "returnPct": 1.2746694518551551,
+          "price": 52.38563747622422,
+          "account": "TFSA",
+          "exchange": "NYSE"
         },
         {
-          "ticker": "LBS",
-          "shares": 221.0,
-          "currentValue": 2760.29,
-          "profit": 875.16,
-          "returnPct": 46.42,
-          "price": 12.49,
-          "account": "TSE"
-        },
-        {
-          "ticker": "SOXL",
-          "shares": 80.0,
-          "currentValue": 1990.05,
-          "profit": -1729.95,
-          "returnPct": -46.5,
-          "price": 24.88,
-          "account": "RRSP"
-        },
-        {
-          "ticker": "SMCI",
-          "shares": 150.0,
-          "currentValue": 1797.84,
-          "profit": 738.84,
-          "returnPct": 69.77,
-          "price": 11.99,
-          "account": "NASDAQ"
+          "ticker": "COST",
+          "shares": 115.13,
+          "currentValue": 5271.075002102764,
+          "profit": 850.083002102765,
+          "returnPct": 19.228331607538877,
+          "price": 45.78367933729492,
+          "account": "TFSA",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "LULU",
-          "shares": 400.0,
-          "currentValue": 1741.5,
-          "profit": -2230.5,
-          "returnPct": -56.16,
-          "price": 4.35,
-          "account": "NASDAQ"
+          "shares": 400,
+          "currentValue": 1929.0088564324326,
+          "profit": -2042.9911435675674,
+          "returnPct": -51.434822345608445,
+          "price": 4.822522141081081,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
         },
         {
-          "ticker": "NFLX",
-          "shares": 50.0,
-          "currentValue": 1486.83,
-          "profit": -483.17,
-          "returnPct": -24.53,
-          "price": 29.74,
-          "account": "NASDAQ"
+          "ticker": "MFC",
+          "shares": 75,
+          "currentValue": 4677.75,
+          "profit": 815.25,
+          "returnPct": 21.106796116504857,
+          "price": 62.37,
+          "account": "Unregistered",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "CCO",
+          "shares": 25,
+          "currentValue": 2690,
+          "profit": -1132.9999999999995,
+          "returnPct": -29.636411195396278,
+          "price": 107.6,
+          "account": "TFSA",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "KEEL",
+          "shares": 800,
+          "currentValue": 2303.32723296,
+          "profit": -1464.67276704,
+          "returnPct": -38.871357936305735,
+          "price": 2.8791590412,
+          "account": "TFSA",
+          "exchange": "NASDAQ"
+        },
+        {
+          "ticker": "SOXL",
+          "shares": 80,
+          "currentValue": 1503.4146341463415,
+          "profit": -2216.5853658536585,
+          "returnPct": -59.58562811434566,
+          "price": 18.79268292682927,
+          "account": "RRSP",
+          "exchange": ""
+        },
+        {
+          "ticker": "HUT",
+          "shares": 60,
+          "currentValue": 4971.6,
+          "profit": 1827.6000000000004,
+          "returnPct": 58.129770992366424,
+          "price": 82.86,
+          "account": "Unregistered",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "AAPL",
+          "shares": 100.3,
+          "currentValue": 5037.717859976828,
+          "profit": 2052.7898599768278,
+          "returnPct": 68.77183838192505,
+          "price": 50.22649910246089,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "QNC",
-          "shares": 500.0,
-          "currentValue": 1365.0,
-          "profit": -610.0,
-          "returnPct": -30.89,
-          "price": 2.73,
-          "account": "CVE"
+          "shares": 500,
+          "currentValue": 695,
+          "profit": -1280,
+          "returnPct": -64.81012658227849,
+          "price": 1.39,
+          "account": "Unregistered",
+          "exchange": "CVE"
+        },
+        {
+          "ticker": "NFLX",
+          "shares": 50,
+          "currentValue": 1184.7328244274809,
+          "profit": -785.2671755725191,
+          "returnPct": -39.86127794784361,
+          "price": 23.694656488549615,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
+        },
+        {
+          "ticker": "LBS",
+          "shares": 221,
+          "currentValue": 2844.27,
+          "profit": 959.1400000000001,
+          "returnPct": 50.879249706916774,
+          "price": 12.87,
+          "account": "Unregistered",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "SNDK",
+          "shares": 115,
+          "currentValue": 3247.910429447853,
+          "profit": -857.589570552147,
+          "returnPct": -20.88879723668608,
+          "price": 28.24269938650307,
+          "account": "RRSP",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "KILO",
-          "shares": 20.0,
-          "currentValue": 1208.0,
-          "profit": -202.0,
-          "returnPct": -14.33,
-          "price": 60.4,
-          "account": "TSE"
+          "shares": 20,
+          "currentValue": 1093.4,
+          "profit": -316.5999999999999,
+          "returnPct": -22.45390070921985,
+          "price": 54.67,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
-          "ticker": "SCD",
-          "shares": 4000.0,
-          "currentValue": 720.0,
-          "profit": 280.0,
-          "returnPct": 63.64,
-          "price": 0.18,
-          "account": "CVE"
-        },
-        {
-          "ticker": "YES",
-          "shares": 1500.0,
-          "currentValue": 405.0,
-          "profit": -30.0,
-          "returnPct": -6.9,
-          "price": 0.27,
-          "account": "CVE"
+          "ticker": "SMCI",
+          "shares": 150,
+          "currentValue": 1555.8300053716218,
+          "profit": 496.83000537162184,
+          "returnPct": 46.91501467154125,
+          "price": 10.372200035810812,
+          "account": "TFSA",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "LAC",
-          "shares": 100.0,
-          "currentValue": 393.0,
-          "profit": -377.0,
-          "returnPct": -48.96,
-          "price": 3.93,
-          "account": "TSE"
-        },
-        {
-          "ticker": "GSY",
-          "shares": 7.0,
-          "currentValue": 295.4,
-          "profit": -51.1,
-          "returnPct": -14.75,
-          "price": 42.2,
-          "account": "TSE"
-        },
-        {
-          "ticker": "SIDU",
-          "shares": 150.0,
-          "currentValue": 289.5,
-          "profit": -111.0,
-          "returnPct": -27.72,
-          "price": 1.93,
-          "account": "NASDAQ"
-        },
-        {
-          "ticker": "CURA",
-          "shares": 16.67,
-          "currentValue": 230.83,
-          "profit": -44.17,
-          "returnPct": -16.06,
-          "price": 13.85,
-          "account": "TSE"
-        },
-        {
-          "ticker": "OPEN",
-          "shares": 52.0,
-          "currentValue": 140.4,
-          "profit": -2.6,
-          "returnPct": -1.82,
-          "price": 2.7,
-          "account": "NASDAQ"
+          "shares": 100,
+          "currentValue": 283,
+          "profit": -487,
+          "returnPct": -63.24675324675325,
+          "price": 2.83,
+          "account": "TFSA",
+          "exchange": "TSE"
         },
         {
           "ticker": "BYND",
           "shares": 6.66,
-          "currentValue": 67.67,
-          "profit": -461.8,
-          "returnPct": -87.22,
-          "price": 10.16,
-          "account": "NASDAQ"
+          "currentValue": 46.0206,
+          "profit": -483.4494,
+          "returnPct": -91.30817610062894,
+          "price": 6.91,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
+        },
+        {
+          "ticker": "SCD",
+          "shares": 4000,
+          "currentValue": 600,
+          "profit": 160,
+          "returnPct": 36.36363636363637,
+          "price": 0.15,
+          "account": "Unregistered",
+          "exchange": "CVE"
+        },
+        {
+          "ticker": "YES",
+          "shares": 1500,
+          "currentValue": 300,
+          "profit": -134.99999999999994,
+          "returnPct": -31.03448275862068,
+          "price": 0.2,
+          "account": "Unregistered",
+          "exchange": "CVE"
+        },
+        {
+          "ticker": "SIDU",
+          "shares": 150,
+          "currentValue": 163.5,
+          "profit": -237,
+          "returnPct": -59.176029962546814,
+          "price": 1.09,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
+        },
+        {
+          "ticker": "GSY",
+          "shares": 7,
+          "currentValue": 310.31,
+          "profit": -36.19,
+          "returnPct": -10.444444444444443,
+          "price": 44.33,
+          "account": "FHSA",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "CURA",
+          "shares": 16.666666666666668,
+          "currentValue": 196.16666666666669,
+          "profit": -78.83333333333331,
+          "returnPct": -28.666666666666664,
+          "price": 11.77,
+          "account": "TFSA",
+          "exchange": "TSE"
+        },
+        {
+          "ticker": "OPEN",
+          "shares": 52,
+          "currentValue": 93.60000000000001,
+          "profit": -49.39999999999999,
+          "returnPct": -34.54545454545454,
+          "price": 1.8,
+          "account": "Unregistered",
+          "exchange": "NASDAQ"
         },
         {
           "ticker": "BOCA",
-          "shares": 500.0,
-          "currentValue": 40.0,
-          "profit": -65.0,
-          "returnPct": -61.9,
+          "shares": 500,
+          "currentValue": 40,
+          "profit": -65,
+          "returnPct": -61.904761904761905,
           "price": 0.08,
-          "account": "CVE"
-        },
-        {
-          "ticker": "XNDU",
-          "shares": 414.0,
-          "currentValue": 0,
-          "profit": 0,
-          "returnPct": 0,
-          "price": 0,
-          "account": "TSE"
+          "account": "TFSA",
+          "exchange": "CVE"
         }
       ]
     },
@@ -668,275 +655,289 @@ window.PORTFOLIO_DATA = {
       "id": "simarjot",
       "name": "Simarjot",
       "color": "#a855f7",
-      "colorMuted": "rgba(168, 85, 247, 0.15)",
-      "colorGlow": "rgba(168, 85, 247, 0.4)",
-      "currentValue": 84813.32,
-      "initialValue": 36006.26,
-      "dayChangeDollar": -128.04,
-      "dayChangePercent": -0.15,
-      "totalProfit": 48807.06,
-      "totalReturnPct": 135.55,
+      "currentValue": 215003.8849668927,
+      "initialValue": 140533.7898521475,
+      "totalProfit": 74470.0951147452,
+      "totalReturnPct": 52.99088225905921,
       "holdings": [
         {
-          "ticker": "RBC ETFs",
-          "shares": 1.0,
-          "currentValue": 88700.0,
-          "profit": 39200.0,
-          "returnPct": 79.19,
-          "price": 88700.0,
-          "account": "RRSP"
-        },
-        {
-          "ticker": "RBC ETFs",
-          "shares": 1.0,
-          "currentValue": 36055.0,
-          "profit": 11055.0,
-          "returnPct": 44.22,
-          "price": 36055.0,
+          "ticker": "ATH",
+          "shares": 58.1395,
+          "currentValue": 697.674,
+          "profit": 89.53482999999994,
+          "returnPct": 14.722753346080294,
+          "price": 12,
           "account": "TFSA"
-        },
-        {
-          "ticker": "VFV",
-          "shares": 132.0,
-          "currentValue": 24759.24,
-          "profit": 10517.44,
-          "returnPct": 73.85,
-          "price": 187.57,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "LBS",
-          "shares": 1672.0,
-          "currentValue": 20883.28,
-          "profit": 11269.28,
-          "returnPct": 117.22,
-          "price": 12.49,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "VFV",
-          "shares": 42.0,
-          "currentValue": 7877.94,
-          "profit": 2669.94,
-          "returnPct": 51.27,
-          "price": 187.57,
-          "account": "RRSP"
-        },
-        {
-          "ticker": "GOOG",
-          "shares": 90.38,
-          "currentValue": 5033.51,
-          "profit": -364.02,
-          "returnPct": -6.74,
-          "price": 55.69,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "VFV",
-          "shares": 22.71,
-          "currentValue": 4259.51,
-          "profit": 72.9,
-          "returnPct": 1.74,
-          "price": 187.57,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "Company RRSP",
-          "shares": 1.0,
-          "currentValue": 4078.58,
-          "profit": 2059.36,
-          "returnPct": 0.99,
-          "price": 4078.58,
-          "account": "TFSA"
-        },
-        {
-          "ticker": "LBS",
-          "shares": 306.6,
-          "currentValue": 3829.49,
-          "profit": 450.71,
-          "returnPct": 13.34,
-          "price": 12.49,
-          "account": "FHSA"
         },
         {
           "ticker": "ATH",
-          "shares": 260.08,
-          "currentValue": 2957.06,
-          "profit": 358.9,
-          "returnPct": 13.81,
-          "price": 11.37,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "XQQ",
-          "shares": 30.81,
-          "currentValue": 2168.74,
-          "profit": 28.96,
-          "returnPct": 1.35,
-          "price": 70.39,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "FFN",
-          "shares": 211.74,
-          "currentValue": 2051.72,
-          "profit": -222.32,
-          "returnPct": -9.78,
-          "price": 9.69,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "XEQT",
-          "shares": 31.09,
-          "currentValue": 1398.36,
-          "profit": 85.49,
-          "returnPct": 6.51,
-          "price": 44.98,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "VFV",
-          "shares": 6.87,
-          "currentValue": 1288.55,
-          "profit": 67.6,
-          "returnPct": 5.54,
-          "price": 187.57,
+          "shares": 260.0753,
+          "currentValue": 3120.9036000000006,
+          "profit": 522.7513530000001,
+          "returnPct": 20.12012012012012,
+          "price": 12,
           "account": "TFSA"
         },
         {
-          "ticker": "NVDA",
-          "shares": 19.46,
-          "currentValue": 947.73,
-          "profit": 85.04,
-          "returnPct": 9.86,
-          "price": 48.71,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "SNDK",
-          "shares": 25.26,
-          "currentValue": 942.05,
-          "profit": -57.95,
-          "returnPct": -5.8,
-          "price": 37.3,
-          "account": "FHSA"
+          "ticker": "AVGO",
+          "shares": 36.9276,
+          "currentValue": 449.1292298037628,
+          "profit": -50.870474196237126,
+          "returnPct": -10.174100862315138,
+          "price": 12.16242674324253,
+          "account": "TFSA"
         },
         {
           "ticker": "CLS",
-          "shares": 2.06,
-          "currentValue": 907.64,
-          "profit": -223.63,
-          "returnPct": -19.77,
-          "price": 441.18,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "TTWO",
-          "shares": 2.73,
-          "currentValue": 816.69,
-          "profit": -157.28,
-          "returnPct": -16.15,
-          "price": 298.77,
-          "account": "FHSA"
+          "shares": 2.0573,
+          "currentValue": 759.802036,
+          "profit": -371.4660880000001,
+          "returnPct": -32.83625518294902,
+          "price": 369.32,
+          "account": "TFSA"
         },
         {
           "ticker": "GOOG",
-          "shares": 13.1,
-          "currentValue": 729.34,
-          "profit": 5.4,
-          "returnPct": 0.75,
-          "price": 55.69,
+          "shares": 13.0959,
+          "currentValue": 568.7381899876023,
+          "profit": -155.2031620123978,
+          "returnPct": -21.438637478522953,
+          "price": 43.42872120187251,
           "account": "TFSA"
         },
         {
-          "ticker": "XQQ",
-          "shares": 9.81,
-          "currentValue": 690.7,
-          "profit": -9.22,
-          "returnPct": -1.32,
-          "price": 70.39,
+          "ticker": "GOOG",
+          "shares": 45.2143,
+          "currentValue": 1963.5992290378244,
+          "profit": -736.5987669621754,
+          "returnPct": -27.279435361901346,
+          "price": 43.42872120187251,
           "account": "TFSA"
         },
         {
-          "ticker": "ATH",
-          "shares": 58.14,
-          "currentValue": 661.05,
-          "profit": 52.91,
-          "returnPct": 8.7,
-          "price": 11.37,
+          "ticker": "LBS",
+          "shares": 44.237,
+          "currentValue": 569.33019,
+          "profit": 227.37818,
+          "returnPct": 66.49417852522637,
+          "price": 12.87,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "LBS",
+          "shares": 309.1681,
+          "currentValue": 3978.9934469999994,
+          "profit": 568.8693039999998,
+          "returnPct": 16.68177697189483,
+          "price": 12.87,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "META",
+          "shares": 12.6194,
+          "currentValue": 403.8650380422629,
+          "profit": -96.87275395773713,
+          "returnPct": -19.346004137378376,
+          "price": 32.00350555828826,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "MU",
+          "shares": 9.4942,
+          "currentValue": 370.8883000373008,
+          "profit": -34.41909796269914,
+          "returnPct": -8.49209714220394,
+          "price": 39.06472372999313,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "MU",
+          "shares": 23.668,
+          "currentValue": 924.5838812414775,
+          "profit": -176.92483875852258,
+          "returnPct": -16.062046132374018,
+          "price": 39.06472372999313,
           "account": "TFSA"
         },
         {
           "ticker": "NBIS",
-          "shares": 2.0,
-          "currentValue": 581.73,
-          "profit": 21.38,
-          "returnPct": 3.82,
-          "price": 290.87,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "RDDT",
-          "shares": 37.04,
-          "currentValue": 561.55,
-          "profit": 61.55,
-          "returnPct": 12.31,
-          "price": 15.16,
-          "account": "FHSA"
-        },
-        {
-          "ticker": "LBS",
-          "shares": 43.87,
-          "currentValue": 547.94,
-          "profit": 210.58,
-          "returnPct": 62.42,
-          "price": 12.49,
+          "shares": 2,
+          "currentValue": 430.86754816559994,
+          "profit": -131.82634988640007,
+          "returnPct": -23.427719821162455,
+          "price": 215.43377408279997,
           "account": "TFSA"
         },
         {
-          "ticker": "MU",
-          "shares": 9.49,
-          "currentValue": 386.35,
-          "profit": -18.95,
-          "returnPct": -4.68,
-          "price": 40.69,
+          "ticker": "NOWS",
+          "shares": 29.6469,
+          "currentValue": 389.0516995865923,
+          "profit": -126.50789141340766,
+          "returnPct": -24.537976525279632,
+          "price": 13.122845882253872,
           "account": "TFSA"
         },
         {
-          "ticker": "XQQ",
-          "shares": 3.0,
-          "currentValue": 211.17,
-          "profit": -1.41,
-          "returnPct": -0.66,
-          "price": 70.39,
+          "ticker": "NVDA",
+          "shares": 19.4564,
+          "currentValue": 917.5268218092543,
+          "profit": 54.83004580925433,
+          "returnPct": 6.355656742277466,
+          "price": 47.15809819952583,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "SNDK",
+          "shares": 25.2589,
+          "currentValue": 711.0759691637141,
+          "profit": -288.923881836286,
+          "returnPct": -28.892392488595075,
+          "price": 28.151501813765215,
           "account": "TFSA"
         },
         {
           "ticker": "SPCX",
-          "shares": 1.0,
-          "currentValue": 201.0,
-          "profit": 13.1,
-          "returnPct": 6.97,
-          "price": 201.0,
+          "shares": 1,
+          "currentValue": 188.29141069439999,
+          "profit": -0.391342005599995,
+          "returnPct": -0.20740740740740476,
+          "price": 188.29141069439999,
           "account": "TFSA"
         },
         {
-          "ticker": "MU",
-          "shares": 2.39,
-          "currentValue": 97.32,
-          "profit": -4.13,
-          "returnPct": -4.07,
-          "price": 40.69,
-          "account": "FHSA"
+          "ticker": "TTWO",
+          "shares": 2.7335,
+          "currentValue": 726.5399836133437,
+          "profit": -251.5019567821762,
+          "returnPct": -25.71484375000001,
+          "price": 265.79110430339995,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "VFV",
+          "shares": 6.8839,
+          "currentValue": 1293.071776,
+          "profit": 69.32087299999989,
+          "returnPct": 5.664622827248683,
+          "price": 187.84,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "VFV",
+          "shares": 22.7558,
+          "currentValue": 4274.449472,
+          "profit": 78.73506799999996,
+          "returnPct": 1.8765592797483446,
+          "price": 187.84,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "XEQT",
+          "shares": 53.9701,
+          "currentValue": 2409.225264,
+          "profit": 59.906810999999834,
+          "returnPct": 2.549965541006195,
+          "price": 44.64,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "XQQ",
+          "shares": 9.8125,
+          "currentValue": 676.375625,
+          "profit": -23.549999999999955,
+          "returnPct": -3.3646432076265187,
+          "price": 68.93,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "XQQ",
+          "shares": 43.8608,
+          "currentValue": 3023.324944,
+          "profit": -79.3880479999998,
+          "returnPct": -2.5586655357647663,
+          "price": 68.93,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "YAMD",
+          "shares": 9.823,
+          "currentValue": 471.1392135100617,
+          "profit": -52.131996489938274,
+          "returnPct": -9.962710635262788,
+          "price": 47.96286404459551,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "LBS",
+          "shares": 1685,
+          "currentValue": 21685.949999999997,
+          "profit": 11913.623999999998,
+          "returnPct": 1.2191185599006826,
+          "price": 12.87,
+          "account": "TFSA"
         },
         {
           "ticker": "NVDA",
-          "shares": 1.0,
-          "currentValue": 48.71,
-          "profit": 20.08,
-          "returnPct": 70.14,
-          "price": 48.71,
-          "account": "RRSP"
+          "shares": 1,
+          "currentValue": 47.15809819952583,
+          "profit": 18.528098199525832,
+          "returnPct": 64.71567656138957,
+          "price": 47.15809819952583,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "VFV",
+          "shares": 42,
+          "currentValue": 7889.28,
+          "profit": 2681.2799999999997,
+          "returnPct": 51.48387096774193,
+          "price": 187.84,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "VFV",
+          "shares": 132,
+          "currentValue": 24794.88,
+          "profit": 10553.083200000001,
+          "returnPct": 74.09938049389947,
+          "price": 187.84,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "XQQ",
+          "shares": 3,
+          "currentValue": 206.79000000000002,
+          "profit": -5.789999999999964,
+          "returnPct": -2.723680496754146,
+          "price": 68.93,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "RBC ETFs",
+          "shares": 1,
+          "currentValue": 36370,
+          "profit": 11370,
+          "returnPct": 45.48,
+          "price": 36370,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "RBC ETFs",
+          "shares": 1,
+          "currentValue": 88250,
+          "profit": 38750,
+          "returnPct": 78.28282828282829,
+          "price": 88250,
+          "account": "TFSA"
+        },
+        {
+          "ticker": "Company RRSP",
+          "shares": 1,
+          "currentValue": 6441.38,
+          "profit": 3268,
+          "returnPct": 1.4908394204286894,
+          "price": 6441.38,
+          "account": "TFSA"
         }
       ]
     }
@@ -944,2223 +945,3837 @@ window.PORTFOLIO_DATA = {
   "history": [
     {
       "date": "2025-09-14 16:00:00",
-      "simarjot": 36006.26,
-      "alex": 1033570.89,
-      "chris": 679088.48
+      "simarjot": 36006.260949,
+      "alex": 336627.61,
+      "chris": 198215.07
     },
     {
       "date": "2025-09-15 16:00:00",
-      "simarjot": 36006.26,
-      "alex": 1033570.89,
-      "chris": 679088.48
+      "simarjot": 36006.260949,
+      "alex": 341390.58,
+      "chris": 201382.21
     },
     {
       "date": "2025-09-16 16:00:00",
-      "simarjot": 36174.62,
-      "alex": 1043460.16,
-      "chris": 677696.32
+      "simarjot": 36174.621081000005,
+      "alex": 343725.22,
+      "chris": 202481.83
     },
     {
       "date": "2025-09-17 16:00:00",
-      "simarjot": 36256.75,
-      "alex": 1041190.13,
-      "chris": 676415.18
+      "simarjot": 36256.74518,
+      "alex": 341618.32,
+      "chris": 202441.82
     },
     {
       "date": "2025-09-18 16:00:00",
-      "simarjot": 36786.57,
-      "alex": 1056580.43,
-      "chris": 682639.79
+      "simarjot": 36786.572004999995,
+      "alex": 345206.38,
+      "chris": 204540.11
     },
     {
       "date": "2025-09-19 16:00:00",
-      "simarjot": 36641.96,
-      "alex": 1038287.53,
-      "chris": 685665.54
+      "simarjot": 36641.956995,
+      "alex": 345596.03,
+      "chris": 205964.84
     },
     {
       "date": "2025-09-20 16:00:00",
-      "simarjot": 36641.96,
-      "alex": 1038287.53,
-      "chris": 685665.54
+      "simarjot": 36641.956995,
+      "alex": 345596.03,
+      "chris": 205964.84
     },
     {
       "date": "2025-09-21 16:00:00",
-      "simarjot": 36641.96,
-      "alex": 1038287.53,
-      "chris": 685665.54
+      "simarjot": 36641.956995,
+      "alex": 345596.03,
+      "chris": 205964.84
     },
     {
       "date": "2025-09-22 16:00:00",
-      "simarjot": 36610.07,
-      "alex": 1020206.13,
-      "chris": 682951.28
+      "simarjot": 36610.072397,
+      "alex": 344329.09,
+      "chris": 206498.93
     },
     {
       "date": "2025-09-23 16:00:00",
-      "simarjot": 35991.46,
-      "alex": 964119.49,
-      "chris": 670142.83
+      "simarjot": 35991.464502,
+      "alex": 338592.8,
+      "chris": 203471.41
     },
     {
       "date": "2025-09-24 16:00:00",
-      "simarjot": 35693.67,
-      "alex": 953284.36,
-      "chris": 667382.87
+      "simarjot": 35693.674498,
+      "alex": 335899.34,
+      "chris": 202853.33
     },
     {
       "date": "2025-09-25 16:00:00",
-      "simarjot": 35358.08,
-      "alex": 945233.59,
-      "chris": 662237.26
+      "simarjot": 35358.080075,
+      "alex": 334545.87,
+      "chris": 201254.07
     },
     {
       "date": "2025-09-26 16:00:00",
-      "simarjot": 35925.16,
-      "alex": 965952.66,
-      "chris": 667265.16
+      "simarjot": 35925.159088,
+      "alex": 336956.06,
+      "chris": 200894
     },
     {
       "date": "2025-09-27 16:00:00",
-      "simarjot": 35925.16,
-      "alex": 965952.66,
-      "chris": 667265.16
+      "simarjot": 35925.159088,
+      "alex": 336956.06,
+      "chris": 200894
     },
     {
       "date": "2025-09-28 16:00:00",
-      "simarjot": 35925.16,
-      "alex": 965952.66,
-      "chris": 667265.16
+      "simarjot": 35925.159088,
+      "alex": 336956.06,
+      "chris": 200894
     },
     {
       "date": "2025-09-29 16:00:00",
-      "simarjot": 36345.91,
-      "alex": 973864.92,
-      "chris": 670769.48
+      "simarjot": 36345.911644,
+      "alex": 339157.19,
+      "chris": 202774.98
     },
     {
       "date": "2025-09-30 16:00:00",
-      "simarjot": 35731.1,
-      "alex": 940621.31,
-      "chris": 668985.12
+      "simarjot": 35731.10334,
+      "alex": 335909.59,
+      "chris": 202788.83
     },
     {
       "date": "2025-10-01 16:00:00",
-      "simarjot": 35053.03,
-      "alex": 868300.82,
-      "chris": 662915.85
+      "simarjot": 35053.032448,
+      "alex": 332501.17,
+      "chris": 204433.18
     },
     {
       "date": "2025-10-02 16:00:00",
-      "simarjot": 35092.98,
-      "alex": 865019.56,
-      "chris": 662598.45
+      "simarjot": 35092.980255,
+      "alex": 332843.63,
+      "chris": 205910.42
     },
     {
       "date": "2025-10-03 16:00:00",
-      "simarjot": 35496.26,
-      "alex": 878075.34,
-      "chris": 666753.17
+      "simarjot": 35496.255463,
+      "alex": 331345.68,
+      "chris": 206937.17
     },
     {
       "date": "2025-10-04 16:00:00",
-      "simarjot": 35496.26,
-      "alex": 878075.34,
-      "chris": 666753.17
+      "simarjot": 35496.255463,
+      "alex": 331345.68,
+      "chris": 206937.17
     },
     {
       "date": "2025-10-05 16:00:00",
-      "simarjot": 35496.26,
-      "alex": 878075.34,
-      "chris": 666753.17
+      "simarjot": 35496.255463,
+      "alex": 331345.68,
+      "chris": 206937.17
     },
     {
       "date": "2025-10-06 16:00:00",
-      "simarjot": 35300.19,
-      "alex": 876027.67,
-      "chris": 673993.88
+      "simarjot": 35300.185513,
+      "alex": 332351.14,
+      "chris": 209587
     },
     {
       "date": "2025-10-07 16:00:00",
-      "simarjot": 35992.18,
-      "alex": 883019.37,
-      "chris": 668900.98
+      "simarjot": 35992.178247,
+      "alex": 333645.1,
+      "chris": 209310.48
     },
     {
       "date": "2025-10-08 16:00:00",
-      "simarjot": 36446.25,
-      "alex": 885161.48,
-      "chris": 673399.59
+      "simarjot": 36446.248777,
+      "alex": 340556.96,
+      "chris": 214366.08
     },
     {
       "date": "2025-10-09 16:00:00",
-      "simarjot": 36493.7,
-      "alex": 912381.73,
-      "chris": 674746.35
+      "simarjot": 36493.698746,
+      "alex": 345144.51,
+      "chris": 215260.8
     },
     {
       "date": "2025-10-10 16:00:00",
-      "simarjot": 35430.64,
-      "alex": 862552.0,
-      "chris": 651260.68
+      "simarjot": 35430.640099000004,
+      "alex": 331362.77,
+      "chris": 207317.08
     },
     {
       "date": "2025-10-11 16:00:00",
-      "simarjot": 35430.64,
-      "alex": 862552.0,
-      "chris": 651260.68
+      "simarjot": 35430.640099000004,
+      "alex": 331362.77,
+      "chris": 207317.08
     },
     {
       "date": "2025-10-12 16:00:00",
-      "simarjot": 35430.64,
-      "alex": 862552.0,
-      "chris": 651260.68
+      "simarjot": 35430.640099000004,
+      "alex": 331362.77,
+      "chris": 207317.08
     },
     {
       "date": "2025-10-13 16:00:00",
-      "simarjot": 36080.6,
-      "alex": 880116.31,
-      "chris": 663388.67
+      "simarjot": 36080.597224000005,
+      "alex": 333748.55,
+      "chris": 210236.64
     },
     {
       "date": "2025-10-14 16:00:00",
-      "simarjot": 36089.13,
-      "alex": 860559.02,
-      "chris": 659409.07
+      "simarjot": 36089.130253,
+      "alex": 336744.67,
+      "chris": 213664.2
     },
     {
       "date": "2025-10-15 16:00:00",
-      "simarjot": 37037.47,
-      "alex": 884753.53,
-      "chris": 665326.01
+      "simarjot": 37037.474304,
+      "alex": 345930.75,
+      "chris": 217533.8
     },
     {
       "date": "2025-10-16 16:00:00",
-      "simarjot": 36576.96,
-      "alex": 884204.91,
-      "chris": 665843.88
+      "simarjot": 36576.957484,
+      "alex": 345668.91,
+      "chris": 214632.77
     },
     {
       "date": "2025-10-17 16:00:00",
-      "simarjot": 36554.08,
-      "alex": 871788.3,
-      "chris": 665479.05
+      "simarjot": 36554.08302800001,
+      "alex": 342890.32,
+      "chris": 213441.35
     },
     {
       "date": "2025-10-18 16:00:00",
-      "simarjot": 36554.08,
-      "alex": 871788.3,
-      "chris": 665479.05
+      "simarjot": 36554.08302800001,
+      "alex": 342890.32,
+      "chris": 213441.35
     },
     {
       "date": "2025-10-19 16:00:00",
-      "simarjot": 36554.08,
-      "alex": 871788.3,
-      "chris": 665479.05
+      "simarjot": 36554.08302800001,
+      "alex": 342890.32,
+      "chris": 213441.35
     },
     {
       "date": "2025-10-20 16:00:00",
-      "simarjot": 37359.11,
-      "alex": 895278.68,
-      "chris": 673437.66
+      "simarjot": 37359.108067,
+      "alex": 345661.91,
+      "chris": 216422.17
     },
     {
       "date": "2025-10-21 16:00:00",
-      "simarjot": 37407.46,
-      "alex": 900188.81,
-      "chris": 673062.31
+      "simarjot": 37407.462004,
+      "alex": 345063.21,
+      "chris": 215905.68
     },
     {
       "date": "2025-10-22 16:00:00",
-      "simarjot": 37267.26,
-      "alex": 874429.25,
-      "chris": 670914.93
+      "simarjot": 37267.261529,
+      "alex": 343689.38,
+      "chris": 214344.11
     },
     {
       "date": "2025-10-23 16:00:00",
-      "simarjot": 38294.1,
-      "alex": 892059.29,
-      "chris": 675432.97
+      "simarjot": 38294.099970999996,
+      "alex": 349289.58,
+      "chris": 216317.67
     },
     {
       "date": "2025-10-24 16:00:00",
-      "simarjot": 39385.68,
-      "alex": 940971.01,
-      "chris": 689453.78
+      "simarjot": 39385.67811199999,
+      "alex": 359597.27,
+      "chris": 220781.54
     },
     {
       "date": "2025-10-25 16:00:00",
-      "simarjot": 39385.68,
-      "alex": 940971.01,
-      "chris": 689453.78
+      "simarjot": 39385.67811199999,
+      "alex": 359597.27,
+      "chris": 220781.54
     },
     {
       "date": "2025-10-26 16:00:00",
-      "simarjot": 39385.68,
-      "alex": 940971.01,
-      "chris": 689453.78
+      "simarjot": 39385.67811199999,
+      "alex": 359597.27,
+      "chris": 220781.54
     },
     {
       "date": "2025-10-27 16:00:00",
-      "simarjot": 39746.56,
-      "alex": 958929.42,
-      "chris": 706053.72
+      "simarjot": 39746.559357,
+      "alex": 363596.38,
+      "chris": 224022.54
     },
     {
       "date": "2025-10-28 16:00:00",
-      "simarjot": 39138.49,
-      "alex": 947192.58,
-      "chris": 709956.48
+      "simarjot": 39138.489916,
+      "alex": 368637.54,
+      "chris": 226883.32
     },
     {
       "date": "2025-10-29 16:00:00",
-      "simarjot": 39351.53,
-      "alex": 946762.75,
-      "chris": 712707.63
+      "simarjot": 39351.528567,
+      "alex": 370910.42,
+      "chris": 227849.5
     },
     {
       "date": "2025-10-30 16:00:00",
-      "simarjot": 38882.92,
-      "alex": 897383.36,
-      "chris": 696509.89
+      "simarjot": 38882.915659000006,
+      "alex": 364839.18,
+      "chris": 222974.81
     },
     {
       "date": "2025-10-31 16:00:00",
-      "simarjot": 39461.15,
-      "alex": 940593.83,
-      "chris": 699371.79
+      "simarjot": 39461.149191,
+      "alex": 370907.37,
+      "chris": 223558.35
     },
     {
       "date": "2025-11-01 16:00:00",
-      "simarjot": 39461.15,
-      "alex": 940593.83,
-      "chris": 699371.79
+      "simarjot": 39461.149191,
+      "alex": 370907.37,
+      "chris": 223558.35
     },
     {
       "date": "2025-11-02 16:00:00",
-      "simarjot": 39461.15,
-      "alex": 940593.83,
-      "chris": 699371.79
+      "simarjot": 39461.149191,
+      "alex": 370907.37,
+      "chris": 223558.35
     },
     {
       "date": "2025-11-03 16:00:00",
-      "simarjot": 39742.12,
-      "alex": 934307.46,
-      "chris": 700658.65
+      "simarjot": 39742.119973,
+      "alex": 370382.95,
+      "chris": 223251.81
     },
     {
       "date": "2025-11-04 16:00:00",
-      "simarjot": 38491.46,
-      "alex": 875028.09,
-      "chris": 680339.08
+      "simarjot": 38491.46415199999,
+      "alex": 358612.44,
+      "chris": 216072.46
     },
     {
       "date": "2025-11-05 16:00:00",
-      "simarjot": 39538.08,
-      "alex": 910339.56,
-      "chris": 688601.27
+      "simarjot": 39538.07831,
+      "alex": 368171.4,
+      "chris": 219233.91
     },
     {
       "date": "2025-11-06 16:00:00",
-      "simarjot": 38623.72,
-      "alex": 866944.09,
-      "chris": 672701.99
+      "simarjot": 38623.718944,
+      "alex": 357539.89,
+      "chris": 212288.2
     },
     {
       "date": "2025-11-07 16:00:00",
-      "simarjot": 39616.2,
-      "alex": 891163.11,
-      "chris": 672988.38
+      "simarjot": 39616.20079299999,
+      "alex": 354598.86,
+      "chris": 209928.07
     },
     {
       "date": "2025-11-08 16:00:00",
-      "simarjot": 39616.2,
-      "alex": 891163.11,
-      "chris": 672988.38
+      "simarjot": 39616.20079299999,
+      "alex": 354598.86,
+      "chris": 209928.07
     },
     {
       "date": "2025-11-09 16:00:00",
-      "simarjot": 39616.2,
-      "alex": 891163.11,
-      "chris": 672988.38
+      "simarjot": 39616.20079299999,
+      "alex": 354598.86,
+      "chris": 209928.07
     },
     {
       "date": "2025-11-10 16:00:00",
-      "simarjot": 41006.55,
-      "alex": 931549.55,
-      "chris": 693553.39
+      "simarjot": 41006.55391,
+      "alex": 367406.64,
+      "chris": 216048.59
     },
     {
       "date": "2025-11-11 16:00:00",
-      "simarjot": 41481.37,
-      "alex": 935328.0,
-      "chris": 692409.35
+      "simarjot": 41481.374106999996,
+      "alex": 363645.72,
+      "chris": 214069.61
     },
     {
       "date": "2025-11-12 16:00:00",
-      "simarjot": 41860.12,
-      "alex": 925625.83,
-      "chris": 691829.98
+      "simarjot": 41860.116535999994,
+      "alex": 364848.8,
+      "chris": 214722
     },
     {
       "date": "2025-11-13 16:00:00",
-      "simarjot": 40100.06,
-      "alex": 870949.77,
-      "chris": 671622.91
+      "simarjot": 40100.063526,
+      "alex": 343832.75,
+      "chris": 204593.37
     },
     {
       "date": "2025-11-14 16:00:00",
-      "simarjot": 40516.84,
-      "alex": 889382.93,
-      "chris": 679843.63
+      "simarjot": 40516.838367000004,
+      "alex": 351110.86,
+      "chris": 206926.18
     },
     {
       "date": "2025-11-15 16:00:00",
-      "simarjot": 40516.84,
-      "alex": 889382.93,
-      "chris": 679843.63
+      "simarjot": 40516.838367000004,
+      "alex": 351110.86,
+      "chris": 206926.18
     },
     {
       "date": "2025-11-16 16:00:00",
-      "simarjot": 40516.84,
-      "alex": 889382.93,
-      "chris": 679843.63
+      "simarjot": 40516.838367000004,
+      "alex": 351110.86,
+      "chris": 206926.18
     },
     {
       "date": "2025-11-17 16:00:00",
-      "simarjot": 40314.04,
-      "alex": 870243.41,
-      "chris": 675040.14
+      "simarjot": 40314.039082999996,
+      "alex": 348385.89,
+      "chris": 205427.52
     },
     {
       "date": "2025-11-18 16:00:00",
-      "simarjot": 39636.93,
-      "alex": 856091.97,
-      "chris": 662196.85
+      "simarjot": 39636.927276999995,
+      "alex": 342392.37,
+      "chris": 202816.23
     },
     {
       "date": "2025-11-19 16:00:00",
-      "simarjot": 39879.54,
-      "alex": 865018.18,
-      "chris": 665176.34
+      "simarjot": 39879.537855999995,
+      "alex": 348092.75,
+      "chris": 205662.1
     },
     {
       "date": "2025-11-20 16:00:00",
-      "simarjot": 38122.9,
-      "alex": 830186.11,
-      "chris": 647423.51
+      "simarjot": 38122.895805999986,
+      "alex": 333329.27,
+      "chris": 199759.83
     },
     {
       "date": "2025-11-21 16:00:00",
-      "simarjot": 38502.58,
-      "alex": 835490.98,
-      "chris": 650967.95
+      "simarjot": 38502.579618,
+      "alex": 334351.94,
+      "chris": 201336.27
     },
     {
       "date": "2025-11-22 16:00:00",
-      "simarjot": 38502.58,
-      "alex": 835490.98,
-      "chris": 650967.95
+      "simarjot": 38502.579618,
+      "alex": 334351.94,
+      "chris": 201336.27
     },
     {
       "date": "2025-11-23 16:00:00",
-      "simarjot": 38502.58,
-      "alex": 835490.98,
-      "chris": 650967.95
+      "simarjot": 38502.579618,
+      "alex": 334351.94,
+      "chris": 201336.27
     },
     {
       "date": "2025-11-24 16:00:00",
-      "simarjot": 39937.98,
-      "alex": 887648.88,
-      "chris": 671736.88
+      "simarjot": 39937.979216,
+      "alex": 354077.88,
+      "chris": 210341.29
     },
     {
       "date": "2025-11-25 16:00:00",
-      "simarjot": 40915.22,
-      "alex": 955836.83,
-      "chris": 685103.88
+      "simarjot": 40915.217307,
+      "alex": 364233.2,
+      "chris": 214821.76
     },
     {
       "date": "2025-11-26 16:00:00",
-      "simarjot": 40533.54,
-      "alex": 928533.76,
-      "chris": 685943.44
+      "simarjot": 40533.539675,
+      "alex": 363317.73,
+      "chris": 216465.54
     },
     {
       "date": "2025-11-27 16:00:00",
-      "simarjot": 40613.11,
-      "alex": 929681.73,
-      "chris": 686151.31
+      "simarjot": 40613.113854,
+      "alex": 364455.63,
+      "chris": 217232.02
     },
     {
       "date": "2025-11-28 16:00:00",
-      "simarjot": 41146.2,
-      "alex": 958601.63,
-      "chris": 694556.47
+      "simarjot": 41146.19896199999,
+      "alex": 369749.45,
+      "chris": 218926.63
     },
     {
       "date": "2025-11-29 16:00:00",
-      "simarjot": 41146.2,
-      "alex": 958601.63,
-      "chris": 694556.47
+      "simarjot": 41146.19896199999,
+      "alex": 369749.45,
+      "chris": 218926.63
     },
     {
       "date": "2025-11-30 16:00:00",
-      "simarjot": 41146.2,
-      "alex": 958601.63,
-      "chris": 694556.47
+      "simarjot": 41146.19896199999,
+      "alex": 369749.45,
+      "chris": 218926.63
     },
     {
       "date": "2025-12-01 16:00:00",
-      "simarjot": 40681.89,
-      "alex": 971962.71,
-      "chris": 692209.9
+      "simarjot": 40681.893179,
+      "alex": 361733.22,
+      "chris": 214343.07
     },
     {
       "date": "2025-12-02 16:00:00",
-      "simarjot": 40667.09,
-      "alex": 964910.75,
-      "chris": 694297.21
+      "simarjot": 40667.09210899998,
+      "alex": 357036.45,
+      "chris": 213568.18
     },
     {
       "date": "2025-12-03 16:00:00",
-      "simarjot": 40447.53,
-      "alex": 959620.21,
-      "chris": 689367.86
+      "simarjot": 40447.528575,
+      "alex": 357507.04,
+      "chris": 214606.12
     },
     {
       "date": "2025-12-04 16:00:00",
-      "simarjot": 41292.58,
-      "alex": 967826.38,
-      "chris": 691840.96
+      "simarjot": 41292.584898999994,
+      "alex": 363871.54,
+      "chris": 217559.31
     },
     {
       "date": "2025-12-05 16:00:00",
-      "simarjot": 42229.48,
-      "alex": 1002635.36,
-      "chris": 700817.43
+      "simarjot": 42229.483472,
+      "alex": 367083.22,
+      "chris": 217425.71
     },
     {
       "date": "2025-12-06 16:00:00",
-      "simarjot": 42229.48,
-      "alex": 1002635.36,
-      "chris": 700817.43
+      "simarjot": 42229.483472,
+      "alex": 367083.22,
+      "chris": 217425.71
     },
     {
       "date": "2025-12-07 16:00:00",
-      "simarjot": 42229.48,
-      "alex": 1002635.36,
-      "chris": 700817.43
+      "simarjot": 42229.483472,
+      "alex": 367083.22,
+      "chris": 217425.71
     },
     {
       "date": "2025-12-08 16:00:00",
-      "simarjot": 42401.99,
-      "alex": 1018325.87,
-      "chris": 706599.16
+      "simarjot": 42401.99261799999,
+      "alex": 373059.21,
+      "chris": 218499.64
     },
     {
       "date": "2025-12-09 16:00:00",
-      "simarjot": 42165.46,
-      "alex": 1017485.25,
-      "chris": 709617.08
+      "simarjot": 42165.458387999985,
+      "alex": 373040.39,
+      "chris": 219998.32
     },
     {
       "date": "2025-12-10 16:00:00",
-      "simarjot": 42880.63,
-      "alex": 1027750.63,
-      "chris": 709074.33
+      "simarjot": 42880.62942199998,
+      "alex": 376090.43,
+      "chris": 221795.63
     },
     {
       "date": "2025-12-11 16:00:00",
-      "simarjot": 43050.42,
-      "alex": 1013770.56,
-      "chris": 704367.64
+      "simarjot": 43050.419766,
+      "alex": 375609.55,
+      "chris": 220574.47
     },
     {
       "date": "2025-12-12 16:00:00",
-      "simarjot": 41624.91,
-      "alex": 969595.88,
-      "chris": 688827.91
+      "simarjot": 41624.911993999995,
+      "alex": 357453.92,
+      "chris": 214164.6
     },
     {
       "date": "2025-12-13 16:00:00",
-      "simarjot": 41624.91,
-      "alex": 969595.88,
-      "chris": 688827.91
+      "simarjot": 41624.911993999995,
+      "alex": 357453.92,
+      "chris": 214164.6
     },
     {
       "date": "2025-12-14 16:00:00",
-      "simarjot": 41624.91,
-      "alex": 969595.88,
-      "chris": 688827.91
+      "simarjot": 41624.911993999995,
+      "alex": 357453.92,
+      "chris": 214164.6
     },
     {
       "date": "2025-12-15 16:00:00",
-      "simarjot": 41373.68,
-      "alex": 949018.84,
-      "chris": 683765.42
+      "simarjot": 41373.68006600001,
+      "alex": 354289.17,
+      "chris": 213643.94
     },
     {
       "date": "2025-12-16 16:00:00",
-      "simarjot": 41668.89,
-      "alex": 959297.51,
-      "chris": 683494.75
+      "simarjot": 41668.889040999995,
+      "alex": 350348.29,
+      "chris": 211735.66
     },
     {
       "date": "2025-12-17 16:00:00",
-      "simarjot": 41377.89,
-      "alex": 961117.06,
-      "chris": 675376.2
+      "simarjot": 41377.892863,
+      "alex": 345962.22,
+      "chris": 208172.99
     },
     {
       "date": "2025-12-18 16:00:00",
-      "simarjot": 42224.65,
-      "alex": 977541.47,
-      "chris": 689460.45
+      "simarjot": 42224.649934,
+      "alex": 347260.6,
+      "chris": 209992.95
     },
     {
       "date": "2025-12-19 16:00:00",
-      "simarjot": 43220.38,
-      "alex": 997262.85,
-      "chris": 700984.01
+      "simarjot": 43220.37623999999,
+      "alex": 358036.26,
+      "chris": 216092.34
     },
     {
       "date": "2025-12-20 16:00:00",
-      "simarjot": 43220.38,
-      "alex": 997262.85,
-      "chris": 700984.01
+      "simarjot": 43220.37623999999,
+      "alex": 358036.26,
+      "chris": 216092.34
     },
     {
       "date": "2025-12-21 16:00:00",
-      "simarjot": 43220.38,
-      "alex": 997262.85,
-      "chris": 700984.01
+      "simarjot": 43220.37623999999,
+      "alex": 358036.26,
+      "chris": 216092.34
     },
     {
       "date": "2025-12-22 16:00:00",
-      "simarjot": 43304.13,
-      "alex": 1003371.66,
-      "chris": 704794.77
+      "simarjot": 43304.126022,
+      "alex": 361797.28,
+      "chris": 218807.32
     },
     {
       "date": "2025-12-23 16:00:00",
-      "simarjot": 43306.05,
-      "alex": 981195.24,
-      "chris": 706131.77
+      "simarjot": 43306.04650299999,
+      "alex": 358940.02,
+      "chris": 219520.93
     },
     {
       "date": "2025-12-24 16:00:00",
-      "simarjot": 43453.8,
-      "alex": 985412.99,
-      "chris": 708928.69
+      "simarjot": 43453.79730399999,
+      "alex": 360918.67,
+      "chris": 220883.38
     },
     {
       "date": "2025-12-25 16:00:00",
-      "simarjot": 43453.8,
-      "alex": 985412.99,
-      "chris": 708928.69
+      "simarjot": 43453.79730399999,
+      "alex": 360918.67,
+      "chris": 220883.38
     },
     {
       "date": "2025-12-26 16:00:00",
-      "simarjot": 43462.35,
-      "alex": 984725.96,
-      "chris": 708567.52
+      "simarjot": 43462.349991999996,
+      "alex": 360867.73,
+      "chris": 220682.45
     },
     {
       "date": "2025-12-27 16:00:00",
-      "simarjot": 43462.35,
-      "alex": 984725.96,
-      "chris": 708567.52
+      "simarjot": 43462.349991999996,
+      "alex": 360867.73,
+      "chris": 220682.45
     },
     {
       "date": "2025-12-28 16:00:00",
-      "simarjot": 43462.35,
-      "alex": 984725.96,
-      "chris": 708567.52
+      "simarjot": 43462.349991999996,
+      "alex": 360867.73,
+      "chris": 220682.45
     },
     {
       "date": "2025-12-29 16:00:00",
-      "simarjot": 43862.2,
-      "alex": 1010776.56,
-      "chris": 712610.52
+      "simarjot": 43862.198809,
+      "alex": 361541.36,
+      "chris": 219803.93
     },
     {
       "date": "2025-12-30 16:00:00",
-      "simarjot": 43602.22,
-      "alex": 1005329.24,
-      "chris": 711447.42
+      "simarjot": 43602.218626,
+      "alex": 359431.82,
+      "chris": 218702.6
     },
     {
       "date": "2025-12-31 16:00:00",
-      "simarjot": 43052.24,
-      "alex": 992302.5,
-      "chris": 705198.64
+      "simarjot": 43052.237265,
+      "alex": 356690.54,
+      "chris": 217200.15
     },
     {
       "date": "2026-01-01 16:00:00",
-      "simarjot": 43052.24,
-      "alex": 992302.5,
-      "chris": 705198.64
+      "simarjot": 43052.237265,
+      "alex": 356690.54,
+      "chris": 217200.15
     },
     {
       "date": "2026-01-02 16:00:00",
-      "simarjot": 44305.42,
-      "alex": 1037615.94,
-      "chris": 713829.2
+      "simarjot": 44305.41819999999,
+      "alex": 364761.93,
+      "chris": 220826.09
     },
     {
       "date": "2026-01-03 16:00:00",
-      "simarjot": 44305.42,
-      "alex": 1037615.94,
-      "chris": 713829.2
+      "simarjot": 44305.41819999999,
+      "alex": 364761.93,
+      "chris": 220826.09
     },
     {
       "date": "2026-01-04 16:00:00",
-      "simarjot": 44305.42,
-      "alex": 1037615.94,
-      "chris": 713829.2
+      "simarjot": 44305.41819999999,
+      "alex": 364761.93,
+      "chris": 220826.09
     },
     {
       "date": "2026-01-05 16:00:00",
-      "simarjot": 44525.52,
-      "alex": 1040081.36,
-      "chris": 715781.9
+      "simarjot": 44525.51755599999,
+      "alex": 363944.8,
+      "chris": 222887.47
     },
     {
       "date": "2026-01-06 16:00:00",
-      "simarjot": 46892.94,
-      "alex": 1078306.05,
-      "chris": 730112.3
+      "simarjot": 46892.937092999986,
+      "alex": 374268.9,
+      "chris": 226141.39
     },
     {
       "date": "2026-01-07 16:00:00",
-      "simarjot": 46867.91,
-      "alex": 1081661.2,
-      "chris": 735820.86
+      "simarjot": 46867.910891,
+      "alex": 375403.75,
+      "chris": 227030.02
     },
     {
       "date": "2026-01-08 16:00:00",
-      "simarjot": 46410.8,
-      "alex": 1068777.49,
-      "chris": 731832.74
+      "simarjot": 46410.803051,
+      "alex": 369921.22,
+      "chris": 227647.12
     },
     {
       "date": "2026-01-09 16:00:00",
-      "simarjot": 47381.68,
-      "alex": 1050894.85,
-      "chris": 733445.8
+      "simarjot": 47381.680599,
+      "alex": 373776.16,
+      "chris": 229582.02
     },
     {
       "date": "2026-01-10 16:00:00",
-      "simarjot": 47381.68,
-      "alex": 1050894.85,
-      "chris": 733445.8
+      "simarjot": 47381.680599,
+      "alex": 373776.16,
+      "chris": 229582.02
     },
     {
       "date": "2026-01-11 16:00:00",
-      "simarjot": 47381.68,
-      "alex": 1050894.85,
-      "chris": 733445.8
+      "simarjot": 47381.680599,
+      "alex": 373776.16,
+      "chris": 229582.02
     },
     {
       "date": "2026-01-12 16:00:00",
-      "simarjot": 47686.33,
-      "alex": 1054120.34,
-      "chris": 733294.97
+      "simarjot": 47686.332933,
+      "alex": 379109.12,
+      "chris": 232189.57
     },
     {
       "date": "2026-01-13 16:00:00",
-      "simarjot": 48156.48,
-      "alex": 1100775.45,
-      "chris": 735839.11
+      "simarjot": 48156.475683,
+      "alex": 387633.85,
+      "chris": 233546.24
     },
     {
       "date": "2026-01-14 16:00:00",
-      "simarjot": 47662.0,
-      "alex": 1076059.22,
-      "chris": 723142.95
+      "simarjot": 47662.001422999994,
+      "alex": 377556.35,
+      "chris": 228478.55
     },
     {
       "date": "2026-01-15 16:00:00",
-      "simarjot": 47479.71,
-      "alex": 1011401.65,
-      "chris": 712200.95
+      "simarjot": 47479.706141999995,
+      "alex": 373207.29,
+      "chris": 227752.91
     },
     {
       "date": "2026-01-16 16:00:00",
-      "simarjot": 47846.5,
-      "alex": 1025553.87,
-      "chris": 719849.96
+      "simarjot": 47846.49739700001,
+      "alex": 374834.23,
+      "chris": 230830.05
     },
     {
       "date": "2026-01-17 16:00:00",
-      "simarjot": 47846.5,
-      "alex": 1025553.87,
-      "chris": 719849.96
+      "simarjot": 47846.49739700001,
+      "alex": 374834.23,
+      "chris": 230830.05
     },
     {
       "date": "2026-01-18 16:00:00",
-      "simarjot": 47846.5,
-      "alex": 1025553.87,
-      "chris": 719849.96
+      "simarjot": 47846.49739700001,
+      "alex": 374834.23,
+      "chris": 230830.05
     },
     {
       "date": "2026-01-19 16:00:00",
-      "simarjot": 47666.22,
-      "alex": 1024569.02,
-      "chris": 718739.34
+      "simarjot": 47666.217834999996,
+      "alex": 372641.49,
+      "chris": 229030.11
     },
     {
       "date": "2026-01-20 16:00:00",
-      "simarjot": 48147.3,
-      "alex": 1007411.13,
-      "chris": 707075.29
+      "simarjot": 48147.29661599999,
+      "alex": 369243.18,
+      "chris": 225617.09
     },
     {
       "date": "2026-01-21 16:00:00",
-      "simarjot": 49172.3,
-      "alex": 972985.19,
-      "chris": 704964.44
+      "simarjot": 49172.296508,
+      "alex": 368043.65,
+      "chris": 226791.26
     },
     {
       "date": "2026-01-22 16:00:00",
-      "simarjot": 49489.75,
-      "alex": 982446.46,
-      "chris": 713388.6
+      "simarjot": 49489.752145,
+      "alex": 364604.63,
+      "chris": 227045.47
     },
     {
       "date": "2026-01-23 16:00:00",
-      "simarjot": 48926.01,
-      "alex": 999222.25,
-      "chris": 723275.97
+      "simarjot": 48926.011797,
+      "alex": 369053.65,
+      "chris": 229135.35
     },
     {
       "date": "2026-01-24 16:00:00",
-      "simarjot": 48926.01,
-      "alex": 999222.25,
-      "chris": 723275.97
+      "simarjot": 48926.011797,
+      "alex": 369053.65,
+      "chris": 229135.35
     },
     {
       "date": "2026-01-25 16:00:00",
-      "simarjot": 48926.01,
-      "alex": 999222.25,
-      "chris": 723275.97
+      "simarjot": 48926.011797,
+      "alex": 369053.65,
+      "chris": 229135.35
     },
     {
       "date": "2026-01-26 16:00:00",
-      "simarjot": 48757.96,
-      "alex": 981834.4,
-      "chris": 723342.67
+      "simarjot": 48757.960794,
+      "alex": 369251.38,
+      "chris": 229536.65
     },
     {
       "date": "2026-01-27 16:00:00",
-      "simarjot": 48508.27,
-      "alex": 943464.47,
-      "chris": 727786.92
+      "simarjot": 48508.273628,
+      "alex": 370316.4,
+      "chris": 230794.34
     },
     {
       "date": "2026-01-28 16:00:00",
-      "simarjot": 49529.44,
-      "alex": 943846.6,
-      "chris": 734889.81
+      "simarjot": 49529.438607,
+      "alex": 374902.33,
+      "chris": 233500.53
     },
     {
       "date": "2026-01-29 16:00:00",
-      "simarjot": 49778.19,
-      "alex": 921166.31,
-      "chris": 706798.99
+      "simarjot": 49778.191560999985,
+      "alex": 356297.35,
+      "chris": 225134.1
     },
     {
       "date": "2026-01-30 16:00:00",
-      "simarjot": 49910.53,
-      "alex": 881061.22,
-      "chris": 694517.95
+      "simarjot": 49910.533788999994,
+      "alex": 348060.23,
+      "chris": 220165.03
     },
     {
       "date": "2026-01-31 16:00:00",
-      "simarjot": 49910.53,
-      "alex": 881061.22,
-      "chris": 694517.95
+      "simarjot": 49910.533788999994,
+      "alex": 348060.23,
+      "chris": 220165.03
     },
     {
       "date": "2026-02-01 16:00:00",
-      "simarjot": 49910.53,
-      "alex": 881061.22,
-      "chris": 694517.95
+      "simarjot": 49910.533788999994,
+      "alex": 348060.23,
+      "chris": 220165.03
     },
     {
       "date": "2026-02-02 16:00:00",
-      "simarjot": 52284.96,
-      "alex": 881606.66,
-      "chris": 696358.83
+      "simarjot": 52284.955959,
+      "alex": 352816.17,
+      "chris": 221497.3
     },
     {
       "date": "2026-02-03 16:00:00",
-      "simarjot": 52727.74,
-      "alex": 845998.67,
-      "chris": 677271.23
+      "simarjot": 52727.743216999996,
+      "alex": 352151.57,
+      "chris": 218940.24
     },
     {
       "date": "2026-02-04 16:00:00",
-      "simarjot": 49372.4,
-      "alex": 786775.27,
-      "chris": 659229.14
+      "simarjot": 49372.404884999996,
+      "alex": 336629.2,
+      "chris": 213111.93
     },
     {
       "date": "2026-02-05 16:00:00",
-      "simarjot": 48560.03,
-      "alex": 785604.47,
-      "chris": 643926.09
+      "simarjot": 48560.025802000004,
+      "alex": 338935.54,
+      "chris": 208258.98
     },
     {
       "date": "2026-02-06 16:00:00",
-      "simarjot": 49331.07,
-      "alex": 763817.35,
-      "chris": 647362.21
+      "simarjot": 49331.0663,
+      "alex": 343668.89,
+      "chris": 214242.35
     },
     {
       "date": "2026-02-07 16:00:00",
-      "simarjot": 49331.07,
-      "alex": 763817.35,
-      "chris": 647362.21
+      "simarjot": 49331.0663,
+      "alex": 343668.89,
+      "chris": 214242.35
     },
     {
       "date": "2026-02-08 16:00:00",
-      "simarjot": 49331.07,
-      "alex": 763817.35,
-      "chris": 647362.21
+      "simarjot": 49331.0663,
+      "alex": 343668.89,
+      "chris": 214242.35
     },
     {
       "date": "2026-02-09 16:00:00",
-      "simarjot": 49175.64,
-      "alex": 770639.52,
-      "chris": 655286.44
+      "simarjot": 49175.64003699999,
+      "alex": 347556.43,
+      "chris": 217461.64
     },
     {
       "date": "2026-02-10 16:00:00",
-      "simarjot": 48453.83,
-      "alex": 784889.2,
-      "chris": 653187.37
+      "simarjot": 48453.827975,
+      "alex": 341618.13,
+      "chris": 215137.06
     },
     {
       "date": "2026-02-11 16:00:00",
-      "simarjot": 49472.08,
-      "alex": 762736.73,
-      "chris": 648443.55
+      "simarjot": 49472.081065,
+      "alex": 339278.16,
+      "chris": 213230.29
     },
     {
       "date": "2026-02-12 16:00:00",
-      "simarjot": 49389.84,
-      "alex": 732029.64,
-      "chris": 639324.16
+      "simarjot": 49389.84491199999,
+      "alex": 328720.59,
+      "chris": 207306.86
     },
     {
       "date": "2026-02-13 16:00:00",
-      "simarjot": 49896.85,
-      "alex": 758271.43,
-      "chris": 641624.52
+      "simarjot": 49896.851687999995,
+      "alex": 334302.79,
+      "chris": 209885.24
     },
     {
       "date": "2026-02-14 16:00:00",
-      "simarjot": 49896.85,
-      "alex": 758271.43,
-      "chris": 641624.52
+      "simarjot": 49896.851687999995,
+      "alex": 334302.79,
+      "chris": 209885.24
     },
     {
       "date": "2026-02-15 16:00:00",
-      "simarjot": 49896.85,
-      "alex": 758271.43,
-      "chris": 641624.52
+      "simarjot": 49896.851687999995,
+      "alex": 334302.79,
+      "chris": 209885.24
     },
     {
       "date": "2026-02-16 16:00:00",
-      "simarjot": 49896.85,
-      "alex": 758271.43,
-      "chris": 641624.52
+      "simarjot": 49896.851687999995,
+      "alex": 334302.79,
+      "chris": 209885.24
     },
     {
       "date": "2026-02-17 16:00:00",
-      "simarjot": 49231.75,
-      "alex": 756166.13,
-      "chris": 637619.16
+      "simarjot": 49231.75042299999,
+      "alex": 334923.42,
+      "chris": 210792.15
     },
     {
       "date": "2026-02-18 16:00:00",
-      "simarjot": 49785.39,
-      "alex": 786826.0,
-      "chris": 650466.35
+      "simarjot": 49785.392799,
+      "alex": 342056.49,
+      "chris": 215109.26
     },
     {
       "date": "2026-02-19 16:00:00",
-      "simarjot": 50316.22,
-      "alex": 782582.48,
-      "chris": 648210.59
+      "simarjot": 50316.217599999996,
+      "alex": 342573.71,
+      "chris": 215965.6
     },
     {
       "date": "2026-02-20 16:00:00",
-      "simarjot": 51437.8,
-      "alex": 796702.5,
-      "chris": 657663.16
+      "simarjot": 51437.803655,
+      "alex": 345924.87,
+      "chris": 218841.55
     },
     {
       "date": "2026-02-21 16:00:00",
-      "simarjot": 51437.8,
-      "alex": 796702.5,
-      "chris": 657663.16
+      "simarjot": 51437.803655,
+      "alex": 345924.87,
+      "chris": 218841.55
     },
     {
       "date": "2026-02-22 16:00:00",
-      "simarjot": 51437.8,
-      "alex": 796702.5,
-      "chris": 657663.16
+      "simarjot": 51437.803655,
+      "alex": 345924.87,
+      "chris": 218841.55
     },
     {
       "date": "2026-02-23 16:00:00",
-      "simarjot": 51333.94,
-      "alex": 773057.3,
-      "chris": 643801.61
+      "simarjot": 51333.938798999996,
+      "alex": 343033.01,
+      "chris": 215130.65
     },
     {
       "date": "2026-02-24 16:00:00",
-      "simarjot": 50566.16,
-      "alex": 774892.95,
-      "chris": 647699.78
+      "simarjot": 50566.155692,
+      "alex": 344263.1,
+      "chris": 217031.49
     },
     {
       "date": "2026-02-25 16:00:00",
-      "simarjot": 51134.76,
-      "alex": 798418.22,
-      "chris": 661154.35
+      "simarjot": 51134.761485999996,
+      "alex": 346778.96,
+      "chris": 219210.76
     },
     {
       "date": "2026-02-26 16:00:00",
-      "simarjot": 51952.0,
-      "alex": 794173.46,
-      "chris": 654768.98
+      "simarjot": 51952.00115699999,
+      "alex": 343580.6,
+      "chris": 218293.82
     },
     {
       "date": "2026-02-27 16:00:00",
-      "simarjot": 50764.59,
-      "alex": 776297.91,
-      "chris": 645251.33
+      "simarjot": 50764.58848400001,
+      "alex": 339376.65,
+      "chris": 215322.13
     },
     {
       "date": "2026-02-28 16:00:00",
-      "simarjot": 50764.59,
-      "alex": 776297.91,
-      "chris": 645251.33
+      "simarjot": 50764.58848400001,
+      "alex": 339376.65,
+      "chris": 215322.13
     },
     {
       "date": "2026-03-01 16:00:00",
-      "simarjot": 50764.59,
-      "alex": 776297.91,
-      "chris": 645251.33
+      "simarjot": 50764.58848400001,
+      "alex": 339376.65,
+      "chris": 215322.13
     },
     {
       "date": "2026-03-02 16:00:00",
-      "simarjot": 50220.24,
-      "alex": 777619.05,
-      "chris": 649647.47
+      "simarjot": 50220.243341999994,
+      "alex": 337590.25,
+      "chris": 216090.89
     },
     {
       "date": "2026-03-03 16:00:00",
-      "simarjot": 48233.3,
-      "alex": 760561.78,
-      "chris": 641821.5
+      "simarjot": 48233.301045999986,
+      "alex": 331282.87,
+      "chris": 212091.28
     },
     {
       "date": "2026-03-04 16:00:00",
-      "simarjot": 49472.2,
-      "alex": 776463.26,
-      "chris": 649622.65
+      "simarjot": 49472.199663999985,
+      "alex": 337769.33,
+      "chris": 216830.61
     },
     {
       "date": "2026-03-05 16:00:00",
-      "simarjot": 48240.73,
-      "alex": 764905.47,
-      "chris": 647956.47
+      "simarjot": 48240.726376,
+      "alex": 334067.96,
+      "chris": 214294.09
     },
     {
       "date": "2026-03-06 16:00:00",
-      "simarjot": 46126.94,
-      "alex": 736727.27,
-      "chris": 634992.8
+      "simarjot": 46126.93915800001,
+      "alex": 323958.04,
+      "chris": 208689.58
     },
     {
       "date": "2026-03-07 16:00:00",
-      "simarjot": 46126.94,
-      "alex": 736727.27,
-      "chris": 634992.8
+      "simarjot": 46126.93915800001,
+      "alex": 323958.04,
+      "chris": 208689.58
     },
     {
       "date": "2026-03-08 16:00:00",
-      "simarjot": 46126.94,
-      "alex": 736727.27,
-      "chris": 634992.8
+      "simarjot": 46126.93915800001,
+      "alex": 323958.04,
+      "chris": 208689.58
     },
     {
       "date": "2026-03-09 16:00:00",
-      "simarjot": 47033.59,
-      "alex": 747569.2,
-      "chris": 646621.87
+      "simarjot": 47033.59052599999,
+      "alex": 333605.63,
+      "chris": 214050.09
     },
     {
       "date": "2026-03-10 16:00:00",
-      "simarjot": 48596.64,
-      "alex": 738124.14,
-      "chris": 648287.64
+      "simarjot": 48596.63966899999,
+      "alex": 335239.2,
+      "chris": 216364.56
     },
     {
       "date": "2026-03-11 16:00:00",
-      "simarjot": 49442.59,
-      "alex": 749563.26,
-      "chris": 651997.61
+      "simarjot": 49442.591401,
+      "alex": 334913.7,
+      "chris": 215704.08
     },
     {
       "date": "2026-03-12 16:00:00",
-      "simarjot": 47492.71,
-      "alex": 730187.21,
-      "chris": 639809.23
+      "simarjot": 47492.714736999995,
+      "alex": 329479.31,
+      "chris": 210663.48
     },
     {
       "date": "2026-03-13 16:00:00",
-      "simarjot": 48685.19,
-      "alex": 734817.59,
-      "chris": 638345.76
+      "simarjot": 48685.187401999996,
+      "alex": 330367.71,
+      "chris": 209535.06
     },
     {
       "date": "2026-03-14 16:00:00",
-      "simarjot": 48685.19,
-      "alex": 734817.59,
-      "chris": 638345.76
+      "simarjot": 48685.187401999996,
+      "alex": 330367.71,
+      "chris": 209535.06
     },
     {
       "date": "2026-03-15 16:00:00",
-      "simarjot": 48685.19,
-      "alex": 734817.59,
-      "chris": 638345.76
+      "simarjot": 48685.187401999996,
+      "alex": 330367.71,
+      "chris": 209535.06
     },
     {
       "date": "2026-03-16 16:00:00",
-      "simarjot": 50492.33,
-      "alex": 763557.14,
-      "chris": 650067.48
+      "simarjot": 50492.32644499999,
+      "alex": 337159.05,
+      "chris": 212933.62
     },
     {
       "date": "2026-03-17 16:00:00",
-      "simarjot": 51668.21,
-      "alex": 783952.7,
-      "chris": 659472.98
+      "simarjot": 51668.209318999994,
+      "alex": 343761.6,
+      "chris": 215159.27
     },
     {
       "date": "2026-03-18 16:00:00",
-      "simarjot": 52225.24,
-      "alex": 777260.91,
-      "chris": 652848.15
+      "simarjot": 52225.242931,
+      "alex": 340948.22,
+      "chris": 212941.23
     },
     {
       "date": "2026-03-19 16:00:00",
-      "simarjot": 51932.4,
-      "alex": 763095.97,
-      "chris": 644710.13
+      "simarjot": 51932.402492,
+      "alex": 342287.97,
+      "chris": 211100.89
     },
     {
       "date": "2026-03-20 16:00:00",
-      "simarjot": 49754.34,
-      "alex": 756323.57,
-      "chris": 630695.61
+      "simarjot": 49754.33687299999,
+      "alex": 333165.32,
+      "chris": 204297.97
     },
     {
       "date": "2026-03-21 16:00:00",
-      "simarjot": 49754.34,
-      "alex": 756323.57,
-      "chris": 630695.61
+      "simarjot": 49754.33687299999,
+      "alex": 333165.32,
+      "chris": 204297.97
     },
     {
       "date": "2026-03-22 16:00:00",
-      "simarjot": 49754.34,
-      "alex": 756323.57,
-      "chris": 630695.61
+      "simarjot": 49754.33687299999,
+      "alex": 333165.32,
+      "chris": 204297.97
     },
     {
       "date": "2026-03-23 16:00:00",
-      "simarjot": 50644.64,
-      "alex": 761860.74,
-      "chris": 630752.08
+      "simarjot": 50644.639137000006,
+      "alex": 340534.19,
+      "chris": 209632.08
     },
     {
       "date": "2026-03-24 16:00:00",
-      "simarjot": 50771.26,
-      "alex": 748262.77,
-      "chris": 616340.65
+      "simarjot": 50771.25563100001,
+      "alex": 342300.13,
+      "chris": 207615.42
     },
     {
       "date": "2026-03-25 16:00:00",
-      "simarjot": 50589.14,
-      "alex": 758833.77,
-      "chris": 614992.77
+      "simarjot": 50589.137444,
+      "alex": 343460.13,
+      "chris": 207890.34
     },
     {
       "date": "2026-03-26 16:00:00",
-      "simarjot": 47510.82,
-      "alex": 704884.84,
-      "chris": 593106.6
+      "simarjot": 47510.81679499999,
+      "alex": 325082.58,
+      "chris": 199172.23
     },
     {
       "date": "2026-03-27 16:00:00",
-      "simarjot": 47453.9,
-      "alex": 690168.43,
-      "chris": 580827.22
+      "simarjot": 47453.89962699999,
+      "alex": 325201.61,
+      "chris": 200347.3
     },
     {
       "date": "2026-03-28 16:00:00",
-      "simarjot": 47453.9,
-      "alex": 690168.43,
-      "chris": 580827.22
+      "simarjot": 47453.89962699999,
+      "alex": 325201.61,
+      "chris": 200347.3
     },
     {
       "date": "2026-03-29 16:00:00",
-      "simarjot": 47453.9,
-      "alex": 690168.43,
-      "chris": 580827.22
+      "simarjot": 47453.89962699999,
+      "alex": 325201.61,
+      "chris": 200347.3
     },
     {
       "date": "2026-03-30 16:00:00",
-      "simarjot": 46690.85,
-      "alex": 680724.23,
-      "chris": 572255.61
+      "simarjot": 46690.845503000004,
+      "alex": 315428.41,
+      "chris": 193697.45
     },
     {
       "date": "2026-03-31 16:00:00",
-      "simarjot": 49359.7,
-      "alex": 724907.24,
-      "chris": 597298.3
+      "simarjot": 49359.698639999995,
+      "alex": 332196.64,
+      "chris": 203785.37
     },
     {
       "date": "2026-04-01 16:00:00",
-      "simarjot": 50791.49,
-      "alex": 739708.22,
-      "chris": 607928.52
+      "simarjot": 50791.49092900001,
+      "alex": 337907.09,
+      "chris": 206736.09
     },
     {
       "date": "2026-04-02 16:00:00",
-      "simarjot": 51193.5,
-      "alex": 742791.8,
-      "chris": 610939.17
+      "simarjot": 51193.496186,
+      "alex": 341476.47,
+      "chris": 209813.1
     },
     {
       "date": "2026-04-03 16:00:00",
-      "simarjot": 51193.5,
-      "alex": 742791.8,
-      "chris": 610939.17
+      "simarjot": 51193.496186,
+      "alex": 341476.47,
+      "chris": 209813.1
     },
     {
       "date": "2026-04-04 16:00:00",
-      "simarjot": 51193.5,
-      "alex": 742791.8,
-      "chris": 610939.17
+      "simarjot": 51193.496186,
+      "alex": 341476.47,
+      "chris": 209813.1
     },
     {
       "date": "2026-04-05 16:00:00",
-      "simarjot": 51193.5,
-      "alex": 742791.8,
-      "chris": 610939.17
+      "simarjot": 51193.496186,
+      "alex": 341476.47,
+      "chris": 209813.1
     },
     {
       "date": "2026-04-06 16:00:00",
-      "simarjot": 52082.79,
-      "alex": 752859.76,
-      "chris": 616454.26
+      "simarjot": 52082.78993399999,
+      "alex": 343320.64,
+      "chris": 211903.82
     },
     {
       "date": "2026-04-07 16:00:00",
-      "simarjot": 51998.75,
-      "alex": 762238.18,
-      "chris": 619062.64
+      "simarjot": 51998.747943999995,
+      "alex": 344956.51,
+      "chris": 211971.88
     },
     {
       "date": "2026-04-08 16:00:00",
-      "simarjot": 54458.62,
-      "alex": 789617.13,
-      "chris": 635662.75
+      "simarjot": 54458.622387999996,
+      "alex": 357598.3,
+      "chris": 219230.98
     },
     {
       "date": "2026-04-09 16:00:00",
-      "simarjot": 56273.09,
-      "alex": 777400.01,
-      "chris": 637219.15
+      "simarjot": 56273.086875999994,
+      "alex": 361168.22,
+      "chris": 221081.59
     },
     {
       "date": "2026-04-10 16:00:00",
-      "simarjot": 57590.63,
-      "alex": 789761.65,
-      "chris": 638185.53
+      "simarjot": 57590.62830699999,
+      "alex": 368867.96,
+      "chris": 224158.49
     },
     {
       "date": "2026-04-11 16:00:00",
-      "simarjot": 57590.63,
-      "alex": 789761.65,
-      "chris": 638185.53
+      "simarjot": 57590.62830699999,
+      "alex": 368867.96,
+      "chris": 224158.49
     },
     {
       "date": "2026-04-12 16:00:00",
-      "simarjot": 57590.63,
-      "alex": 789761.65,
-      "chris": 638185.53
+      "simarjot": 57590.62830699999,
+      "alex": 368867.96,
+      "chris": 224158.49
     },
     {
       "date": "2026-04-13 16:00:00",
-      "simarjot": 61251.3,
-      "alex": 823249.78,
-      "chris": 655176.31
+      "simarjot": 61251.295725,
+      "alex": 381983.02,
+      "chris": 231756.04
     },
     {
       "date": "2026-04-14 16:00:00",
-      "simarjot": 61776.08,
-      "alex": 855079.69,
-      "chris": 678146.67
+      "simarjot": 61776.076258,
+      "alex": 390930.37,
+      "chris": 239465.06
     },
     {
       "date": "2026-04-15 16:00:00",
-      "simarjot": 61053.6,
-      "alex": 863852.7,
-      "chris": 689968.73
+      "simarjot": 61053.600364000005,
+      "alex": 392182.31,
+      "chris": 248022.92
     },
     {
       "date": "2026-04-16 16:00:00",
-      "simarjot": 62020.5,
-      "alex": 879100.96,
-      "chris": 696677.71
+      "simarjot": 62020.49916100001,
+      "alex": 396729.44,
+      "chris": 253335.17
     },
     {
       "date": "2026-04-17 16:00:00",
-      "simarjot": 62354.22,
-      "alex": 887053.84,
-      "chris": 702900.43
+      "simarjot": 62354.215993000005,
+      "alex": 402223.26,
+      "chris": 256007.64
     },
     {
       "date": "2026-04-18 16:00:00",
-      "simarjot": 62354.22,
-      "alex": 887053.84,
-      "chris": 702900.43
+      "simarjot": 62354.215993000005,
+      "alex": 402223.26,
+      "chris": 256007.64
     },
     {
       "date": "2026-04-19 16:00:00",
-      "simarjot": 62354.22,
-      "alex": 887053.84,
-      "chris": 702900.43
+      "simarjot": 62354.215993000005,
+      "alex": 402223.26,
+      "chris": 256007.64
     },
     {
       "date": "2026-04-20 16:00:00",
-      "simarjot": 62288.03,
-      "alex": 892300.4,
-      "chris": 698635.83
+      "simarjot": 62288.029622999995,
+      "alex": 402453.09,
+      "chris": 254330.75
     },
     {
       "date": "2026-04-21 16:00:00",
-      "simarjot": 61350.55,
-      "alex": 867381.64,
-      "chris": 693685.14
+      "simarjot": 61350.554981999994,
+      "alex": 399109.13,
+      "chris": 247930.05
     },
     {
       "date": "2026-04-22 16:00:00",
-      "simarjot": 63586.3,
-      "alex": 901495.84,
-      "chris": 714096.11
+      "simarjot": 63586.30132199999,
+      "alex": 407531.37,
+      "chris": 259874.55
     },
     {
       "date": "2026-04-23 16:00:00",
-      "simarjot": 62092.53,
-      "alex": 865055.53,
-      "chris": 696023.82
+      "simarjot": 62092.532818,
+      "alex": 396133.9,
+      "chris": 251188.22
     },
     {
       "date": "2026-04-24 16:00:00",
-      "simarjot": 63719.87,
-      "alex": 886745.42,
-      "chris": 712223.09
+      "simarjot": 63719.87093899999,
+      "alex": 405969.63,
+      "chris": 255667.44
     },
     {
       "date": "2026-04-25 16:00:00",
-      "simarjot": 63719.87,
-      "alex": 886745.42,
-      "chris": 712223.09
+      "simarjot": 63719.87093899999,
+      "alex": 405969.63,
+      "chris": 255667.44
     },
     {
       "date": "2026-04-26 16:00:00",
-      "simarjot": 63719.87,
-      "alex": 886745.42,
-      "chris": 712223.09
+      "simarjot": 63719.87093899999,
+      "alex": 405969.63,
+      "chris": 255667.44
     },
     {
       "date": "2026-04-27 16:00:00",
-      "simarjot": 66226.54,
-      "alex": 909053.02,
-      "chris": 724739.99
+      "simarjot": 66226.544913,
+      "alex": 413272.56,
+      "chris": 255577.48
     },
     {
       "date": "2026-04-28 16:00:00",
-      "simarjot": 64218.39,
-      "alex": 849661.35,
-      "chris": 712835.53
+      "simarjot": 64218.38599899999,
+      "alex": 387253.01,
+      "chris": 246587.92
     },
     {
       "date": "2026-04-29 16:00:00",
-      "simarjot": 65796.29,
-      "alex": 859313.13,
-      "chris": 713684.65
+      "simarjot": 65796.29217299998,
+      "alex": 394484.64,
+      "chris": 247275.5
     },
     {
       "date": "2026-04-30 16:00:00",
-      "simarjot": 66733.24,
-      "alex": 870308.01,
-      "chris": 724759.65
+      "simarjot": 66733.242429,
+      "alex": 406857.41,
+      "chris": 256110.59
     },
     {
       "date": "2026-05-01 16:00:00",
-      "simarjot": 69658.98,
-      "alex": 934983.19,
-      "chris": 740754.47
+      "simarjot": 69658.98450699999,
+      "alex": 418526.06,
+      "chris": 262646.01
     },
     {
       "date": "2026-05-02 16:00:00",
-      "simarjot": 69658.98,
-      "alex": 934983.19,
-      "chris": 740754.47
+      "simarjot": 69658.98450699999,
+      "alex": 418526.06,
+      "chris": 262646.01
     },
     {
       "date": "2026-05-03 16:00:00",
-      "simarjot": 69658.98,
-      "alex": 934983.19,
-      "chris": 740754.47
+      "simarjot": 69658.98450699999,
+      "alex": 418526.06,
+      "chris": 262646.01
     },
     {
       "date": "2026-05-04 16:00:00",
-      "simarjot": 71202.96,
-      "alex": 947409.02,
-      "chris": 745282.34
+      "simarjot": 71202.95617,
+      "alex": 418769.57,
+      "chris": 250825.96
     },
     {
       "date": "2026-05-05 16:00:00",
-      "simarjot": 75444.87,
-      "alex": 972174.02,
-      "chris": 763006.02
+      "simarjot": 75444.86942799998,
+      "alex": 423953.71,
+      "chris": 251388.21
     },
     {
       "date": "2026-05-06 16:00:00",
-      "simarjot": 75418.85,
-      "alex": 976260.01,
-      "chris": 777537.64
+      "simarjot": 75418.848547,
+      "alex": 426063.95,
+      "chris": 259989.42
     },
     {
       "date": "2026-05-07 16:00:00",
-      "simarjot": 73315.24,
-      "alex": 953874.87,
-      "chris": 779499.96
+      "simarjot": 73315.24339699998,
+      "alex": 414796.83,
+      "chris": 259559.14
     },
     {
       "date": "2026-05-08 16:00:00",
-      "simarjot": 78816.11,
-      "alex": 961197.01,
-      "chris": 799253.88
+      "simarjot": 78816.109676,
+      "alex": 419903.07,
+      "chris": 261070.38
     },
     {
       "date": "2026-05-09 16:00:00",
-      "simarjot": 78816.11,
-      "alex": 961197.01,
-      "chris": 799253.88
+      "simarjot": 78816.109676,
+      "alex": 419903.07,
+      "chris": 261070.38
     },
     {
       "date": "2026-05-10 16:00:00",
-      "simarjot": 78816.11,
-      "alex": 961197.01,
-      "chris": 799253.88
+      "simarjot": 78816.109676,
+      "alex": 419903.07,
+      "chris": 261070.38
     },
     {
       "date": "2026-05-11 16:00:00",
-      "simarjot": 78761.16,
-      "alex": 986398.23,
-      "chris": 812359.09
+      "simarjot": 78761.163133,
+      "alex": 423011.98,
+      "chris": 263266.04
     },
     {
       "date": "2026-05-12 16:00:00",
-      "simarjot": 76105.12,
-      "alex": 955437.24,
-      "chris": 792803.88
+      "simarjot": 76105.11593,
+      "alex": 414902.21,
+      "chris": 259836.38
     },
     {
       "date": "2026-05-13 16:00:00",
-      "simarjot": 75993.51,
-      "alex": 968421.74,
-      "chris": 809043.93
+      "simarjot": 75993.50739599999,
+      "alex": 415965.03,
+      "chris": 263479.22
     },
     {
       "date": "2026-05-14 16:00:00",
-      "simarjot": 74674.93,
-      "alex": 972609.32,
-      "chris": 806890.24
+      "simarjot": 74674.93094,
+      "alex": 419025.34,
+      "chris": 266026.69
     },
     {
       "date": "2026-05-15 16:00:00",
-      "simarjot": 75287.32,
-      "alex": 953919.25,
-      "chris": 797881.27
+      "simarjot": 75287.318612,
+      "alex": 410922.52,
+      "chris": 259135.75
     },
     {
       "date": "2026-05-16 16:00:00",
-      "simarjot": 75287.32,
-      "alex": 953919.25,
-      "chris": 797881.27
+      "simarjot": 75287.318612,
+      "alex": 410922.52,
+      "chris": 259135.75
     },
     {
       "date": "2026-05-17 16:00:00",
-      "simarjot": 75287.32,
-      "alex": 953919.25,
-      "chris": 797881.27
+      "simarjot": 75287.318612,
+      "alex": 410922.52,
+      "chris": 259135.75
     },
     {
       "date": "2026-05-18 16:00:00",
-      "simarjot": 73437.05,
-      "alex": 945774.66,
-      "chris": 790166.49
+      "simarjot": 73437.054072,
+      "alex": 408432.14,
+      "chris": 257975.01
     },
     {
       "date": "2026-05-19 16:00:00",
-      "simarjot": 74561.24,
-      "alex": 930220.53,
-      "chris": 782949.99
+      "simarjot": 74561.238421,
+      "alex": 401817.23,
+      "chris": 253692.18
     },
     {
       "date": "2026-05-20 16:00:00",
-      "simarjot": 75048.68,
-      "alex": 924318.43,
-      "chris": 792517.43
+      "simarjot": 75048.678978,
+      "alex": 406039.84,
+      "chris": 259240.69
     },
     {
       "date": "2026-05-21 16:00:00",
-      "simarjot": 79246.82,
-      "alex": 944729.34,
-      "chris": 800972.28
+      "simarjot": 79246.823062,
+      "alex": 415235.46,
+      "chris": 263103.75
     },
     {
       "date": "2026-05-22 16:00:00",
-      "simarjot": 77538.36,
-      "alex": 926467.87,
-      "chris": 800027.42
+      "simarjot": 77538.358216,
+      "alex": 416777.96,
+      "chris": 266501.45
     },
     {
       "date": "2026-05-23 16:00:00",
-      "simarjot": 77538.36,
-      "alex": 926467.87,
-      "chris": 800027.42
+      "simarjot": 77538.358216,
+      "alex": 416777.96,
+      "chris": 266501.45
     },
     {
       "date": "2026-05-24 16:00:00",
-      "simarjot": 77538.36,
-      "alex": 926467.87,
-      "chris": 800027.42
+      "simarjot": 77538.358216,
+      "alex": 416777.96,
+      "chris": 266501.45
     },
     {
       "date": "2026-05-25 16:00:00",
-      "simarjot": 77754.83,
-      "alex": 930327.47,
-      "chris": 801890.76
+      "simarjot": 77754.82850400002,
+      "alex": 422301.34,
+      "chris": 270119.09
     },
     {
       "date": "2026-05-26 16:00:00",
-      "simarjot": 80519.07,
-      "alex": 977426.49,
-      "chris": 836436.29
+      "simarjot": 80519.06904099998,
+      "alex": 426608.31,
+      "chris": 275373.36
     },
     {
       "date": "2026-05-27 16:00:00",
-      "simarjot": 80576.97,
-      "alex": 1007246.83,
-      "chris": 841202.36
+      "simarjot": 80576.96784599999,
+      "alex": 425668.97,
+      "chris": 275762.53
     },
     {
       "date": "2026-05-28 16:00:00",
-      "simarjot": 82293.15,
-      "alex": 1047342.06,
-      "chris": 857168.18
+      "simarjot": 82293.149556,
+      "alex": 430016.73,
+      "chris": 279360.56
     },
     {
       "date": "2026-05-29 16:00:00",
-      "simarjot": 83819.67,
-      "alex": 1091539.23,
-      "chris": 878021.53
+      "simarjot": 83819.667523,
+      "alex": 444761.21,
+      "chris": 280491.07
     },
     {
       "date": "2026-05-30 16:00:00",
-      "simarjot": 83819.67,
-      "alex": 1091539.23,
-      "chris": 878021.53
+      "simarjot": 83819.667523,
+      "alex": 444761.21,
+      "chris": 280491.07
     },
     {
       "date": "2026-05-31 16:00:00",
-      "simarjot": 83819.67,
-      "alex": 1091539.23,
-      "chris": 878021.53
+      "simarjot": 83819.667523,
+      "alex": 444761.21,
+      "chris": 280491.07
     },
     {
       "date": "2026-06-01 16:00:00",
-      "simarjot": 85501.79,
-      "alex": 1122413.5,
-      "chris": 895329.32
+      "simarjot": 85501.790545,
+      "alex": 462129.45,
+      "chris": 286100.28
     },
     {
       "date": "2026-06-02 16:00:00",
-      "simarjot": 84603.49,
-      "alex": 1119904.96,
-      "chris": 887417.66
+      "simarjot": 84603.49081599999,
+      "alex": 473616.95,
+      "chris": 291308.62
     },
     {
       "date": "2026-06-03 16:00:00",
-      "simarjot": 87625.05,
-      "alex": 1124290.05,
-      "chris": 879824.42
+      "simarjot": 87625.049951,
+      "alex": 471286.21,
+      "chris": 285979.52
     },
     {
       "date": "2026-06-04 16:00:00",
-      "simarjot": 86741.19,
-      "alex": 1133137.2,
-      "chris": 874281.75
+      "simarjot": 86741.194111,
+      "alex": 463179.37,
+      "chris": 285164.5
     },
     {
       "date": "2026-06-05 16:00:00",
-      "simarjot": 80851.59,
-      "alex": 1045152.42,
-      "chris": 820786.89
+      "simarjot": 80851.592182,
+      "alex": 429970.74,
+      "chris": 266409.86
     },
     {
       "date": "2026-06-06 16:00:00",
-      "simarjot": 80851.59,
-      "alex": 1045152.42,
-      "chris": 820786.89
+      "simarjot": 80851.592182,
+      "alex": 429970.74,
+      "chris": 266409.86
     },
     {
       "date": "2026-06-07 16:00:00",
-      "simarjot": 80851.59,
-      "alex": 1045152.42,
-      "chris": 820786.89
+      "simarjot": 80851.592182,
+      "alex": 429970.74,
+      "chris": 266409.86
     },
     {
       "date": "2026-06-08 16:00:00",
-      "simarjot": 83180.72,
-      "alex": 1067252.77,
-      "chris": 834633.45
+      "simarjot": 83180.71803199999,
+      "alex": 438460.06,
+      "chris": 270223.17
     },
     {
       "date": "2026-06-09 16:00:00",
-      "simarjot": 83504.91,
-      "alex": 1076202.11,
-      "chris": 826207.6
+      "simarjot": 83504.913366,
+      "alex": 433880.99,
+      "chris": 265362.64
     },
     {
       "date": "2026-06-10 16:00:00",
-      "simarjot": 83189.43,
-      "alex": 1042165.01,
-      "chris": 801963.67
+      "simarjot": 83189.431734,
+      "alex": 427584.2,
+      "chris": 259019.44
     },
     {
       "date": "2026-06-11 16:00:00",
-      "simarjot": 89739.55,
-      "alex": 1086135.61,
-      "chris": 828972.88
+      "simarjot": 89739.549553,
+      "alex": 447062.01,
+      "chris": 269971.41
     },
     {
       "date": "2026-06-12 16:00:00",
-      "simarjot": 92143.34,
-      "alex": 1056733.58,
-      "chris": 822745.68
+      "simarjot": 92143.339742,
+      "alex": 449446.19,
+      "chris": 268468.71
     },
     {
       "date": "2026-06-13 16:00:00",
-      "simarjot": 92143.34,
-      "alex": 1056733.58,
-      "chris": 822745.68
+      "simarjot": 92143.339742,
+      "alex": 449446.19,
+      "chris": 268468.71
     },
     {
       "date": "2026-06-14 16:00:00",
-      "simarjot": 92143.34,
-      "alex": 1056733.58,
-      "chris": 822745.68
+      "simarjot": 92143.339742,
+      "alex": 449446.19,
+      "chris": 268468.71
     },
     {
       "date": "2026-06-15 16:00:00",
-      "simarjot": 96813.85,
-      "alex": 1148793.68,
-      "chris": 866248.17
+      "simarjot": 96813.85124899998,
+      "alex": 465915.42,
+      "chris": 277958.86
     },
     {
       "date": "2026-06-16 16:00:00",
-      "simarjot": 93875.84,
-      "alex": 1100425.51,
-      "chris": 843639.87
+      "simarjot": 93875.83844,
+      "alex": 450573.63,
+      "chris": 269710.06
     },
     {
       "date": "2026-06-17 16:00:00",
-      "simarjot": 92876.01,
-      "alex": 1080537.75,
-      "chris": 833509.58
+      "simarjot": 92876.00858400001,
+      "alex": 447709.23,
+      "chris": 269128.86
     },
     {
       "date": "2026-06-18 16:00:00",
-      "simarjot": 100383.49,
-      "alex": 1130891.55,
-      "chris": 864019.91
+      "simarjot": 100383.48875,
+      "alex": 457973.94,
+      "chris": 275053.75
     },
     {
       "date": "2026-06-19 16:00:00",
-      "simarjot": 100596.3,
-      "alex": 1131071.22,
-      "chris": 865055.13
+      "simarjot": 100596.29904799999,
+      "alex": 458013.43,
+      "chris": 275851.33
     },
     {
       "date": "2026-06-20 16:00:00",
-      "simarjot": 100596.3,
-      "alex": 1131071.22,
-      "chris": 865055.13
+      "simarjot": 100596.29904799999,
+      "alex": 458013.43,
+      "chris": 275851.33
     },
     {
       "date": "2026-06-21 16:00:00",
-      "simarjot": 100596.3,
-      "alex": 1131071.22,
-      "chris": 865055.13
+      "simarjot": 100596.29904799999,
+      "alex": 458013.43,
+      "chris": 275851.33
     },
     {
       "date": "2026-06-22 16:00:00",
-      "simarjot": 102827.25,
-      "alex": 1140031.36,
-      "chris": 862198.78
+      "simarjot": 102827.25141100002,
+      "alex": 460818.95,
+      "chris": 274517.16
     },
     {
       "date": "2026-06-23 16:00:00",
-      "simarjot": 94845.37,
-      "alex": 1074857.73,
-      "chris": 821536.82
+      "simarjot": 94845.36534199998,
+      "alex": 439009.51,
+      "chris": 266100.93
     },
     {
       "date": "2026-06-24 16:00:00",
-      "simarjot": 92958.59,
-      "alex": 1063818.11,
-      "chris": 812227.61
+      "simarjot": 92958.591298,
+      "alex": 439659.04,
+      "chris": 264789.66
     },
     {
       "date": "2026-06-25 16:00:00",
-      "simarjot": 103826.52,
-      "alex": 1096411.07,
-      "chris": 836204.93
+      "simarjot": 103826.522488,
+      "alex": 451398.35,
+      "chris": 265073.55
     },
     {
       "date": "2026-06-26 16:00:00",
-      "simarjot": 97650.49,
-      "alex": 1093268.19,
-      "chris": 823972.01
+      "simarjot": 97650.49284199999,
+      "alex": 437650.44,
+      "chris": 261247.8
     },
     {
       "date": "2026-06-27 16:00:00",
-      "simarjot": 97650.49,
-      "alex": 1093268.19,
-      "chris": 823972.01
+      "simarjot": 97650.49284199999,
+      "alex": 437650.44,
+      "chris": 261247.8
     },
     {
       "date": "2026-06-28 16:00:00",
-      "simarjot": 97650.49,
-      "alex": 1093268.19,
-      "chris": 823972.01
+      "simarjot": 97650.49284199999,
+      "alex": 437650.44,
+      "chris": 261247.8
     },
     {
       "date": "2026-06-29 16:00:00",
-      "simarjot": 96947.52,
-      "alex": 1123849.83,
-      "chris": 836310.4
+      "simarjot": 96947.51811099998,
+      "alex": 441807.35,
+      "chris": 263998.7
     },
     {
       "date": "2026-06-30 16:00:00",
-      "simarjot": 102488.34,
-      "alex": 1138136.92,
-      "chris": 844213.6
+      "simarjot": 102488.34312600002,
+      "alex": 457774.89,
+      "chris": 269585.45
     },
     {
       "date": "2026-07-01 16:00:00",
-      "simarjot": 97271.23,
-      "alex": 1170814.45,
-      "chris": 836048.81
+      "simarjot": 97271.23023700001,
+      "alex": 454786.79,
+      "chris": 268137.77
     },
     {
       "date": "2026-07-02 16:00:00",
-      "simarjot": 89616.11,
-      "alex": 1135661.7,
-      "chris": 821414.06
+      "simarjot": 89616.10875399999,
+      "alex": 434967.1,
+      "chris": 260062.76
     },
     {
       "date": "2026-07-03 16:00:00",
-      "simarjot": 90088.06,
-      "alex": 1137875.3,
-      "chris": 823328.81
+      "simarjot": 90088.063748,
+      "alex": 437962.76,
+      "chris": 262894.71
     },
     {
       "date": "2026-07-04 16:00:00",
-      "simarjot": 90088.06,
-      "alex": 1137875.3,
-      "chris": 823328.81
+      "simarjot": 90088.063748,
+      "alex": 437962.76,
+      "chris": 262894.71
     },
     {
       "date": "2026-07-05 16:00:00",
-      "simarjot": 90088.06,
-      "alex": 1137875.3,
-      "chris": 823328.81
+      "simarjot": 90088.063748,
+      "alex": 437962.76,
+      "chris": 262894.71
     },
     {
       "date": "2026-07-06 16:00:00",
-      "simarjot": 90364.83,
-      "alex": 1166894.46,
-      "chris": 832364.0
+      "simarjot": 90364.83003700002,
+      "alex": 443650.69,
+      "chris": 264830.35
     },
     {
       "date": "2026-07-07 16:00:00",
-      "simarjot": 87518.09,
-      "alex": 1142722.41,
-      "chris": 819767.55
+      "simarjot": 87518.091105,
+      "alex": 434393.46,
+      "chris": 259205.64
     },
     {
       "date": "2026-07-08 16:00:00",
-      "simarjot": 89789.78,
-      "alex": 1137343.81,
-      "chris": 817990.41
+      "simarjot": 89789.776472,
+      "alex": 440106.76,
+      "chris": 260430.96
     },
     {
       "date": "2026-07-09 16:00:00",
-      "simarjot": 93521.14,
-      "alex": 1164977.11,
-      "chris": 827478.13
+      "simarjot": 93521.14405399997,
+      "alex": 445255.12,
+      "chris": 260597.32
     },
     {
       "date": "2026-07-10 16:00:00",
-      "simarjot": 94893.97,
-      "alex": 1151428.51,
-      "chris": 824760.34
+      "simarjot": 94893.969985,
+      "alex": 448120.06,
+      "chris": 260577.53
     },
     {
       "date": "2026-07-11 16:00:00",
-      "simarjot": 94893.97,
-      "alex": 1151428.51,
-      "chris": 824760.34
+      "simarjot": 94893.969985,
+      "alex": 448120.06,
+      "chris": 260577.53
     },
     {
       "date": "2026-07-12 16:00:00",
-      "simarjot": 94893.97,
-      "alex": 1151428.51,
-      "chris": 824760.34
+      "simarjot": 94893.969985,
+      "alex": 448120.06,
+      "chris": 260577.53
     },
     {
       "date": "2026-07-13 16:00:00",
-      "simarjot": 88979.61,
-      "alex": 1147712.32,
-      "chris": 813983.66
+      "simarjot": 88979.609221,
+      "alex": 435096.41,
+      "chris": 253670.66
     },
     {
       "date": "2026-07-14 16:00:00",
-      "simarjot": 91296.91,
-      "alex": 1167488.56,
-      "chris": 825435.7
+      "simarjot": 91296.90952200002,
+      "alex": 438244.65,
+      "chris": 255652.41
     },
     {
       "date": "2026-07-15 16:00:00",
-      "simarjot": 87780.8,
-      "alex": 1127238.77,
-      "chris": 816229.85
+      "simarjot": 87780.79618800001,
+      "alex": 426793.89,
+      "chris": 253397.31
     },
     {
       "date": "2026-07-16 16:00:00",
-      "simarjot": 81887.0,
-      "alex": 1064071.93,
-      "chris": 790954.02
+      "simarjot": 81887.003406,
+      "alex": 405136.76,
+      "chris": 244428.33
     },
     {
       "date": "2026-07-17 16:00:00",
-      "simarjot": 80437.19,
-      "alex": 1048595.1,
-      "chris": 779413.25
+      "simarjot": 80437.19422199999,
+      "alex": 399346.99,
+      "chris": 240664.78
     },
     {
       "date": "2026-07-18 16:00:00",
-      "simarjot": 80437.19,
-      "alex": 1048595.1,
-      "chris": 779413.25
+      "simarjot": 80437.19422199999,
+      "alex": 399346.99,
+      "chris": 240664.78
     },
     {
       "date": "2026-07-19 16:00:00",
-      "simarjot": 80437.19,
-      "alex": 1048595.1,
-      "chris": 779413.25
+      "simarjot": 80437.19422199999,
+      "alex": 399346.99,
+      "chris": 240664.78
     },
     {
       "date": "2026-07-20 16:00:00",
-      "simarjot": 80642.85,
-      "alex": 1057345.45,
-      "chris": 789260.42
+      "simarjot": 80642.84997000001,
+      "alex": 403492.32,
+      "chris": 243320.99
     },
     {
       "date": "2026-07-21 16:00:00",
-      "simarjot": 86316.87,
-      "alex": 1112614.82,
-      "chris": 812438.46
+      "simarjot": 86316.866058,
+      "alex": 425393.61,
+      "chris": 251836.52
     },
     {
       "date": "2026-07-22 16:00:00",
-      "simarjot": 86128.06,
-      "alex": 1065390.31,
-      "chris": 799536.19
+      "simarjot": 86128.057582,
+      "alex": 419075.86,
+      "chris": 250189
     },
     {
       "date": "2026-07-23 16:00:00",
-      "simarjot": 85942.75,
-      "alex": 1064208.87,
-      "chris": 788746.86
+      "simarjot": 85942.7498,
+      "alex": 416934.33,
+      "chris": 247532.88
     },
     {
       "date": "2026-07-24 16:00:00",
-      "simarjot": 81773.42,
-      "alex": 1035976.8,
-      "chris": 771540.04
+      "simarjot": 81773.424803,
+      "alex": 400943.02,
+      "chris": 241419.33
     },
     {
       "date": "2026-07-25 16:00:00",
-      "simarjot": 81773.42,
-      "alex": 1035976.8,
-      "chris": 771540.04
+      "simarjot": 81773.424803,
+      "alex": 400943.02,
+      "chris": 241419.33
     },
     {
       "date": "2026-07-26 16:00:00",
-      "simarjot": 81773.42,
-      "alex": 1035976.8,
-      "chris": 771540.04
+      "simarjot": 81773.424803,
+      "alex": 400943.02,
+      "chris": 241419.33
     },
     {
       "date": "2026-07-27 16:00:00",
-      "simarjot": 78471.77,
-      "alex": 1060627.09,
-      "chris": 777986.83
+      "simarjot": 78471.76984600001,
+      "alex": 403731.96,
+      "chris": 243884.93
     },
     {
       "date": "2026-07-28 16:00:00",
-      "simarjot": 73799.46,
-      "alex": 1041382.04,
-      "chris": 765932.01
+      "simarjot": 73799.45551599999,
+      "alex": 406556.5,
+      "chris": 245153.89
     },
     {
       "date": "2026-07-29 16:00:00",
-      "simarjot": 70266.96,
-      "alex": 1008286.09,
-      "chris": 743004.54
+      "simarjot": 70266.957019,
+      "alex": 393066.69,
+      "chris": 237067.55
     },
     {
       "date": "2026-07-30 16:00:00",
-      "simarjot": 77949.74,
-      "alex": 1058655.55,
-      "chris": 802448.12
+      "simarjot": 77949.735414,
+      "alex": 414402.3,
+      "chris": 248412.78
     },
     {
       "date": "2026-07-31 16:00:00",
-      "simarjot": 74627.95,
-      "alex": 932422.99,
-      "chris": 792223.4
+      "simarjot": 74627.94740399998,
+      "alex": 395154.96,
+      "chris": 244996.18
     },
     {
       "date": "2026-08-01 16:00:00",
-      "simarjot": 74627.95,
-      "alex": 932422.99,
-      "chris": 792223.4
+      "simarjot": 74627.94740399998,
+      "alex": 395154.96,
+      "chris": 244996.18
     },
     {
       "date": "2026-08-02 16:00:00",
-      "simarjot": 74627.95,
-      "alex": 932422.99,
-      "chris": 792223.4
+      "simarjot": 74627.94740399998,
+      "alex": 395154.96,
+      "chris": 244996.18
     },
     {
       "date": "2026-08-03 16:00:00",
-      "simarjot": 77009.15,
-      "alex": 975541.64,
-      "chris": 819685.84
+      "simarjot": 77009.154069,
+      "alex": 402296.42,
+      "chris": 248327.62
     },
     {
       "date": "2026-08-04 16:00:00",
-      "simarjot": 81055.93,
-      "alex": 1027185.53,
-      "chris": 848665.26
+      "simarjot": 81055.931113,
+      "alex": 428433.49,
+      "chris": 260064.27
     },
     {
       "date": "2026-08-05 16:00:00",
-      "simarjot": 78736.21,
-      "alex": 1003807.1,
-      "chris": 837777.08
+      "simarjot": 78736.21175399999,
+      "alex": 419588.1,
+      "chris": 257670.05
     },
     {
       "date": "2026-08-06 16:00:00",
-      "simarjot": 76235.77,
-      "alex": 976066.49,
-      "chris": 837148.76
+      "simarjot": 76235.768008,
+      "alex": 400517.24,
+      "chris": 252769.25
     },
     {
       "date": "2026-08-07 16:00:00",
-      "simarjot": 75161.53,
-      "alex": 1005200.05,
-      "chris": 843155.41
+      "simarjot": 75161.531011,
+      "alex": 402759.83,
+      "chris": 254678.63
     },
     {
       "date": "2026-08-08 16:00:00",
-      "simarjot": 75161.53,
-      "alex": 1005200.05,
-      "chris": 843155.41
+      "simarjot": 75161.531011,
+      "alex": 402759.83,
+      "chris": 254678.63
     },
     {
       "date": "2026-08-09 16:00:00",
-      "simarjot": 75161.53,
-      "alex": 1005200.05,
-      "chris": 843155.41
+      "simarjot": 75161.531011,
+      "alex": 402759.83,
+      "chris": 254678.63
     },
     {
       "date": "2026-08-10 16:00:00",
-      "simarjot": 76122.6,
-      "alex": 989184.79,
-      "chris": 839170.03
+      "simarjot": 76122.60408800002,
+      "alex": 401547.5,
+      "chris": 253232.57
     },
     {
       "date": "2026-08-11 16:00:00",
-      "simarjot": 76548.1,
-      "alex": 982896.78,
-      "chris": 833205.23
+      "simarjot": 76548.09637199999,
+      "alex": 399490.52,
+      "chris": 251803.46
     },
     {
       "date": "2026-08-12 16:00:00",
-      "simarjot": 78765.85,
-      "alex": 995861.9,
-      "chris": 838878.75
+      "simarjot": 78765.84883,
+      "alex": 411064.66,
+      "chris": 256922.06
     },
     {
       "date": "2026-08-13 16:00:00",
-      "simarjot": 83643.11,
-      "alex": 1020980.16,
-      "chris": 851995.31
+      "simarjot": 83643.111265,
+      "alex": 421302.43,
+      "chris": 258400.67
     },
     {
       "date": "2026-08-14 16:00:00",
-      "simarjot": 87263.65,
-      "alex": 1084429.17,
-      "chris": 863073.26
+      "simarjot": 87263.648218,
+      "alex": 426132.16,
+      "chris": 258485.09
     },
     {
       "date": "2026-08-15 16:00:00",
-      "simarjot": 87263.65,
-      "alex": 1084429.17,
-      "chris": 863073.26
+      "simarjot": 87263.648218,
+      "alex": 426132.16,
+      "chris": 258485.09
     },
     {
       "date": "2026-08-16 16:00:00",
-      "simarjot": 87263.65,
-      "alex": 1084429.17,
-      "chris": 863073.26
+      "simarjot": 87263.648218,
+      "alex": 426132.16,
+      "chris": 258485.09
     },
     {
       "date": "2026-08-17 16:00:00",
-      "simarjot": 90261.99,
-      "alex": 1054349.35,
-      "chris": 855778.04
+      "simarjot": 90261.992211,
+      "alex": 426543.26,
+      "chris": 257358
     },
     {
       "date": "2026-08-18 16:00:00",
-      "simarjot": 85211.87,
-      "alex": 1006948.79,
-      "chris": 835215.33
+      "simarjot": 85211.87121999999,
+      "alex": 408560.28,
+      "chris": 250096.35
     },
     {
       "date": "2026-08-19 16:00:00",
-      "simarjot": 82378.19,
-      "alex": 980525.17,
-      "chris": 831708.99
+      "simarjot": 82378.18578599999,
+      "alex": 400472.24,
+      "chris": 247903.36
     },
     {
       "date": "2026-08-20 16:00:00",
-      "simarjot": 81751.42,
-      "alex": 984906.13,
-      "chris": 833932.76
+      "simarjot": 81751.41668899999,
+      "alex": 399869.54,
+      "chris": 245795.65
     },
     {
       "date": "2026-08-21 16:00:00",
-      "simarjot": 82977.82,
-      "alex": 990391.61,
-      "chris": 835315.1
+      "simarjot": 82977.819651,
+      "alex": 399260.43,
+      "chris": 245898.92
     },
     {
       "date": "2026-08-22 16:00:00",
-      "simarjot": 82977.82,
-      "alex": 990391.61,
-      "chris": 835315.1
+      "simarjot": 82977.819651,
+      "alex": 399260.43,
+      "chris": 245898.92
     },
     {
       "date": "2026-08-23 16:00:00",
-      "simarjot": 82977.82,
-      "alex": 990391.61,
-      "chris": 835315.1
+      "simarjot": 82977.819651,
+      "alex": 399260.43,
+      "chris": 245898.92
     },
     {
       "date": "2026-08-24 16:00:00",
-      "simarjot": 79926.43,
-      "alex": 972246.84,
-      "chris": 824029.75
+      "simarjot": 79926.43109299999,
+      "alex": 394920.49,
+      "chris": 244298.05
     },
     {
       "date": "2026-08-25 16:00:00",
-      "simarjot": 80929.64,
-      "alex": 1012517.53,
-      "chris": 836492.28
+      "simarjot": 80929.64378999999,
+      "alex": 401871.35,
+      "chris": 247788.51
     },
     {
       "date": "2026-08-26 16:00:00",
-      "simarjot": 81438.54,
-      "alex": 994048.43,
-      "chris": 835357.66
+      "simarjot": 81438.538191,
+      "alex": 401354.44,
+      "chris": 246811.09
     },
     {
       "date": "2026-08-27 16:00:00",
-      "simarjot": 80903.87,
-      "alex": 991677.83,
-      "chris": 843522.49
+      "simarjot": 80903.87429399998,
+      "alex": 403832.3,
+      "chris": 248970.03
     },
     {
       "date": "2026-08-28 16:00:00",
-      "simarjot": 80690.0,
-      "alex": 981165.4,
-      "chris": 844498.34
+      "simarjot": 80689.999299,
+      "alex": 397851.91,
+      "chris": 245060.09
     },
     {
       "date": "2026-08-29 16:00:00",
-      "simarjot": 80690.0,
-      "alex": 981165.4,
-      "chris": 844498.34
+      "simarjot": 80689.999299,
+      "alex": 397851.91,
+      "chris": 245060.09
     },
     {
       "date": "2026-08-30 16:00:00",
-      "simarjot": 80690.0,
-      "alex": 981165.4,
-      "chris": 844498.34
+      "simarjot": 80689.999299,
+      "alex": 397851.91,
+      "chris": 245060.09
     },
     {
       "date": "2026-08-31 16:00:00",
-      "simarjot": 81781.22,
-      "alex": 973059.83,
-      "chris": 843306.67
+      "simarjot": 81781.221292,
+      "alex": 398434.49,
+      "chris": 243862.68
     },
     {
       "date": "2026-09-01 16:00:00",
-      "simarjot": 80326.49,
-      "alex": 953874.48,
-      "chris": 829483.8
+      "simarjot": 80326.48917799999,
+      "alex": 392819.09,
+      "chris": 239845.73
     },
     {
       "date": "2026-09-02 16:00:00",
-      "simarjot": 81920.4,
-      "alex": 992431.89,
-      "chris": 839883.39
+      "simarjot": 81920.39737600001,
+      "alex": 391953.73,
+      "chris": 240086.49
     },
     {
       "date": "2026-09-03 16:00:00",
-      "simarjot": 82772.06,
-      "alex": 996352.76,
-      "chris": 850767.37
+      "simarjot": 82772.063423,
+      "alex": 402372.54,
+      "chris": 245767.82
     },
     {
       "date": "2026-09-04 16:00:00",
-      "simarjot": 87237.85,
-      "alex": 1010940.53,
-      "chris": 856323.07
+      "simarjot": 87237.853087,
+      "alex": 408631.19,
+      "chris": 247071.12
     },
     {
       "date": "2026-09-05 16:00:00",
-      "simarjot": 87237.85,
-      "alex": 1010940.53,
-      "chris": 856323.07
+      "simarjot": 87237.853087,
+      "alex": 408631.19,
+      "chris": 247071.12
     },
     {
       "date": "2026-09-06 16:00:00",
-      "simarjot": 87237.85,
-      "alex": 1010940.53,
-      "chris": 856323.07
+      "simarjot": 87237.853087,
+      "alex": 408631.19,
+      "chris": 247071.12
     },
     {
       "date": "2026-09-07 16:00:00",
-      "simarjot": 87237.85,
-      "alex": 1010940.53,
-      "chris": 856323.07
+      "simarjot": 87237.853087,
+      "alex": 408631.19,
+      "chris": 247071.12
     },
     {
       "date": "2026-09-08 16:00:00",
-      "simarjot": 86528.53,
-      "alex": 1001491.53,
-      "chris": 848955.41
+      "simarjot": 86528.527949,
+      "alex": 412393.22,
+      "chris": 247408.87
     },
     {
       "date": "2026-09-09 16:00:00",
-      "simarjot": 86427.12,
-      "alex": 1003099.11,
-      "chris": 848093.32
+      "simarjot": 86427.12309900002,
+      "alex": 412968.33,
+      "chris": 244482.62
     },
     {
       "date": "2026-09-10 16:00:00",
-      "simarjot": 85184.13,
-      "alex": 1010631.78,
-      "chris": 840882.82
+      "simarjot": 85184.12766499998,
+      "alex": 408624.18,
+      "chris": 241953.41
     },
     {
       "date": "2026-09-11 16:00:00",
-      "simarjot": 84249.26,
-      "alex": 1026097.86,
-      "chris": 847513.08
+      "simarjot": 84249.26478900001,
+      "alex": 415414.28,
+      "chris": 244986.68
     },
     {
       "date": "2026-09-12 16:00:00",
-      "simarjot": 84249.26,
-      "alex": 1026097.86,
-      "chris": 847513.08
+      "simarjot": 84249.26478900001,
+      "alex": 415414.28,
+      "chris": 244986.68
     },
     {
       "date": "2026-09-13 16:00:00",
-      "simarjot": 84249.26,
-      "alex": 1026097.86,
-      "chris": 847513.08
+      "simarjot": 84249.26478900001,
+      "alex": 415414.28,
+      "chris": 244986.68
     },
     {
       "date": "2026-09-14 16:00:00",
-      "simarjot": 84249.26,
-      "alex": 1014503.15,
-      "chris": 844740.36
+      "simarjot": 84249.26478900001,
+      "alex": 404289.19,
+      "chris": 241713.63
     },
     {
       "date": "2026-09-14 17:00:00",
-      "simarjot": 85250.97,
-      "alex": 1014503.15,
-      "chris": 844740.36
+      "simarjot": 85250.97227932051,
+      "alex": 404289.19,
+      "chris": 241713.63
     },
     {
       "date": "2026-09-15 10:00:00",
-      "simarjot": 85155.97,
-      "alex": 1010445.53,
-      "chris": 841050.82
+      "simarjot": 85155.96981645424,
+      "alex": 402054.95,
+      "chris": 239228.4
     },
     {
       "date": "2026-09-15 11:00:00",
-      "simarjot": 84941.36,
-      "alex": 1010445.53,
-      "chris": 841050.82
+      "simarjot": 84941.35731416188,
+      "alex": 402054.95,
+      "chris": 239228.4
     },
     {
       "date": "2026-09-15 12:00:00",
-      "simarjot": 84813.32,
-      "alex": 1010445.53,
-      "chris": 841050.82
+      "simarjot": 84813.32498577758,
+      "alex": 402054.95,
+      "chris": 239228.4
+    },
+    {
+      "date": "2026-09-15 13:00:00",
+      "simarjot": 84768.1149328496,
+      "alex": 402054.95,
+      "chris": 239228.4
+    },
+    {
+      "date": "2026-09-15 14:00:00",
+      "simarjot": 84932.59485212908,
+      "alex": 402054.95,
+      "chris": 239228.4
+    },
+    {
+      "date": "2026-09-15 15:00:00",
+      "simarjot": 85053.29673505905,
+      "alex": 402054.95,
+      "chris": 239228.4
+    },
+    {
+      "date": "2026-09-15 16:00:00",
+      "simarjot": 85087.29197076405,
+      "alex": 402054.95,
+      "chris": 239228.4
+    },
+    {
+      "date": "2026-09-15 17:00:00",
+      "simarjot": 85079.32208449695,
+      "alex": 402054.95,
+      "chris": 239228.4
+    },
+    {
+      "date": "2026-09-16 10:00:00",
+      "simarjot": 85550.76491264823,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 11:00:00",
+      "simarjot": 85468.19197895814,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 12:00:00",
+      "simarjot": 85600.01943443339,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 13:00:00",
+      "simarjot": 85429.29302637819,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 14:00:00",
+      "simarjot": 85398.38829375099,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 15:00:00",
+      "simarjot": 85503.73856118915,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 16:00:00",
+      "simarjot": 85010.61967799619,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-16 17:00:00",
+      "simarjot": 85217.69051495421,
+      "alex": 404250.47,
+      "chris": 239698.28
+    },
+    {
+      "date": "2026-09-17 10:00:00",
+      "simarjot": 85931.27332932656,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 11:00:00",
+      "simarjot": 85971.38764019932,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 12:00:00",
+      "simarjot": 86046.52358595806,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 13:00:00",
+      "simarjot": 86038.4426607122,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 14:00:00",
+      "simarjot": 86011.95765963712,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 15:00:00",
+      "simarjot": 86064.30300140168,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 16:00:00",
+      "simarjot": 86184.98531088783,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-17 17:00:00",
+      "simarjot": 86184.24853838343,
+      "alex": 411259.55,
+      "chris": 244319.64
+    },
+    {
+      "date": "2026-09-18 10:00:00",
+      "simarjot": 86420.7580764979,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 11:00:00",
+      "simarjot": 86287.89830320171,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 12:00:00",
+      "simarjot": 86259.26087462394,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 13:00:00",
+      "simarjot": 86253.87133026803,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 14:00:00",
+      "simarjot": 86344.64062505301,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 15:00:00",
+      "simarjot": 86473.7892230833,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 16:00:00",
+      "simarjot": 86512.02941172764,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-18 17:00:00",
+      "simarjot": 86391.03505759317,
+      "alex": 417598.18,
+      "chris": 246026.63
+    },
+    {
+      "date": "2026-09-21 10:00:00",
+      "simarjot": 87330.90961429279,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 11:00:00",
+      "simarjot": 87630.36232830852,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 12:00:00",
+      "simarjot": 87781.84421027025,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 13:00:00",
+      "simarjot": 87792.61360555321,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 14:00:00",
+      "simarjot": 87902.33835805836,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 15:00:00",
+      "simarjot": 88182.54180069262,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 16:00:00",
+      "simarjot": 88121.25322997235,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-21 17:00:00",
+      "simarjot": 88088.46933375158,
+      "alex": 427516.03,
+      "chris": 252473.54
+    },
+    {
+      "date": "2026-09-22 10:00:00",
+      "simarjot": 88581.11242087149,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 11:00:00",
+      "simarjot": 88380.88763454302,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 12:00:00",
+      "simarjot": 88155.02059474528,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 13:00:00",
+      "simarjot": 87934.70444558526,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 14:00:00",
+      "simarjot": 88019.90816664658,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 15:00:00",
+      "simarjot": 88043.72587974458,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 16:00:00",
+      "simarjot": 88199.14623832867,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-22 17:00:00",
+      "simarjot": 88167.16334715333,
+      "alex": 435222.47,
+      "chris": 254337.2
+    },
+    {
+      "date": "2026-09-23 10:00:00",
+      "simarjot": 87711.92211650945,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 11:00:00",
+      "simarjot": 87861.68990597577,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 12:00:00",
+      "simarjot": 87664.75278316802,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 13:00:00",
+      "simarjot": 87278.63860367487,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 14:00:00",
+      "simarjot": 87426.33552993038,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 15:00:00",
+      "simarjot": 87163.0517304154,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 16:00:00",
+      "simarjot": 87051.7348699921,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-23 17:00:00",
+      "simarjot": 87143.31046178745,
+      "alex": 433216.23,
+      "chris": 252087.45
+    },
+    {
+      "date": "2026-09-24 10:00:00",
+      "simarjot": 87176.86465339763,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 11:00:00",
+      "simarjot": 87106.47869913257,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 12:00:00",
+      "simarjot": 86879.77934381147,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 13:00:00",
+      "simarjot": 87382.8383244893,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 14:00:00",
+      "simarjot": 87300.97304549074,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 15:00:00",
+      "simarjot": 87323.35364986556,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 16:00:00",
+      "simarjot": 87428.21319355609,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-24 17:00:00",
+      "simarjot": 87465.59198253,
+      "alex": 436338.98,
+      "chris": 252938.65
+    },
+    {
+      "date": "2026-09-25 10:00:00",
+      "simarjot": 87594.78443595674,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 11:00:00",
+      "simarjot": 87429.89314054155,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 12:00:00",
+      "simarjot": 87551.63365013203,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 13:00:00",
+      "simarjot": 87774.64699369419,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 14:00:00",
+      "simarjot": 88056.51662260116,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 15:00:00",
+      "simarjot": 88123.94399199828,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 16:00:00",
+      "simarjot": 87974.99890817537,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-25 17:00:00",
+      "simarjot": 88084.57120529009,
+      "alex": 434457.14,
+      "chris": 253528.42
+    },
+    {
+      "date": "2026-09-28 10:00:00",
+      "simarjot": 87222.19453944858,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 11:00:00",
+      "simarjot": 87160.8952179151,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 12:00:00",
+      "simarjot": 87088.98986542357,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 13:00:00",
+      "simarjot": 87400.87952894844,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 14:00:00",
+      "simarjot": 87427.11954718709,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 15:00:00",
+      "simarjot": 87398.81710963666,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 16:00:00",
+      "simarjot": 87370.44188182686,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-28 17:00:00",
+      "simarjot": 87287.77493993612,
+      "alex": 425653.17,
+      "chris": 249467.39
+    },
+    {
+      "date": "2026-09-29 10:00:00",
+      "simarjot": 87182.03793143002,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 11:00:00",
+      "simarjot": 87076.67572560914,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 12:00:00",
+      "simarjot": 86762.97298101509,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 13:00:00",
+      "simarjot": 86578.19417333623,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 14:00:00",
+      "simarjot": 86512.45068170447,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 15:00:00",
+      "simarjot": 86620.42111536728,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 16:00:00",
+      "simarjot": 86811.38161478542,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-29 17:00:00",
+      "simarjot": 86846.54917468056,
+      "alex": 429252.89,
+      "chris": 249443.41
+    },
+    {
+      "date": "2026-09-30 10:00:00",
+      "simarjot": 87325.1084205163,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 11:00:00",
+      "simarjot": 86775.03493234662,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 12:00:00",
+      "simarjot": 86969.9535432216,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 13:00:00",
+      "simarjot": 86867.53549630979,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 14:00:00",
+      "simarjot": 86863.40764788724,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 15:00:00",
+      "simarjot": 86694.40263626011,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 16:00:00",
+      "simarjot": 86612.85899576482,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-09-30 17:00:00",
+      "simarjot": 86470.86601357153,
+      "alex": 428250.85,
+      "chris": 248380.12
+    },
+    {
+      "date": "2026-10-01 10:00:00",
+      "simarjot": 86185.632363632,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 11:00:00",
+      "simarjot": 85272.3696988736,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 12:00:00",
+      "simarjot": 85454.28737934299,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 13:00:00",
+      "simarjot": 85823.6342343272,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 14:00:00",
+      "simarjot": 85902.70162094681,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 15:00:00",
+      "simarjot": 85780.57613085445,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 16:00:00",
+      "simarjot": 85817.21158235006,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-01 17:00:00",
+      "simarjot": 85912.66086330272,
+      "alex": 435714.56,
+      "chris": 249417.49
+    },
+    {
+      "date": "2026-10-02 10:00:00",
+      "simarjot": 86742.54287626801,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 11:00:00",
+      "simarjot": 86890.97943288952,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 12:00:00",
+      "simarjot": 86672.77295303746,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 13:00:00",
+      "simarjot": 86702.74821176339,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 14:00:00",
+      "simarjot": 86712.20898635595,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 15:00:00",
+      "simarjot": 86652.83483873644,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 16:00:00",
+      "simarjot": 86735.00592003629,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-02 17:00:00",
+      "simarjot": 86734.766870814,
+      "alex": 439140.47,
+      "chris": 252712.09
+    },
+    {
+      "date": "2026-10-05 10:00:00",
+      "simarjot": 87127.6665024919,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 11:00:00",
+      "simarjot": 87109.85214746177,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 12:00:00",
+      "simarjot": 87073.27337582698,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 13:00:00",
+      "simarjot": 87201.5778663881,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 14:00:00",
+      "simarjot": 87366.01101939272,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 15:00:00",
+      "simarjot": 87337.26264092424,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 16:00:00",
+      "simarjot": 87392.29375009693,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-05 17:00:00",
+      "simarjot": 87449.78312725839,
+      "alex": 439050.36,
+      "chris": 253954.76
+    },
+    {
+      "date": "2026-10-06 10:00:00",
+      "simarjot": 87775.74420146193,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 11:00:00",
+      "simarjot": 87809.52411129483,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 12:00:00",
+      "simarjot": 87998.59005811419,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 13:00:00",
+      "simarjot": 87925.31229177899,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 14:00:00",
+      "simarjot": 87917.01539436962,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 15:00:00",
+      "simarjot": 87962.17191032325,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 16:00:00",
+      "simarjot": 87737.41422356533,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-06 17:00:00",
+      "simarjot": 87828.60731116151,
+      "alex": 439646.08,
+      "chris": 255999.1
+    },
+    {
+      "date": "2026-10-07 10:00:00",
+      "simarjot": 87092.37177092033,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 11:00:00",
+      "simarjot": 86748.72539533346,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 12:00:00",
+      "simarjot": 86831.86570177886,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 13:00:00",
+      "simarjot": 86975.4343096791,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 14:00:00",
+      "simarjot": 87284.04100333591,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 15:00:00",
+      "simarjot": 86946.9733664077,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 16:00:00",
+      "simarjot": 86822.26827728517,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-07 17:00:00",
+      "simarjot": 86912.86601792448,
+      "alex": 436574.85,
+      "chris": 254050.39
+    },
+    {
+      "date": "2026-10-08 10:00:00",
+      "simarjot": 86456.52724529653,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 11:00:00",
+      "simarjot": 86435.21263257402,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 12:00:00",
+      "simarjot": 86128.24754532568,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 13:00:00",
+      "simarjot": 86199.82508072414,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 14:00:00",
+      "simarjot": 85993.56144236667,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 15:00:00",
+      "simarjot": 86169.66156590718,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 16:00:00",
+      "simarjot": 86265.28839525295,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-08 17:00:00",
+      "simarjot": 86208.30756311242,
+      "alex": 426703.44,
+      "chris": 247294.09
+    },
+    {
+      "date": "2026-10-09 10:00:00",
+      "simarjot": 86664.49145357283,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 11:00:00",
+      "simarjot": 86655.84986674234,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 12:00:00",
+      "simarjot": 86657.91113589301,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 13:00:00",
+      "simarjot": 79779.05511848693,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 14:00:00",
+      "simarjot": 80285.90548755128,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 15:00:00",
+      "simarjot": 86848.5334938815,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 16:00:00",
+      "simarjot": 86952.34673177388,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-09 17:00:00",
+      "simarjot": 86934.46170713948,
+      "alex": 430083.89,
+      "chris": 250443.43
+    },
+    {
+      "date": "2026-10-12 10:00:00",
+      "simarjot": 86970.10051039126,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 11:00:00",
+      "simarjot": 86984.36713110244,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 12:00:00",
+      "simarjot": 87020.5259399804,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 13:00:00",
+      "simarjot": 86971.96592916705,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 14:00:00",
+      "simarjot": 86960.71960672966,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 15:00:00",
+      "simarjot": 86950.17730127739,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 16:00:00",
+      "simarjot": 86966.93319666572,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-12 17:00:00",
+      "simarjot": 86963.2944482144,
+      "alex": 426428.95,
+      "chris": 249606
+    },
+    {
+      "date": "2026-10-13 10:00:00",
+      "simarjot": 86830.05168959369,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 11:00:00",
+      "simarjot": 86959.64133266153,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 12:00:00",
+      "simarjot": 87068.07756241204,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 13:00:00",
+      "simarjot": 86984.7949896319,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 14:00:00",
+      "simarjot": 87113.77167826016,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 15:00:00",
+      "simarjot": 87161.16283318611,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 16:00:00",
+      "simarjot": 87270.86153489558,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-13 17:00:00",
+      "simarjot": 87186.00716843926,
+      "alex": 423012.56,
+      "chris": 248144.78
+    },
+    {
+      "date": "2026-10-14 10:00:00",
+      "simarjot": 86918.38091302692,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 11:00:00",
+      "simarjot": 86672.83627529185,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 12:00:00",
+      "simarjot": 86582.88081268866,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 13:00:00",
+      "simarjot": 86309.35910533322,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 14:00:00",
+      "simarjot": 86107.19121863919,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 15:00:00",
+      "simarjot": 85980.21831994824,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 16:00:00",
+      "simarjot": 86002.94232811187,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-14 17:00:00",
+      "simarjot": 85943.93771090446,
+      "alex": 405237.42,
+      "chris": 240165.28
+    },
+    {
+      "date": "2026-10-15 10:00:00",
+      "simarjot": 85290.77128095184,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 11:00:00",
+      "simarjot": 85759.63032598092,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 12:00:00",
+      "simarjot": 85887.60232654774,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 13:00:00",
+      "simarjot": 86068.66014585739,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 14:00:00",
+      "simarjot": 86129.39909188868,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 15:00:00",
+      "simarjot": 86067.1589775905,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 16:00:00",
+      "simarjot": 86543.02614299525,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-15 17:00:00",
+      "simarjot": 86613.76476042563,
+      "alex": 405770.88,
+      "chris": 242175.84
+    },
+    {
+      "date": "2026-10-16 10:00:00",
+      "simarjot": 86674.89144288276,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 11:00:00",
+      "simarjot": 86481.65883577963,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 12:00:00",
+      "simarjot": 86290.0685711359,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 13:00:00",
+      "simarjot": 85950.27629554941,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 14:00:00",
+      "simarjot": 85753.44307691157,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 15:00:00",
+      "simarjot": 85517.17246104786,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 16:00:00",
+      "simarjot": 85662.33039999707,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-16 17:00:00",
+      "simarjot": 85550.19879959224,
+      "alex": 394433.15,
+      "chris": 235716.33
+    },
+    {
+      "date": "2026-10-19 10:00:00",
+      "simarjot": 85748.96796745961,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 11:00:00",
+      "simarjot": 85534.86825037542,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 12:00:00",
+      "simarjot": 85787.53401298061,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 13:00:00",
+      "simarjot": 85544.74844897116,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 14:00:00",
+      "simarjot": 85592.0170559449,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 15:00:00",
+      "simarjot": 85614.89495336529,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 16:00:00",
+      "simarjot": 85607.05964285157,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-19 17:00:00",
+      "simarjot": 85645.59308376997,
+      "alex": 395784.66,
+      "chris": 235993.19
+    },
+    {
+      "date": "2026-10-20 10:00:00",
+      "simarjot": 85279.74240991691,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 11:00:00",
+      "simarjot": 86017.07661865035,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 12:00:00",
+      "simarjot": 85645.31085832827,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 13:00:00",
+      "simarjot": 85617.27525641327,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 14:00:00",
+      "simarjot": 85617.8234584104,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 15:00:00",
+      "simarjot": 85596.05800411676,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 16:00:00",
+      "simarjot": 85594.00564481343,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-20 17:00:00",
+      "simarjot": 85569.06169264116,
+      "alex": 395723.04,
+      "chris": 236101.53
+    },
+    {
+      "date": "2026-10-21 10:00:00",
+      "simarjot": 86026.5007826563,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 11:00:00",
+      "simarjot": 86189.89230634728,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 12:00:00",
+      "simarjot": 86592.86798582716,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 13:00:00",
+      "simarjot": 86540.70970121605,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 14:00:00",
+      "simarjot": 86663.43947217418,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 15:00:00",
+      "simarjot": 86636.26439644185,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 16:00:00",
+      "simarjot": 86266.08748486254,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-21 17:00:00",
+      "simarjot": 86408.47598007672,
+      "alex": 398351.65,
+      "chris": 238537.26
+    },
+    {
+      "date": "2026-10-22 10:00:00",
+      "simarjot": 85313.82136756595,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 11:00:00",
+      "simarjot": 85041.02727753273,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 12:00:00",
+      "simarjot": 84949.27737883222,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 13:00:00",
+      "simarjot": 84995.43282481669,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 14:00:00",
+      "simarjot": 84995.55595438801,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 15:00:00",
+      "simarjot": 84970.23275245316,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 16:00:00",
+      "simarjot": 84877.29805831253,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-22 17:00:00",
+      "simarjot": 85008.18177925934,
+      "alex": 379112.4,
+      "chris": 229490.28
+    },
+    {
+      "date": "2026-10-23 10:00:00",
+      "simarjot": 84581.64221033904,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 11:00:00",
+      "simarjot": 84505.97232414038,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 12:00:00",
+      "simarjot": 84841.95929609996,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 13:00:00",
+      "simarjot": 84794.29244309089,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 14:00:00",
+      "simarjot": 84570.20904542513,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 15:00:00",
+      "simarjot": 84588.21329154292,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 16:00:00",
+      "simarjot": 84594.83953072086,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-23 17:00:00",
+      "simarjot": 84668.34751791199,
+      "alex": 373796.68,
+      "chris": 227690.48
+    },
+    {
+      "date": "2026-10-26 10:00:00",
+      "simarjot": 85015.04098941127,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 11:00:00",
+      "simarjot": 85524.73668114086,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 12:00:00",
+      "simarjot": 85634.19826284026,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 13:00:00",
+      "simarjot": 85433.29855273118,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 14:00:00",
+      "simarjot": 85468.80447798336,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 15:00:00",
+      "simarjot": 85460.32800899545,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 16:00:00",
+      "simarjot": 85454.66350000762,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-26 17:00:00",
+      "simarjot": 85321.45848016652,
+      "alex": 370419.95,
+      "chris": 228152.35
+    },
+    {
+      "date": "2026-10-27 10:00:00",
+      "simarjot": 85792.66349850122,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 11:00:00",
+      "simarjot": 85974.21159458163,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 12:00:00",
+      "simarjot": 86048.13036703212,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 13:00:00",
+      "simarjot": 86201.03572938812,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 14:00:00",
+      "simarjot": 86187.2379723402,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 15:00:00",
+      "simarjot": 86240.62970057708,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 16:00:00",
+      "simarjot": 86330.90154718384,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-27 17:00:00",
+      "simarjot": 86239.8849748861,
+      "alex": 382818.34,
+      "chris": 233039.39
+    },
+    {
+      "date": "2026-10-28 10:00:00",
+      "simarjot": 86287.70519749097,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 11:00:00",
+      "simarjot": 86500.33444384685,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 12:00:00",
+      "simarjot": 86569.60376429002,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 13:00:00",
+      "simarjot": 86651.24576019378,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 14:00:00",
+      "simarjot": 86778.84960763023,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 15:00:00",
+      "simarjot": 86742.78216625727,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 16:00:00",
+      "simarjot": 86567.80003818023,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-28 17:00:00",
+      "simarjot": 86736.98356316723,
+      "alex": 393831.58,
+      "chris": 236530.61
+    },
+    {
+      "date": "2026-10-29 10:00:00",
+      "simarjot": 85947.77701929105,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 11:00:00",
+      "simarjot": 86128.32884710969,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 12:00:00",
+      "simarjot": 86292.59301666841,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 13:00:00",
+      "simarjot": 86172.55713407938,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 14:00:00",
+      "simarjot": 85829.29942871748,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 15:00:00",
+      "simarjot": 85888.42778840257,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 16:00:00",
+      "simarjot": 85973.7507404194,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-29 17:00:00",
+      "simarjot": 86184.68353216945,
+      "alex": 383710.05,
+      "chris": 231846.17
+    },
+    {
+      "date": "2026-10-30 10:00:00",
+      "simarjot": 85103.54599289266,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 11:00:00",
+      "simarjot": 84893.91144438804,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 12:00:00",
+      "simarjot": 84449.23078508762,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 13:00:00",
+      "simarjot": 84166.66309956976,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 14:00:00",
+      "simarjot": 83946.24213519917,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 15:00:00",
+      "simarjot": 83453.9598238866,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 16:00:00",
+      "simarjot": 83893.25459409444,
+      "alex": 356303.97,
+      "chris": 221471.38
+    },
+    {
+      "date": "2026-10-30 17:00:00",
+      "simarjot": 83940.0543154097,
+      "alex": 356303.97,
+      "chris": 221471.38
     }
   ]
 };
