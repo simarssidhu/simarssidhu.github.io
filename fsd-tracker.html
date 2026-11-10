@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tesla FSD Tracker — Canada | Find Teslas with FSD Included</title>
+<meta name="description" content="Find used Teslas for sale in Canada with Full Self-Driving Capability — Included Package, verified from listing software-screen photos and descriptions. Filter by price, mileage, location, distance, HW3 / HW4 (AI4), model, seller type and source.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/fsd-tracker.css">
+</head>
+<body>
+<header class="nav">
+  <a href="projects.html" class="nav-btn" aria-label="Back to projects">←</a>
+  <div class="nav-title-group">
+    <div class="nav-title">Tesla FSD Tracker <span class="ca-pill">🇨🇦 Canada</span></div>
+    <div class="nav-subtitle">Full Self-Driving — Included Package finder</div>
+  </div>
+  <button class="nav-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+</header>
+
+<section class="hero">
+  <h1>Find a Tesla that already <span class="accent">includes FSD</span>.</h1>
+  <p class="hero-sub">Most sellers bury it. This tracker scans Canadian listings on AutoTrader, CarGurus, Kijiji Autos, Facebook Marketplace and dealer sites, then checks the two places FSD actually shows up:</p>
+  <div class="how-grid">
+    <div class="how-card">
+      <div class="how-num">1</div>
+      <div><strong>The software-screen photo</strong><br><span>Controls → Software must read <em>“Full Self-Driving Capability — Included package”</em> (not “Subscription” or a trial). The same screen shows the computer: FSD Computer 3 = HW3, Computer 4 / AI4 = HW4.</span></div>
+    </div>
+    <div class="how-card">
+      <div class="how-num">2</div>
+      <div><strong>The listing description</strong><br><span>Text is searched for “Full Self-Driving”, “FSD included”, “Enhanced Autopilot”, “Acceleration Boost” and “SC01” (free unlimited Supercharging).</span></div>
+    </div>
+  </div>
+  <div class="demo-banner" id="demoBanner" hidden>
+    ⚠️ <strong>Preview data:</strong> the listings marked <em>Demo</em> are examples showing how verified results will look. The automatic scanner (GitHub Action in this repo) replaces them with real Canadian listings on its first successful run. Use the <strong>Live search</strong> buttons below for real cars right now.
+  </div>
+  <div class="stats" id="statsRow"></div>
+</section>
+
+<main class="layout">
+  <aside class="filters" id="filtersPanel">
+    <div class="filters-head"><h2>Filters</h2><button id="resetBtn" class="link-btn">Reset all</button></div>
+
+    <label class="f-label">Search</label>
+    <input id="q" type="search" placeholder="Model, city, trim, keyword…">
+
+    <label class="f-label">Model</label>
+    <div class="chip-row" id="modelChips">
+      <button data-model="all" class="chip active">All</button>
+      <button data-model="Model 3" class="chip">Model 3</button>
+      <button data-model="Model Y" class="chip">Model Y</button>
+      <button data-model="Model S" class="chip">Model S</button>
+      <button data-model="Model X" class="chip">Model X</button>
+      <button data-model="Cybertruck" class="chip">Cybertruck</button>
+    </div>
+
+    <label class="f-label">Package</label>
+    <div class="check-row">
+      <label><input type="checkbox" class="pkg" value="FSD Included" checked> FSD Included</label>
+      <label><input type="checkbox" class="pkg" value="EAP"> Enhanced Autopilot</label>
+      <label><input type="checkbox" class="pkg" value="Acceleration Boost"> Acceleration Boost</label>
+      <label><input type="checkbox" class="pkg" value="SC01"> SC01 Supercharging</label>
+    </div>
+
+    <label class="f-label">Autopilot hardware</label>
+    <div class="check-row">
+      <label><input type="checkbox" class="hw" value="HW3" checked> HW3 (FSD Computer 3)</label>
+      <label><input type="checkbox" class="hw" value="HW4" checked> HW4 / AI4 (Computer 4)</label>
+    </div>
+
+    <label class="f-label">Max price (CAD) — <span id="priceVal"></span></label>
+    <input id="priceMax" type="range" min="15000" max="200000" step="1000" value="200000">
+
+    <label class="f-label">Max mileage (km) — <span id="kmVal"></span></label>
+    <input id="kmMax" type="range" min="10000" max="300000" step="5000" value="300000">
+
+    <label class="f-label">Min year — <span id="yearVal"></span></label>
+    <input id="yearMin" type="range" min="2016" max="2026" step="1" value="2016">
+
+    <label class="f-label">Province</label>
+    <select id="province">
+      <option value="all">All of Canada</option>
+      <option>ON</option><option>BC</option><option>AB</option><option>QC</option>
+      <option>MB</option><option>SK</option><option>NS</option><option>NB</option>
+      <option>NL</option><option>PE</option>
+    </select>
+
+    <label class="f-label">Your postal code (for distance)</label>
+    <input id="postal" type="text" placeholder="e.g. M5V 1J1" maxlength="7">
+    <label class="f-label">Max distance — <span id="distVal">Any</span></label>
+    <input id="distMax" type="range" min="25" max="1000" step="25" value="1000">
+
+    <label class="f-label">Seller type</label>
+    <select id="seller"><option value="all">Dealer + Private</option><option>Dealer</option><option>Private</option></select>
+
+    <label class="f-label">Source</label>
+    <select id="source"><option value="all">All sources</option></select>
+
+    <label class="f-label">Sort by</label>
+    <select id="sort">
+      <option value="price-asc">Price: low → high</option>
+      <option value="price-desc">Price: high → low</option>
+      <option value="km-asc">Mileage: low → high</option>
+      <option value="year-desc">Year: newest first</option>
+      <option value="dist-asc">Distance: nearest first</option>
+    </select>
+  </aside>
+
+  <section class="results-wrap">
+    <div class="live-panel">
+      <h3>Live search — real listings right now</h3>
+      <p>These open the source sites with an FSD search already filled in, using your model / province choices above. Always confirm on the car's Software screen (photo 1 above) before buying — “Included package” is the only wording that means FSD stays with the car.</p>
+      <div class="live-btns" id="liveBtns"></div>
+    </div>
+    <div class="results-head"><h2 id="resultCount">Listings</h2><span id="lastScan" class="muted"></span></div>
+    <div class="grid" id="results"></div>
+    <div class="empty" id="emptyState" hidden>No listings match those filters. Try widening price, mileage or distance — FSD-included cars are only ~1–2% of used Teslas.</div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p><strong>How verification works:</strong> a car is only listed as <em>Photo-verified</em> when its software-screen photo shows “Full Self-Driving Capability — Included package”. <em>Description match</em> means the seller wrote it in text — confirm with a photo of the Software screen and in the Tesla app (Upgrades / specs) before paying. FSD that shows as a monthly subscription does <u>not</u> transfer as an included package.</p>
+  <p class="muted">Independent tool — not affiliated with Tesla, Inc., AutoTrader, CarGurus or FSD Hunter. Listing data belongs to its source sites; every card links back to the original listing. Built for Canada (CAD, km).</p>
+  <p><a href="projects.html">← Back to Projects</a> · <a href="index.html">Home</a></p>
+</footer>
+
+<script src="js/fsd-tracker.js"></script>
+</body>
+</html>
