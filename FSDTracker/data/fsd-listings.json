@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T02:42:46.334751Z",
-  "source_note": "Written by tools/fsd_scraper.py. Listings are only included when FSD/EAP/Boost/SC01 is photo-verified from the software screen or matched in the listing description.",
+  "generated_at": "2026-11-11T03:06:58.733242Z",
+  "source_note": "Written by FSDTracker/tools/fsd_scraper.py. Listings are only included when FSD/EAP/Boost/SC01 is photo-verified from the software screen or matched in the listing description.",
   "listings": [
     {
       "id": "9f581dc80cba",
