@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T04:40:22.625877Z",
+  "generated_at": "2026-11-11T20:16:35.321227Z",
   "source_note": "Written by FSDTracker/tools/fsd_scraper.py (v4). A listing is included only when FSD/EAP/Boost/SC01 is photo-verified from the software screen or matched in the listing description with an ownership claim (included/purchased/lifetime/package) \u2014 hardware-only mentions (FSD computer, capability, TACC/Autosteer) and time-limited FSD promos are rejected. Evidence quotes the exact matched wording.",
   "listings": [
     {
@@ -159,32 +159,6 @@
       "missing_runs": 0
     },
     {
-      "id": "c2e9b736cbe4",
-      "title": "2017 Tesla Model S",
-      "year": 2017,
-      "model": "Model S",
-      "trim": "",
-      "price_cad": 36999,
-      "mileage_km": 98000,
-      "city": "Richmond Hill",
-      "province": "ON",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Dealer",
-      "seller_name": "SILKWAY AUTOS",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-s-p100d-awd-ludicrous-plus-fsd-gasoline-black-cat_ma51520gr201430tr15323-798a0678-a65c-48f9-9079-950cd2745b6c",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Listing description matched: FSD Included",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
-    },
-    {
       "id": "8c27f50e71d6",
       "title": "2017 Tesla Model X",
       "year": 2017,
@@ -268,7 +242,7 @@
       "year": 2023,
       "model": "Model S",
       "trim": "",
-      "price_cad": 63000,
+      "price_cad": 62000,
       "mileage_km": 146000,
       "city": "Ancaster",
       "province": "ON",
@@ -418,32 +392,6 @@
       "first_seen": "2026-11-11",
       "demo": false,
       "missing_runs": 0
-    },
-    {
-      "id": "f5ab923a1745",
-      "title": "2019 Tesla Model 3",
-      "year": 2019,
-      "model": "Model 3",
-      "trim": "",
-      "price_cad": 28990,
-      "mileage_km": 121493,
-      "city": "Aurora",
-      "province": "ON",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Dealer",
-      "seller_name": "JDM Motors",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-3-performance-full-self-driving-20-rims-heate-electric-blue-cat_ma51520gr201429tr5802-52a10beb-6f17-4908-8ca8-214536058558",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Listing description matched: FSD Included",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
     },
     {
       "id": "bdcb14944f48",
@@ -1176,32 +1124,6 @@
       "missing_runs": 0
     },
     {
-      "id": "d2cd40de9a65",
-      "title": "2026 Tesla Model 3",
-      "year": 2026,
-      "model": "Model 3",
-      "trim": "",
-      "price_cad": 60999,
-      "mileage_km": 6500,
-      "city": "Surrey",
-      "province": "BC",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Private",
-      "seller_name": "",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-3-premium-rwd-6-500-km-pearl-white-electric-white-cat_ma51520gr201429tr481946-fdd482ce-0e9f-4e7e-8737-1b3deed66919",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Listing description matched: FSD Included",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
-    },
-    {
       "id": "cffd6a63fa55",
       "title": "2021 Tesla Model 3",
       "year": 2021,
@@ -1278,32 +1200,6 @@
       "first_seen": "2026-11-11",
       "demo": false,
       "missing_runs": 0
-    },
-    {
-      "id": "4c72577c4bba",
-      "title": "2022 Tesla Model X",
-      "year": 2022,
-      "model": "Model X",
-      "trim": "",
-      "price_cad": 115900,
-      "mileage_km": 57500,
-      "city": "Mississauga",
-      "province": "ON",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Private",
-      "seller_name": "",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-x-plaid-electric-black-cat_ma51520gr201432tr15338-b3b04cc9-0265-45be-a5fe-6a082d86c70e",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Listing description matched: FSD Included",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
     },
     {
       "id": "f7bb51aae08b",
@@ -1736,12 +1632,13 @@
       "seller_type": "Dealer",
       "seller_name": "Abbotsford Hyundai",
       "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-y-long-range-awd-electric-black-cat_ma51520gr201431tr15328-746a67dc-a5a2-4b20-887f-f79b1521f7e5",
+      "url": "https://www.autotrader.ca/offers/tesla-model-y-long-range-awd-full-self-driving-electric-black-cat_ma51520gr201431tr15328-746a67dc-a5a2-4b20-887f-f79b1521f7e5",
       "packages": [
+        "FSD Included",
         "EAP"
       ],
       "hardware": null,
-      "evidence": "Description says: \u201c\u2026offering all the functions of basic and enhanced Autopilot, including traffic light and stop sign\u2026\u201d",
+      "evidence": "Description says: \u201c\u2026WD in a striking black finish. Vehicle comes with FULL SELF DRIVING package that was purchased with the vehicle. With advanced\u2026\u201d",
       "evidence_type": "Description match",
       "first_seen": "2026-11-11",
       "demo": false,
@@ -1820,6 +1717,32 @@
       ],
       "hardware": null,
       "evidence": "Description says: \u201c\u2026esla Model X 90D. 175,000 km Comes with Lifetime FREE Supercharging and FREE Premium Connectivity 6 Passeng\u2026\u201d",
+      "evidence_type": "Description match",
+      "first_seen": "2026-11-11",
+      "demo": false,
+      "missing_runs": 0
+    },
+    {
+      "id": "68f26f0ec9c2",
+      "title": "2024 Tesla Cybertruck",
+      "year": 2024,
+      "model": "Cybertruck",
+      "trim": "",
+      "price_cad": 118995,
+      "mileage_km": 26400,
+      "city": "Mississauga",
+      "province": "ON",
+      "lat": null,
+      "lon": null,
+      "seller_type": "Private",
+      "seller_name": "",
+      "source": "AutoTrader.ca",
+      "url": "https://www.autotrader.ca/offers/tesla-cybertruck-foundation-electric-silver-cat_ma51520gr201434-fe752eec-3f29-4a45-9709-2e8d25fb7354",
+      "packages": [
+        "FSD Included"
+      ],
+      "hardware": null,
+      "evidence": "Description says: \u201c\u2026tion Series Cybertruck AWD and comes loaded with: Full Self-Driving (Supervised) Included Premium Connectivity / Internet Inclu\u2026\u201d",
       "evidence_type": "Description match",
       "first_seen": "2026-11-11",
       "demo": false,
