@@ -1,151 +1,45 @@
-Run python3 tools/fsd_scraper.py
-  python3 tools/fsd_scraper.py
-  shell: /usr/bin/bash -e {0}
-  env:
-    pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
-    PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
-    Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
-    Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
-    Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
-    LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Run python3 FSDTracker/tools/fsd_scraper.py
 == AutoTrader.ca: https://www.autotrader.ca/cars/tesla/?keyword=Full+Self-Driving
    search page HTTP 200
-   65 candidate listing links
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8a13d850>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8aa3bec0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8ac458a0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac893a00e0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac89061760>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88edf2e0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88b45e90>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac889db2e0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac886473d0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac886da570>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88975d50>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8aca38d0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88889350>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac891569d0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88d5c900>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88f9a660>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8aa7ede0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88f7d120>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88d4ae80>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8931d1c0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88e229d0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88a95a30>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac89285440>)
-   ✓ 2015 Tesla Cars for Sale | AutoTrader.ca — ['SC01']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88a949a0>)
-   ✓ 2016 Tesla Cars for Sale | AutoTrader.ca — ['SC01']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88975030>)
-   ✓ 2017 Tesla Cars for Sale | AutoTrader.ca — ['EAP']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac891ed7b0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88fa1d00>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac886ea700>)
-   ✓ 2020 Tesla Cars for Sale | AutoTrader.ca — ['Acceleration Boost']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8883cea0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88777ce0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88775b20>)
-   ✓ 2023 Tesla Cars for Sale | AutoTrader.ca — ['Acceleration Boost']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac89286ed0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac891a4220>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac893e9670>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac892d6980>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88a57600>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac89536d90>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8949d2b0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88edc810>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8914af20>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8933bd30>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888ba6b0>)
-   ✓ Tesla Cars for Sale in Manitoba | AutoTrader.ca — ['Acceleration Boost']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88de62a0>)
-   ✓ Tesla Cars for Sale in Winnipeg, Manitoba | AutoTrader.ca — ['Acceleration Boost']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88bb4130>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883c8a90>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8a07dda0>)
-   ✓ Tesla Cars for Sale in Hamilton, Ontario | AutoTrader.ca — ['Acceleration Boost']
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8935f9c0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88ba5850>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88eb7f60>)
+   13 candidate listing links
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+   ✓ 271 results for 2023 Tesla Cars — ['Acceleration Boost']
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+   ✓ 26 results for 2016 Tesla Cars — ['SC01']
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+  OCR: photo fetch issue (HTTP 200, text/html) — rest of this listing's photos skipped quietly
+   ✓ 18 results for 2015 Tesla Cars — ['SC01']
+   summary: 13 candidates, 3 matched, 0 blocked
 == CarGurus.ca: https://www.cargurus.ca/Cars/l-Used-Tesla-d3049
    search page HTTP 200
-   130 candidate listing links
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88224ae0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88224a90>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac892d7ab0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88777c90>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac887758a0>)
-  CarGurus.ca: 403 https://www.cargurus.ca/details/440002787?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=3&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2Dw8M2PQgHYADlOSFABzOB6ySsq99BjCnAxC0KwwAFpTjChP54Jig35gMyFCD-U5QQrnDBMU7aaAQCQoPzoSLCYakSLOX4AVQ62l%2BADEqKSyb8AGzHX6cSrMSi-aSVaj0X6xeKJa43MDoJj0ABS1gAGsKENoyaxfAAtUKEpDTABW7FIAEkVLKFQNphqVeQNhAAIoAXjNqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/440345801?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=2&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2Dw8Mxi8LAAOMx6QFABzOCvSSsq99BjCnAxC0KwwAFoAdgwoT%2BeCYYN%2BYDMhQgAP%2BUEKZwwTH%2B2mgEAkKD86EiwmGpEizl%2BAFUOtpfgAxKhk8m-ABsZjMv04lWYlF%2B0kq1Hov1i8USJFuYHQTHoAClrAANUUIbTk1i%2BABaoSJSGmACt2KQAJIqeVKgbTLVq8gbCAARQAvBbVisgA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/440437907?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=1&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2Dw8eJiAdgwzE5IUAHM4HrJKyr30GMKcDELQrDAAWjPQ354JjAn5gMyFCB-E5QQoADgwTBO2mgEAkKD86EiwmGpEizh%2BAFUOtofgAxKgk0k-ABsZjMP04lWYlB%2B0kq1HoP1i8USV2uYHQTHoAClrAANYUIbSk1i%2BABaoQJSGmACt2KQAJIqWUKgbTDUq8gbCAARQAvGbVisgA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/443348520?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=10&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2Dw8GJi8AA4sUIsQFABzOB6ySsq99BjCnAxC0KwwAFoAdgwoT%2BeCYYN%2BYDMhQgAP%2BUEKpwwTH%2B2mgEAkKD86EiwmGpEizl%2BAFUOtpfgAxKhk8m-ABsZjMv04lWYlF%2B0kq1Hov1i8USJFuYHQTHoAClrAANUUIbTk1i%2BABaoSJSGmACt2KQAJIqeVKgbTLVq8gbCAARQAvBbVisgA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/446086397?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=11&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2Dw8ADYzAA4jmIwAdhIUAHM4HrJKyr30GMKcDELQrDAAWiuGFCALwTHB-zAZkKEEBVyghVOGCYV200AgEhQfnQkWEw1IkWc-wAqh1tP8AGJUckU-4nMz-TiVZiUf7SSrUej-WLxRK3O5gdBMegAKWsAA0RQhtBTWL4AFqhYlIaYAK3YpAAkio5YqBtNNaryBsIABFAC85tWKyAA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/451548415?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=9&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DxcLDwADgIsEhQAczgeskrKvfQYwpwMQtCsMABaAHYMUI-PBMEHfMBmQoQP6-KCFE4YJi-bTQCASFB%2BdCRYTDUiRZzfACqHW03wAYlQSaTvgA2Mxmb6cSrMSjfaSVaj0b6xeKJS5XMDoJj0ABS1gAGsKENpSaxfAAtUIEpDTABW7FIAEkVLKFQNphqVeQNhAAIoAXjNqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/453046749?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&inclusionType=DEFAULT&sponsoredType=NONE&listingIndex=0&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwsOLwANgB2BJIUAHM4HrJKyr30GMKcDELQrDAAWjOMUK-PBMEE-MBmQoQP5nKCFAAcGCYZ200AgEhQfnQkWEw1IkWcPwAqh1tD8AGJUUlkn4nMxmH6cSrMSg-aSVaj0H6xeKJK7XMDoJj0ABS1gAGsKENoyaxfAAtUKEpDTABW7FIAEkVLKFQNphqVeQNhAAIoAXjNqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/456281489?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=4&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwsADZQgA58U4wSFABzOB6ySsq99BjCnAxC0KwwAFoAdgwoT%2BeCYYN%2BYDMhQgAP%2BUEKlyY-200AgEhQfnQkWEw1IkWcvwAqh1tL8AGJUUlk35HMxmX6cSrMSi-aSVaj0X6xeKJa43MDoJj0ABS1gAGsKENoyaxfAAtUKEpDTABW7FIAEkVLKFQNphqVeQNhAAIoAXjNqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/459114830?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=13&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwsDBx8AA44khQAczgeskrKvfQYwpwMQtCsMABaAHYMUI-PBMEHfMBmQoQP6-KCFU4YJi-bTQCASFB%2BdCRYTDUiRZzfACqHW03wAYlQSaTvgA2Mxmb6cSrMSjfaSVaj0b6xeKJS5XMDoJj0ABS1gAGsKENpSaxfAAtUIEpDTABW7FIAEkVLKFQNphqVeQNhAAIoAXjNqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/459981372?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=14&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwsDAwADhwYgHZQkhQAczgeskrKvfQYwpwMQtCsMABaC4YUL-PBMMF-MBmQoQAEXKCFE4YJgXbTQCASFB%2BdCRYTDUiRZx-ACqHW0fwAYlQyeS-gA2MxmP6cSrMSh-aSVaj0P6xeKJG63MDoJj0ABS1gAGqKENpyaxfAAtUJEpDTABW7FIAEkVPKlQNplq1eQNhAAIoAXgtqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/461533591?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=6&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwANhwsGJisDB6QFABzOCvSSsq99BjCnAxC0KwwAFoAdgwoT%2BeCYYN%2BYDMhQgAP%2BUEKAA4MEx-tpoBAJCg-OhIsJhqRIs5fgBVDraX4AMSo5Ipv0OZjMv04lWYlF%2B0kq1Hov1i8USJFuYHQTHoAClrAANUUIbQU1i%2BABaoWJSGmACt2KQAJIqeVKgbTLVq8gbCAARQAvBbVisgA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/462280709?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=0&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwANlDQgA4zAHYzDBIUAHM4HrJKyr30GMKcDELQrDAAWguGFCALwTHB-zAZkKEEBFyghVOGCYF200AgEhQfnQkWEw1IkWc-wAqh1tP8AGJUckU-6HMxmf6cSrMSj-aSVaj0f6xeKJW53MDoJj0ABS1gAGqKENoKaxfAAtULEpDTABW7FIAEkVPKlQNplq1eQNhAAIoAXgtqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/462621292?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=8&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwANlDjnFCMUJIUAHM4HrJKyr30GMKcDELQrDAAWgB2C6-PBMEE-MBmQoQf5-KCFAAcGCYf200AgEhQfnQkWEw1IkWcPwAqh1tD8AGJUUlkn6HMxmH6cSrMSg-aSVaj0H6xeKJK7XMDoJj0ABS1gAGsKENoyaxfAAtUKEpDTABW7FIAEkVLKFQNphqVeQNhAAIoAXjNqxWQA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/462813222?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=5&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwANlCADhwY0MuSFABzOB6ySsq99BjCnAxC0KwwAFoAdgwoT%2BeCYYN%2BYDMhQgAP%2BUEKJwwTH%2B2mgEAkKD86EiwmGpEizl%2BAFUOtpfgAxKhk8m-Q5mMy-TiVZiUX7SSrUei-WLxRLXG5gdBMegAKWsAA0RQhtOTWL4AFqhIlIaYAK3YpAAkio5YqBtNNaryBsIABFAC85tWKyAA
-  CarGurus.ca: 403 https://www.cargurus.ca/details/463231567?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=7&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwANhjQmJwsQ4B2EhQAczgeskrKvfQYwpwMQtCsMABaS4YUL-PBMMF-MBmQoQAGXKCFAAcGCYl200AgEhQfnQkWEw1IkWcfwAqh1tH8AGJUckUv6HMxmP6cSrMSh-aSVaj0P6xeKJG63MDoJj0ABS1gAGqKENoKaxfAAtULEpDTABW7FIAEkVPKlQNplq1eQNhAAIoAXgtqxWQA
-/home/runner/work/simarssidhu.github.io/simarssidhu.github.io/tools/fsd_scraper.py:198: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  json.dump({"generated_at": datetime.datetime.utcnow().isoformat() + "Z",
-  CarGurus.ca: 403 https://www.cargurus.ca/details/463352137?searchUuid=3b19b25a-792a-4eee-a0bf-77cb89e7dfcf&resultSetId=563d8e9d-8d97-4721-9c41-c8708ab9f733&srpVariation=SEO_PAGE&searchDistance=50&sponsoredType=NONE&listingIndex=12&searchZip=95141&ourls=SRP&srpc=N4IghgZgxiBcoC8CWAHOICcBWAjAFhxABoQBnAewCcAXAFQE8UBTdAIQFEBlWgfQFkAgrQDCACWJkq1ACJJKTKNSTkAdugGdhEgCZJS1MCqgtYWAAwkAtmADWTPuW1MANrUpJLABTDUAFqTgAbRBLACYJMIB6bQBmMzwMEABdEj1pFyQANyZKenYVMAAjZyZtOGpKAFcmEhVVTl9UFCKS1jBSDJUTHBJSShQANTB3H2U1WBBOdgB5Hk8BAHF2EABfEkUADzhQZyQy2DwANhiYrFCcGIB2EhQAczgeskrKvfQYwpwMQtCsMABaS4YUL-PBMMF-MBmQoQAGXKCFAAcGCYl200AgEhQfnQkWEw1IkWcfwAqh1tH8AGJUckUv6HMxmP6cSrMSh-aSVaj0P6xeKJG63MDoJj0ABS1gAGqKENoKaxfAAtULEpDTABW7FIAEkVPKlQNplq1eQNhAAIoAXgtqxWQA
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8907dbc0>)
-  CarGurus.ca: 403 https://www.cargurus.ca/sell-my-car?pid=SellMyCarDesktopHeader
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8935fc90>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b8bd0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b8d10>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b8a40>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b9580>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b99e0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b9800>)
-  OCR skipped (Unsupported image format/type)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b9940>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883cad40>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883cb1a0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883cb100>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883ca700>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883caa20>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883ca430>)
-  OCR skipped (Unsupported image format/type)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac883ca980>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88bb4590>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88bb4bd0>)
-  CarGurus.ca: 403 https://investors.cargurus.com/
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac888b20c0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88225670>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac891a4310>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88225670>)
-  OCR skipped (Unsupported image format/type)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8868bf10>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8868bec0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8868bec0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8868bec0>)
-  OCR skipped (Unsupported image format/type)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88b00630>)
-  CarGurus.ca: 403 https://www.cargurus.ca/Cars/forsale
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88bb4c70>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88ba6340>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac87fb5c10>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac892d68e0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac893beed0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac891f71a0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88325c60>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88c559e0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8862b740>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac87f51ee0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88098360>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88d5dda0>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac89252e30>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88326200>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac88659b70>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac87e18810>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac885d0e00>)
-  OCR skipped (cannot identify image file <_io.BytesIO object at 0x78ac8ac44130>)
+   16 candidate listing links
+  CarGurus.ca: 403 https://www.cargurus.ca/details/453046749?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/460776112?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/454488695?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/440002787?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/456281489?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/462813222?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/443850989?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/460170514?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/463231567?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/443348520?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/459114830?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/458696402?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/443270748?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/462896534?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/462752706?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+  CarGurus.ca: 403 https://www.cargurus.ca/details/458146315?searchUuid=f6386f3f-8c95-4b95-8ee2-0fca26de495f&resultSetId=21150f9f
+   summary: 16 candidates, 0 matched, 16 blocked
 == Kijiji Autos: https://www.kijijiautos.ca/cars/tesla/?q=Tesla+Full+Self-Driving
    source failed: HTTPSConnectionPool(host='www.kijijiautos.ca', port=443): Max retries exceeded with url: /cars/tesla/?q=Tesla+Full+Self-Driving (Caused by NameResolutionError("HTTPSConnection(host='www.kijijiautos.ca', port=443): Failed to resolve 'www.kijijiautos.ca' ([Errno -2] Name or service not known)"))
-Wrote 8 listings (8 new this run) to /home/runner/work/simarssidhu.github.io/simarssidhu.github.io/tools/../data/fsd-listings.json
+   summary: 0 candidates, 0 matched, 0 blocked
+Wrote 7 listings (3 new this run) to /home/runner/work/simarssidhu.github.io/simarssidhu.github.io/FSDTracker/tools/../data/fsd-listings.json
