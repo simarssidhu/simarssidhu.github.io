@@ -28,31 +28,6 @@
       "demo": false
     },
     {
-      "id": "5091f2db4641",
-      "title": "2024 Tesla Model 3",
-      "year": 2024,
-      "model": "Model 3",
-      "trim": "",
-      "price_cad": 39998,
-      "mileage_km": 46087,
-      "city": "Calgary",
-      "province": "AB",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Dealer",
-      "seller_name": "South Trail Kia",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-3-leather-moonroof-1-year-of-fsd-included-electric-red-cat_ma51520gr201429-22f29522-37af-4fcd-b8a6-80f96b1b40e0",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Listing description matched: FSD Included",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false
-    },
-    {
       "id": "e3b0ae140f1a",
       "title": "2018 Tesla Model 3",
       "year": 2018,
@@ -193,31 +168,6 @@
       "seller_name": "SILKWAY AUTOS",
       "source": "AutoTrader.ca",
       "url": "https://www.autotrader.ca/offers/tesla-model-s-p100d-awd-ludicrous-plus-fsd-gasoline-black-cat_ma51520gr201430tr15323-798a0678-a65c-48f9-9079-950cd2745b6c",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Listing description matched: FSD Included",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false
-    },
-    {
-      "id": "9decbc08a15b",
-      "title": "2019 Tesla Model 3",
-      "year": 2019,
-      "model": "Model 3",
-      "trim": "",
-      "price_cad": 19880,
-      "mileage_km": 81557,
-      "city": "North York",
-      "province": "ON",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Dealer",
-      "seller_name": "Low Price Auto Sales",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-3-mid-range-l-rwd-l-425km-l-tacc-l-tesla-warranty-l-electric-white-cat_ma51520gr201429tr15315-9d459acf-d2e2-4bc4-838d-a479037fdb5c",
       "packages": [
         "FSD Included"
       ],

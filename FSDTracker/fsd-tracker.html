@@ -103,7 +103,10 @@
       <option value="price-asc">Price: low → high</option>
       <option value="price-desc">Price: high → low</option>
       <option value="km-asc">Mileage: low → high</option>
+      <option value="km-desc">Mileage: high → low</option>
       <option value="year-desc">Year: newest first</option>
+      <option value="year-asc">Year: oldest first</option>
+      <option value="newest">Newest listed first</option>
       <option value="dist-asc">Distance: nearest first</option>
     </select>
   </aside>
@@ -114,7 +117,18 @@
       <p>These open the source sites with an FSD search already filled in, using your model / province choices above. Always confirm on the car's Software screen (photo 1 above) before buying — “Included package” is the only wording that means FSD stays with the car.</p>
       <div class="live-btns" id="liveBtns"></div>
     </div>
-    <div class="results-head"><h2 id="resultCount">Listings</h2><span id="lastScan" class="muted"></span></div>
+    <div class="results-head"><h2 id="resultCount">Listings</h2>
+    <label class="sort-top">⇅ Sort <select id="sortTop">
+      <option value="price-asc">Price: low → high</option>
+      <option value="price-desc">Price: high → low</option>
+      <option value="km-asc">Mileage: low → high</option>
+      <option value="km-desc">Mileage: high → low</option>
+      <option value="year-desc">Year: newest first</option>
+      <option value="year-asc">Year: oldest first</option>
+      <option value="newest">Newest listed first</option>
+      <option value="dist-asc">Distance: nearest first</option>
+    </select></label>
+    <span id="lastScan" class="muted"></span></div>
     <div class="grid" id="results"></div>
     <div class="empty" id="emptyState" hidden>No listings match those filters. Try widening price, mileage or distance — FSD-included cars are only ~1–2% of used Teslas.</div>
   </section>

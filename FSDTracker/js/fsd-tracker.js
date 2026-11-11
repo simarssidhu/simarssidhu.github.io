@@ -70,8 +70,11 @@ function apply(){
     return true;
   });
   const sort=$("#sort").value;
+  const st=$("#sortTop"); if(st&&st.value!==sort) st.value=sort;
   out.sort((a,b)=> sort==="price-asc"?(a.price_cad??1e12)-(b.price_cad??1e12) : sort==="price-desc"?(b.price_cad??-1)-(a.price_cad??-1) :
-    sort==="km-asc"?(a.mileage_km??1e12)-(b.mileage_km??1e12) : sort==="year-desc"?b.year-a.year :
+    sort==="km-asc"?(a.mileage_km??1e12)-(b.mileage_km??1e12) : sort==="km-desc"?(b.mileage_km??-1)-(a.mileage_km??-1) :
+    sort==="year-desc"?(b.year??0)-(a.year??0) : sort==="year-asc"?(a.year??9999)-(b.year??9999) :
+    sort==="newest"?String(b.first_seen||"").localeCompare(String(a.first_seen||"")) :
     (a._dist??1e9)-(b._dist??1e9));
   render(out); liveLinks();
 }
@@ -119,6 +122,7 @@ document.querySelectorAll("#modelChips .chip").forEach(c=>c.addEventListener("cl
   document.querySelectorAll("#modelChips .chip").forEach(x=>x.classList.remove("active"));
   c.classList.add("active"); state.model=c.dataset.model; apply();
 }));
+const stEl=$("#sortTop"); if(stEl) stEl.addEventListener("change",()=>{ $("#sort").value=stEl.value; apply(); });
 $("#resetBtn").addEventListener("click",()=>location.reload());
 $("#themeBtn").addEventListener("click",()=>{
   const h=document.documentElement, next=h.dataset.theme==="dark"?"light":"dark";
