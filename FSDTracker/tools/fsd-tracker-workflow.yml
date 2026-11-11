@@ -1,0 +1,38 @@
+name: Tesla FSD Tracker scan
+
+# Scans Canadian listing sources for Teslas with FSD (Included package),
+# EAP, Acceleration Boost or SC01, writes data/fsd-listings.json, and
+# commits it back so the GitHub Pages site stays current.
+# Run it manually any time from the Actions tab (workflow_dispatch).
+# Note: source sites may bot-block GitHub's IPs — check the run log;
+# blocked sources contribute 0 listings and never fabricate data.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * *"   # daily ~8am Toronto
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install OCR + Python deps
+        run: |
+          sudo apt-get update && sudo apt-get install -y tesseract-ocr
+          pip install requests beautifulsoup4 pytesseract pillow
+      - name: Run scanner
+        run: python3 FSDTracker/tools/fsd_scraper.py
+      - name: Commit updated listings
+        run: |
+          git config user.name "fsd-tracker-bot"
+          git config user.email "actions@github.com"
+          git add FSDTracker/data/fsd-listings.json
+          git diff --cached --quiet || git commit -m "FSD Tracker: daily scan"
+          git push
