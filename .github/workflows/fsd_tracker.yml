@@ -28,11 +28,11 @@ jobs:
           sudo apt-get update && sudo apt-get install -y tesseract-ocr
           pip install requests beautifulsoup4 pytesseract pillow
       - name: Run scanner
-        run: python3 tools/fsd_scraper.py
+        run: python3 FSDTracker/tools/fsd_scraper.py
       - name: Commit updated listings
         run: |
           git config user.name "fsd-tracker-bot"
           git config user.email "actions@github.com"
-          git add data/fsd-listings.json
+          git add FSDTracker/data/fsd-listings.json
           git diff --cached --quiet || git commit -m "FSD Tracker: daily scan"
           git push
