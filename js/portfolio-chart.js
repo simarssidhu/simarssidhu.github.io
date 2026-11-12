@@ -33,6 +33,11 @@ class PortfolioChart {
     this.rangeStartIndex = null;
     this.rangeEndIndex = null;
 
+    // Mouse click-and-drag range state
+    this.isMouseDown = false;
+    this.mouseDragStartX = null;
+    this.mouseDragStartIndex = null;
+
     this.initSVG();
     this.bindEvents();
     this.handleResize = this.handleResize.bind(this);
@@ -374,39 +379,80 @@ class PortfolioChart {
 
     const idx = this.getIndexFromX(e.clientX);
 
-    // Desktop range drag (Shift key held or dragging)
-    if (this.isMouseDragging && e.shiftKey) {
-      this.isRangeScrubbing = true;
-      this.rangeEndIndex = idx;
-      this.updateRangeScrubber();
-      return;
+    // Click-and-drag range selection
+    if (this.isMouseDown) {
+      const dist = Math.abs(e.clientX - this.mouseDragStartX);
+      if (dist >= 4 || idx !== this.mouseDragStartIndex) {
+        this.isRangeScrubbing = true;
+        this.isScrubbing = false;
+        this.rangeStartIndex = Math.min(this.mouseDragStartIndex, idx);
+        this.rangeEndIndex = Math.max(this.mouseDragStartIndex, idx);
+        this.updateRangeScrubber();
+        return;
+      }
     }
 
-    this.isRangeScrubbing = false;
-    this.isScrubbing = true;
-    this.scrubIndex = idx;
-    this.updateSingleScrubber(idx);
+    // Normal single-point hovering / scrubbing
+    if (!this.isRangeScrubbing) {
+      this.isScrubbing = true;
+      this.scrubIndex = idx;
+      this.updateSingleScrubber(idx);
+    }
   }
 
   onMouseDown(e) {
-    if (e.shiftKey) {
-      this.isMouseDragging = true;
-      this.rangeStartIndex = this.getIndexFromX(e.clientX);
-      this.rangeEndIndex = this.rangeStartIndex;
-    }
+    if (e.button !== 0) return; // Only primary (left) button
+    if (!this.data || this.data.length === 0) return;
+
+    this.isMouseDown = true;
+    this.mouseDragStartX = e.clientX;
+    this.mouseDragStartIndex = this.getIndexFromX(e.clientX);
+    this.rangeStartIndex = this.mouseDragStartIndex;
+    this.rangeEndIndex = this.mouseDragStartIndex;
   }
 
   onMouseUp(e) {
-    if (this.isMouseDragging) {
-      this.isMouseDragging = false;
+    if (!this.isMouseDown) return;
+    this.isMouseDown = false;
+
+    if (this.isRangeScrubbing) {
+      // Deactivate range scrub and hide range visuals
+      this.isRangeScrubbing = false;
+      this.rangeRect.style.display = 'none';
+      this.rangeLineStart.style.display = 'none';
+      this.rangeLineEnd.style.display = 'none';
+
+      // Check if mouse released inside chart container
+      const rect = this.container.getBoundingClientRect();
+      const isInside = (
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom
+      );
+
+      if (isInside && this.data && this.data.length > 0) {
+        // Return smoothly to single-point scrubbing mode at cursor position
+        this.isScrubbing = true;
+        const curIdx = this.getIndexFromX(e.clientX);
+        this.scrubIndex = curIdx;
+        this.updateSingleScrubber(curIdx);
+      } else {
+        this.onMouseLeave();
+      }
     }
   }
 
   onMouseLeave() {
+    // If dragging with mouse held down, keep active until window mouseup
+    if (this.isMouseDown) return;
+
     this.isScrubbing = false;
     this.isRangeScrubbing = false;
     this.scrubberGroup.style.display = 'none';
     this.rangeRect.style.display = 'none';
+    this.rangeLineStart.style.display = 'none';
+    this.rangeLineEnd.style.display = 'none';
 
     if (this.options.onScrubEnd) {
       this.options.onScrubEnd();
