@@ -11,7 +11,7 @@
 (function () {
   'use strict';
 
-  // Live Google Apps Script Web App URL (no password hardcoded!)
+  // Live API Web App Endpoint URL
   const DEFAULT_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxG26r6e1a4e9Kb_YPZ4yA-MlyKCABOTefUsFGzRKhm_PJW4DCThlQTG-CYQ-39ezKB-Q/exec";
 
   const AppState = {
@@ -76,7 +76,7 @@
     const currentUrl = localStorage.getItem('ws_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
     if (elements.sheetUrlInput) elements.sheetUrlInput.value = currentUrl;
 
-    // Check Password Authentication Gate (verified directly against Google Sheet)
+    // Check Password Authentication Gate
     checkAuthStatus(currentUrl);
 
     // Auto-refresh every 2 minutes if unlocked
@@ -109,10 +109,10 @@
     if (!entered) return;
 
     elements.authSubmitBtn.disabled = true;
-    elements.authSubmitBtn.textContent = 'Verifying with Google Sheet...';
+    elements.authSubmitBtn.textContent = 'Verifying credentials...';
     if (elements.authErrorText) elements.authErrorText.style.display = 'none';
 
-    // Verify passphrase directly against private Google Apps Script endpoint
+    // Verify passphrase directly against private endpoint
     const activeUrl = localStorage.getItem('ws_apps_script_url') || DEFAULT_APPS_SCRIPT_URL;
     const testUrl = activeUrl + (activeUrl.includes('?') ? '&' : '?') + 'key=' + encodeURIComponent(entered);
 
@@ -123,7 +123,7 @@
       })
       .then(data => {
         if (data.status === 'success' && data.users && data.history) {
-          // Passphrase matches the Google Sheet! Unlock and render data
+          // Passphrase verified! Unlock and render data
           unlockPage(entered, data);
         } else {
           showAuthError();
@@ -168,7 +168,7 @@
     renderHoldings();
 
     if (elements.syncBadge) {
-      elements.syncBadge.title = `Live Synced with Google Sheets (${data.history.length} points)`;
+      elements.syncBadge.title = `Live Synced (${data.history.length} points)`;
       const dot = elements.syncBadge.querySelector('.ws-pulse-dot');
       if (dot) dot.classList.remove('fallback');
     }
@@ -284,8 +284,8 @@
       }
     });
 
-    // Google Sheet Test / Connect Button
-    elements.testSheetBtn.addEventListener('click', handleGoogleSheetConnect);
+    // Endpoint Connection Test Button
+    elements.testSheetBtn.addEventListener('click', handleEndpointConnect);
   }
 
   function setMode(mode) {
@@ -319,6 +319,7 @@
     updateUserCards();
     AppState.chart.setActiveUsers(AppState.activeUsers);
     updateHeroMetrics();
+    updateUserCardsData();
     renderHoldings();
   }
 
@@ -355,6 +356,7 @@
     });
 
     updateHeroMetrics();
+    updateUserCardsData();
     renderHoldings();
   }
 
@@ -475,12 +477,14 @@
   function handleChartScrub(point, index) {
     AppState.isScrubbing = true;
     updateHeroMetrics(point, true);
+    updateUserCardsData(point);
   }
 
   function handleChartScrubEnd() {
     AppState.isScrubbing = false;
     AppState.isRangeScrubbing = false;
     updateHeroMetrics();
+    updateUserCardsData();
   }
 
   /**
@@ -515,6 +519,7 @@
 
     elements.rangeUsersGrid.innerHTML = html;
     elements.heroDate.textContent = `Range inspection between ${formatDateLabel(pStart.date)} and ${formatDateLabel(pEnd.date)}`;
+    updateUserCardsData(null, { start: pStart, end: pEnd });
   }
 
   function renderHoldings() {
@@ -580,8 +585,27 @@
     elements.holdingsList.innerHTML = html;
   }
 
-  function updateUserCardsData() {
-    if (!elements.userCards) return;
+  function updateUserCardsData(point = null, range = null) {
+    if (!elements.userCards || elements.userCards.length === 0) return;
+    if (!AppState.filteredHistory || AppState.filteredHistory.length === 0) return;
+
+    const data = AppState.filteredHistory;
+    let startPoint, targetPoint, labelSuffix;
+
+    if (range) {
+      startPoint = range.start;
+      targetPoint = range.end;
+      labelSuffix = '';
+    } else if (point) {
+      startPoint = data[0];
+      targetPoint = point;
+      labelSuffix = '';
+    } else {
+      startPoint = data[0];
+      targetPoint = data[data.length - 1];
+      labelSuffix = AppState.timeframe;
+    }
+
     elements.userCards.forEach(card => {
       const userId = card.dataset.user;
       const uConf = AppState.usersConfig[userId];
@@ -590,15 +614,23 @@
       const valEl = card.querySelector('.ws-user-val');
       const changeEl = card.querySelector('.ws-user-change');
 
-      if (valEl && uConf.currentValue !== undefined) {
-        valEl.textContent = formatCompactCurrency(uConf.currentValue);
+      const startVal = startPoint ? (startPoint[userId] || 0) : 0;
+      const currVal = targetPoint ? (targetPoint[userId] || 0) : (uConf.currentValue || 0);
+      const delta = currVal - startVal;
+      const returnPct = startVal > 0 ? (delta / startVal) * 100 : 0;
+
+      const isPos = delta >= 0;
+      const sign = isPos ? '+' : '-';
+      const colorStyle = isPos ? 'var(--color-green)' : 'var(--color-red)';
+
+      if (valEl) {
+        valEl.textContent = formatCompactCurrency(currVal);
       }
 
-      if (changeEl && uConf.totalReturnPct !== undefined) {
-        const isPos = uConf.totalReturnPct >= 0;
-        const sign = isPos ? '+' : '';
-        changeEl.textContent = `${sign}${uConf.totalReturnPct.toFixed(2)}% 1y`;
-        changeEl.style.color = isPos ? 'var(--color-green)' : 'var(--color-red)';
+      if (changeEl) {
+        const suffix = labelSuffix ? ` ${labelSuffix}` : '';
+        changeEl.textContent = `${sign}${Math.abs(returnPct).toFixed(2)}%${suffix}`;
+        changeEl.style.color = colorStyle;
       }
     });
   }
@@ -620,7 +652,7 @@
       elements.syncStatusText.style.color = 'var(--text-secondary)';
     }
 
-    // Use session key (verified against Google Sheet) — never localStorage
+    // Use session key (verified with private endpoint) — never localStorage
     const sessionKey = sessionStorage.getItem('ws_session_key') || '';
     let finalUrl = url;
     if (sessionKey && !finalUrl.includes('key=')) {
@@ -630,13 +662,13 @@
     fetch(finalUrl)
       .then(res => {
         if (!res.ok) {
-          throw new Error(`HTTP error ${res.status}: Failed to reach Google endpoint`);
+          throw new Error(`HTTP error ${res.status}: Failed to reach live data endpoint`);
         }
         return res.json();
       })
       .then(data => {
         if (data.status === 'error') {
-          throw new Error(data.message || 'Error reported by Google Apps Script');
+          throw new Error(data.message || 'Error reported by server');
         }
 
         if (data.users && data.history) {
@@ -658,7 +690,7 @@
           }
 
           if (elements.syncBadge) {
-            elements.syncBadge.title = `Live Synced with Google Sheets (${data.history.length} hourly points)`;
+            elements.syncBadge.title = `Live Synced (${data.history.length} hourly points)`;
             const dot = elements.syncBadge.querySelector('.ws-pulse-dot');
             if (dot) dot.classList.remove('fallback');
           }
@@ -675,10 +707,10 @@
       });
   }
 
-  function handleGoogleSheetConnect() {
+  function handleEndpointConnect() {
     const url = elements.sheetUrlInput.value.trim();
     if (!url) {
-      elements.syncStatusText.textContent = 'Please enter a valid Google Apps Script Web App URL.';
+      elements.syncStatusText.textContent = 'Please enter a valid Endpoint URL.';
       elements.syncStatusText.style.color = 'var(--color-red)';
       return;
     }

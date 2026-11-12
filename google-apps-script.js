@@ -144,7 +144,10 @@ function parseSimData(ss) {
   const sheet = getSheetByNames(ss, ["Sim's Spreadsheet", "Sims Spreadsheet"]);
   if (!sheet) return { total: 0, holdings: [], initial: 0, cash: 0 };
 
-  const values = sheet.getRange(2, 1, Math.min(sheet.getLastRow(), 50), 15).getValues();
+  // Only read up to row 35 (Wealthsimple + RBC Direct Investing).
+  // Strictly excludes RBC Dominion Securities (rows 36-39) and Company RRSP (row 41),
+  // which are static non-hourly assets updated only a few times a month.
+  const values = sheet.getRange(2, 1, Math.min(sheet.getLastRow(), 35), 15).getValues();
   let total = 0;
   let initial = 0;
   let holdings = [];
@@ -158,7 +161,16 @@ function parseSimData(ss) {
   for (let i = 0; i < values.length; i++) {
     const row = values[i];
     const rawTicker = row[0] ? String(row[0]).trim() : "";
-    if (!rawTicker || rawTicker.toLowerCase().includes("total") || rawTicker.startsWith("RBC -")) continue;
+    if (
+      !rawTicker || 
+      rawTicker.toLowerCase().includes("total") || 
+      rawTicker.toLowerCase().startsWith("rbc -") ||
+      rawTicker.toLowerCase().includes("dominion") ||
+      rawTicker.toLowerCase().includes("rbc etf") ||
+      rawTicker.toLowerCase().includes("company rrsp")
+    ) {
+      continue;
+    }
 
     const shares = parseFloat(row[2]) || 0;
     const initVal = parseFloat(row[3]) || 0;
@@ -331,6 +343,77 @@ function recordHourlyPortfolioValue() {
     historySheet.appendRow([cleanTimestamp, simData.total, alexData.total, chrisData.total]);
     historySheet.getRange(historySheet.getLastRow(), 3, 1, 2).setNumberFormat("$#,##0.00");
     Logger.log("Appended new hourly snapshot: " + timeStr);
+  }
+}
+
+/**
+ * One-time utility to fix Simarjot's Historical Data from Nov 2, 2026 onwards.
+ * Subtracts the static non-hourly assets (Company RRSP + RBC Dominion Securities)
+ * that were unintentionally captured, restoring Simarjot's true hourly values (~$80k).
+ */
+function fixSimHistoricalDataNov2026() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const simSheet = getSheetByNames(ss, ["Sim's Spreadsheet", "Sims Spreadsheet"]);
+  const historySheet = getSheetByNames(ss, ["Historical Data", "Historical data", "History"]);
+
+  if (!historySheet) {
+    Logger.log("Historical Data sheet not found.");
+    return;
+  }
+
+  // Calculate static deduction dynamically from rows 36-45 in Sim's Spreadsheet
+  let staticDeduction = 0;
+  if (simSheet) {
+    const lastRow = simSheet.getLastRow();
+    if (lastRow >= 36) {
+      const numRows = Math.min(lastRow - 35, 15);
+      const rows = simSheet.getRange(36, 1, numRows, 6).getValues();
+      for (let i = 0; i < rows.length; i++) {
+        const ticker = String(rows[i][0] || "").trim().toLowerCase();
+        const currVal = parseFloat(rows[i][5]);
+        if (!isNaN(currVal) && currVal > 0) {
+          if (ticker.includes("rbc") || ticker.includes("dominion") || ticker.includes("etf") || ticker.includes("company")) {
+            staticDeduction += currVal;
+          }
+        }
+      }
+    }
+  }
+
+  // Fallback if sheet structure changed: $36,370 + $88,250 + $6,441.38 = $131,061.38
+  if (staticDeduction < 50000) {
+    staticDeduction = 131061.38;
+  }
+
+  Logger.log("Deducting non-hourly static assets amount: $" + staticDeduction);
+
+  const histData = historySheet.getDataRange().getValues();
+  if (histData.length < 2) return;
+
+  let fixedCount = 0;
+  const colBUpdates = [];
+
+  for (let r = 1; r < histData.length; r++) {
+    const rawVal = histData[r][1];
+    let val = parseFloat(rawVal);
+
+    // Any row where Simarjot is inflated above $120,000 (from Nov 2 onwards)
+    if (!isNaN(val) && val > 120000) {
+      const corrected = Math.round((val - staticDeduction) * 100) / 100;
+      colBUpdates.push([corrected]);
+      fixedCount++;
+    } else {
+      colBUpdates.push([rawVal]);
+    }
+  }
+
+  if (fixedCount > 0) {
+    historySheet.getRange(2, 2, colBUpdates.length, 1).setValues(colBUpdates);
+    historySheet.getRange(2, 2, colBUpdates.length, 1).setNumberFormat("$#,##0.00");
+    SpreadsheetApp.flush();
+    Logger.log("Success! Fixed " + fixedCount + " rows for Simarjot (restored to ~$80k-$85k).");
+  } else {
+    Logger.log("No inflated rows found (all Simarjot values already <= $120,000).");
   }
 }
 
