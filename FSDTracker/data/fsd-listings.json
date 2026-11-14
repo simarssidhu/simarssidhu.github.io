@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T20:33:43.464724Z",
+  "generated_at": "2026-11-14T18:58:36.201042Z",
   "source_note": "Written by FSDTracker/tools/fsd_scraper.py (v4). A listing is included only when FSD/EAP/Boost/SC01 is photo-verified from the software screen or matched in the listing description with an ownership claim (included/purchased/lifetime/package) \u2014 hardware-only mentions (FSD computer, capability, TACC/Autosteer) and time-limited FSD promos are rejected. Evidence quotes the exact matched wording.",
   "listings": [
     {
@@ -9,7 +9,7 @@
       "model": "Model S",
       "trim": "",
       "price_cad": 71995,
-      "mileage_km": 109392,
+      "mileage_km": 109394,
       "city": "Port Coquitlam",
       "province": "BC",
       "lat": null,
@@ -24,7 +24,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262021 Tesla Model S Plaid - Local BC, Lifetime Full Self Driving This local BC vehicle features lifetime full self driving,\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -50,7 +50,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262018 Tesla Model 3 LONG RANGE, FSD PACKAGE, TOIT PANO, CUIR Achetez en toute confiance chez Au\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -76,7 +76,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026erformance, Dual Motor All-Wheel Drive, Acceleration Boost (0-60 in 3.5s), Panoramic Glass Roof, H\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -102,7 +102,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u2026otor All-Wheel Drive Long Range Battery Acceleration Boost Package Single-Speed Automatic Transmis\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -128,7 +128,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u2026otor All-Wheel Drive Long Range Battery Acceleration Boost Package Single-Speed Automatic Transmis\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -154,7 +154,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u20262022 Tesla Model X Pre-Paid FSD I YOKE I 7 SEATS I White Interior This vehicle has the high\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -180,7 +180,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u2026uration - Full Self Driving Computer 3 -Enhanced Autopilot - Traffic-Aware Cruise Control - Autost\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -206,35 +206,9 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u2026ual Motor Long Range AWD l Computer 3 l Acceleration Boost PKG l White Interiror At McWilliam Auto\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
-    },
-    {
-      "id": "b5f98b66abb8",
-      "title": "2024 Tesla Cybertruck",
-      "year": 2024,
-      "model": "Cybertruck",
-      "trim": "",
-      "price_cad": 125000,
-      "mileage_km": 44500,
-      "city": "Kelowna",
-      "province": "BC",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Private",
-      "seller_name": "",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-cybertruck-foundation-series-electric-black-cat_ma51520gr201434-fc28da3e-51d5-4f52-a53f-ef9a2943269b",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": "HW4",
-      "evidence": "Software screen photo: 'Full Self-Driving Capability \u2014 Included package'",
-      "evidence_type": "Photo-verified",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
     },
     {
       "id": "e7a71cee2df2",
@@ -258,7 +232,7 @@
       "hardware": "HW4",
       "evidence": "Description says: \u201c\u2026arts of the car. What&#x27;s included: -Enhanced Autopilot -HW4/AI4 (Hardware 4) -Full Self-Drivin\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -287,7 +261,7 @@
       "evidence_type": "Description match",
       "first_seen": "2026-11-13",
       "demo": false,
-      "missing_runs": 0
+      "missing_runs": 1
     },
     {
       "id": "3599870e85a7",
@@ -311,7 +285,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262021 Tesla Model Y Long Range Acceleration Boost! Immaculate 2021 Tesla Model Y Long Ran\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -337,7 +311,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262023 Tesla Model X 6 Passenger | Full Self Driving Included 2016\u20132026 Electric Inventory Available | Largest S\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -363,7 +337,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026a Model Y Long Range AWD |Clean Carfax |Acceleration Boost CASH PRICE $36990, FINANCE PRICE $34990\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -389,7 +363,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Following: -6 Passenger ($8500 option) -Enhanced Autopilot w/ Summon, Auto Lane Change, Auto-park\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -415,7 +389,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262022 Tesla Model Y Long Range AWD |Acceleration Boost |Clean Carfax |White interior CASH PRIC\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -441,7 +415,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026mium noir 0-100 km/h en 4,4 sec (option Acceleration Boost incluse) NAVIGATION GPS: Trafic en dire\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -467,7 +441,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262023 Tesla Model X Low Km | 6 Passenger | Full Self Driving Included 2016\u20132026 Electric Inventory Available | Largest S\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -493,7 +467,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262022 Tesla Model Y Long Range | Lifetime FSD | No Accident | Welcome to SV Auto Group Ltd. Where quality\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -519,7 +493,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262013 Tesla Model S 85 FREE LIFETIME SUPERCHARGING FREE SUPERCHARGING, SAFETY INCLUDED, cl\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -545,7 +519,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262023 Tesla Model X 6 Passenger | Full Self Driving Included 2016\u20132026 Electric Inventory Available | Largest S\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -571,7 +545,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262023 Tesla Model X Full Self Driving Included | 7 Passenger | Low Km 2016\u20132026 Electric Inventor\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -597,7 +571,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Long Range | Dual Motor | No Accident | Acceleration Boost *ACCIDENT FREE Acceleration Boost*Dual\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -623,7 +597,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262014 Tesla Model S P85 SC01 Free lifetime supercharging Beautiful M\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -649,7 +623,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026ry: 75 kWh \u2013 385km range on full charge Free Unlimited Supercharging for Life (Fully Transferable) Free Prem\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -675,7 +649,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026e model * 196,000 km * 85 kWh battery * FREE UNLIMITED SUPERCHARGING * Battery in good condition * Excellent\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -701,7 +675,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026lean title/ no accident, Winter tires included. \u2022 Full Self-Driving (FSD) included \u2013 fully paid off \u2022 Approximately 350 km of r\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -727,7 +701,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026esla Model S 2013 Tesla Model S RWD 70 FREE UNLIMITED SUPERCHARGING. MAIN BATTERY REPLACED BY TESLA IN 2021\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -753,7 +727,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026ree transferable supercharging for life SC01 at any Tesla supercharger in North Amer\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -779,7 +753,7 @@
       "hardware": null,
       "evidence": "Software screen photo: 'Full Self-Driving Capability \u2014 Included package'",
       "evidence_type": "Photo-verified",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -789,7 +763,7 @@
       "year": 2026,
       "model": "Model Y",
       "trim": "",
-      "price_cad": 73000,
+      "price_cad": 79000,
       "mileage_km": 43000,
       "city": "Surrey",
       "province": "BC",
@@ -798,14 +772,15 @@
       "seller_type": "Private",
       "seller_name": "",
       "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-y-long-range-launch-series-awd-ltd-avail-electric-cat_ma51520gr201431tr15329-61d9a17d-f7c2-419c-96c6-876a0572dff3",
+      "url": "https://www.autotrader.ca/offers/tesla-model-y-long-range-launch-series-awd-fsd-lifetime-electric-cat_ma51520gr201431tr15329-61d9a17d-f7c2-419c-96c6-876a0572dff3",
       "packages": [
+        "FSD Included",
         "Acceleration Boost"
       ],
       "hardware": null,
-      "evidence": "Description says: \u201c\u2026No Subscription Required \u2022 Autopilot \u2022 Acceleration Boost \u2022 Tow hitch \u2022 20&quot; Helix 2.0 wheels\u2026\u201d",
+      "evidence": "Description says: \u201c\u20262026 Tesla Model Y Long Range Launch Series AWD FSD Lifetime Tesla Model Y Long Range Dual Motor AWD, Launch Se\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -831,7 +806,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026leration and heavy-duty towing capacity. Lifetime Full Self-Driving (FSD) Included: Fully unlocked autonomous driving features,\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -857,7 +832,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026ng Package 90D Black Headliner 19&quot; Free Unlimited Supercharging 1 set of winter tires with Rims\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -883,7 +858,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262020 Tesla Model 3 Standard Range Plus Lifetime full self driving purchased, premium connectivity lifetime purchased. Full pp\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -909,7 +884,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Model X 75D 115,846 km | No Accidents | Enhanced Autopilot | Premium White Interior Selling our be\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -937,7 +912,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026ic Autopilot only. No Enhanced Autopilot, and the FSD package is not owned. HW3 is present, so FSD can be subscri\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -947,7 +922,7 @@
       "year": 2015,
       "model": "Model S",
       "trim": "",
-      "price_cad": 19500,
+      "price_cad": 17000,
       "mileage_km": 185000,
       "city": "Richmond",
       "province": "BC",
@@ -961,9 +936,9 @@
         "SC01"
       ],
       "hardware": null,
-      "evidence": "Description says: \u201c\u20265 Tesla Model S 70 kWh Battery LIFETIME FREE UNLIMITED SUPERCHARGING! A well-maintained 2015 Tesla Model S i\u2026\u201d",
+      "evidence": "Description says: \u201c\u20265 Tesla Model S 70 kWh Battery LIFETIME FREE UNLIMITED SUPERCHARGING! PRICE REDUCED! My flight is coming up\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -989,7 +964,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Long Range AWD UPGRADES INCLUDED: Tesla Acceleration Boost ($3000 + HST) Matte Full-Body PPF Wrap\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1015,7 +990,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026e sale Rims and tires costing over CA$9,000 Tesla Full Self-Driving package purchased outright. Full Self-Driving requires acti\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1041,7 +1016,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262023 Tesla Model X Excellent Condition, FSD & Extras included Excellent condition 2023 Tesla Model X AW\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1067,7 +1042,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u2026ng Capability included, FSD Computer 3, Enhanced Autopilot, Smart Air Suspension, premium audio, S\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1093,7 +1068,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026a Model S S70 FUSC package, super rare. Lifetime free supercharging (sc01). S70 model, clean title and no a\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1119,7 +1094,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262021 Tesla Model Y Long Range AWD | Enhanced Auto Pilot Tesla Model Y Long Range AWD \u2014 Enhanced\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1147,7 +1122,7 @@
       "evidence_type": "Description match",
       "first_seen": "2026-11-13",
       "demo": false,
-      "missing_runs": 0
+      "missing_runs": 1
     },
     {
       "id": "92cfb6c9dbeb",
@@ -1171,7 +1146,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Model 3 \u2013 one owner, non-smoker, well cared for. Full Self-Driving (FSD) included \u2013 v14.3 Lite on HW3 Premium Connectivity inc\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1197,7 +1172,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026and beautiful WHITE premeium interior - Acceleration boost - Traffic aware and cruise control Rema\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1223,7 +1198,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262023 Tesla Model X Long Range AWD Fresh Arrival | Full Self-Driving Included | Blue Exterior | Dual-Motor Electric Powertrain |\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1249,7 +1224,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262022 Tesla Model S Full Self Driving (FSD) Included | Adaptive Air Suspension | 17\u201d Cinematic To\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1275,7 +1250,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026onduite \u00e9lectrique moderne avec la technologie de conduite enti\u00e8rement autonome (sous surveillance). Dot\u00e9e d&#x27;\u00e9quipements premium et d&\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1303,7 +1278,7 @@
       "evidence_type": "Description match",
       "first_seen": "2026-11-13",
       "demo": false,
-      "missing_runs": 0
+      "missing_runs": 1
     },
     {
       "id": "1aa69e6a0bfa",
@@ -1327,7 +1302,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262022 Tesla Model S Dual Motor AWD FSD Winter PKG *LEASE ONLY* Nous sommes fier de vous offrir cet\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1353,7 +1328,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026WD Foundation series Cybertruck fully loaded with Full Self Driving bought and available for the vehicle lifetime. Also include\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1379,7 +1354,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262024 Tesla Cybertruck CYBERBEAST | FSD INCLUDED PKG The 2024 Tesla Cybertruck Cyberbeast is the tr\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1405,35 +1380,9 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Great condition. This vehicle comes equipped with Full Self Driving power trunk, heated seats and a fully functional touchscree\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
-    },
-    {
-      "id": "7e95c1333077",
-      "title": "2022 Tesla Model 3",
-      "year": 2022,
-      "model": "Model 3",
-      "trim": "",
-      "price_cad": 30990,
-      "mileage_km": 46284,
-      "city": "Montr\u00e9al",
-      "province": "QC",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Private",
-      "seller_name": "",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-3-sous-garantie-prolongee-02-2028-+-pneus-hiver-incl-electric-white-cat_ma51520gr201429tr15317-d9872365-ff83-4e3f-9a55-64c7ada6f075",
-      "packages": [
-        "FSD Included"
-      ],
-      "hardware": null,
-      "evidence": "Description says: \u201c\u2026ultrasonic toujours pr\u00e9sents. Compatible avec la conduite enti\u00e8rement autonome (supervis\u00e9e) FSD v14 Lite. English: Pearl white on white in\u2026\u201d",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
     },
     {
       "id": "57ce93535b6b",
@@ -1457,7 +1406,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Tesla Model X 2023 Tesla Model X | Lifetime Paid FSD | 6 Seater 2023 Tesla Model X Long Range AWD | Lifetime Pai\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1483,7 +1432,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u20262022 Tesla Model X Fully Paid FSD, 6 Seats, 4 Year Extended Warranty Fully Paid FSD, 6 Seat O\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1509,7 +1458,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u20268 Tesla Model 3 Long Range RWD with free lifetime FSD! 2018 Tesla Model 3 Long Range RWD | Lifetime FSD (Supervis\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1535,7 +1484,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026CAN REFER YOU TO FINANCING Can offer TAX SAVINGS FSD - full self drive purchased for $16,000 extra INCLUDED PREM\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1561,7 +1510,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026del S Plaid in excellent condition, equipped with Full Self-Driving (FSD) . Premium Features &amp; Protection: Full Self-Drivin\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1587,7 +1536,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026sla Model X 2019 Long Range 6 passagers 113,500km Full Self Driving (FSD) inclu \u00e0 vie, HW3 Connectivit\u00e9 premium inclu \u00e0 vie Jam\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1613,7 +1562,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Range AWD, White, Transferable Extended Warranty, FSD, Safety Certified $36,900 *Private sale (save on taxes) by\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1639,35 +1588,9 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026offering all the functions of basic and enhanced Autopilot, including traffic light and stop sign\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
-    },
-    {
-      "id": "95a310af8b08",
-      "title": "2020 Tesla Model Y",
-      "year": 2020,
-      "model": "Model Y",
-      "trim": "",
-      "price_cad": 37995,
-      "mileage_km": 64633,
-      "city": "Richmond",
-      "province": "BC",
-      "lat": null,
-      "lon": null,
-      "seller_type": "Dealer",
-      "seller_name": "UC Auto LTD",
-      "source": "AutoTrader.ca",
-      "url": "https://www.autotrader.ca/offers/tesla-model-y-long-range-awd-no-accident-acceleration-boost-bc-local-electric-white-cat_ma51520gr201431tr15328-956ecfa9-ec9f-4416-b27a-9b3154ea1a96",
-      "packages": [
-        "Acceleration Boost"
-      ],
-      "hardware": null,
-      "evidence": "Description says: \u201c\u2026la Model Y Long Range AWD/ NO ACCIDENT/ ACCELERATION BOOST/ BC LOCAL 2020 Tesla Model Y Long Range\u2026\u201d",
-      "evidence_type": "Description match",
-      "first_seen": "2026-11-11",
-      "demo": false,
-      "missing_runs": 1
     },
     {
       "id": "7bfc564a0b84",
@@ -1691,7 +1614,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026\u2705 Regenerative Braking \u2705 Potential for Lifetime FREE Supercharging! \u26a1\ud83d\udd0b \u2705 Incredible Value for a Luxury Ele\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1717,7 +1640,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026esla Model X 90D. 175,000 km Comes with Lifetime FREE Supercharging and FREE Premium Connectivity 6 Passeng\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1743,7 +1666,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026tion Series Cybertruck AWD and comes loaded with: Full Self-Driving (Supervised) Included Premium Connectivity / Internet Inclu\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1769,7 +1692,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026k trim. All wheel drive Range: 480KM Included: 1. Full Self Driving attached to VIN: Purchased outright (no need to pay monthly\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1795,7 +1718,7 @@
       "hardware": "HW3",
       "evidence": "Description says: \u201c\u2026Self Driving Capability (Subscription) Acceleration Boost Premium Connectivity (Subscription) Pre\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1821,7 +1744,7 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026ures, Including 22-Inch Turbine Wheels, Enhanced Autopilot, Six-Seat Configuration, Yoke Steering\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     },
@@ -1847,7 +1770,59 @@
       "hardware": null,
       "evidence": "Description says: \u201c\u2026Tesla Model 3 Long Range AWD LOW KM/AWD/ACCELERATION BOOST \u2013 Finance or Pay Cash, the price is the\u2026\u201d",
       "evidence_type": "Description match",
-      "first_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
+      "demo": false,
+      "missing_runs": 0
+    },
+    {
+      "id": "7219a1df2cf7",
+      "title": "2023 Tesla Model Y",
+      "year": 2023,
+      "model": "Model Y",
+      "trim": "",
+      "price_cad": 43995,
+      "mileage_km": 113436,
+      "city": "Chilliwack",
+      "province": "BC",
+      "lat": null,
+      "lon": null,
+      "seller_type": "Dealer",
+      "seller_name": "West Star Motors",
+      "source": "AutoTrader.ca",
+      "url": "https://www.autotrader.ca/offers/tesla-model-y-long-range-full-self-driving-ppf-electric-white-cat_ma51520gr201431tr15328-434c6756-a9a6-4220-a911-f0c72dd14e93",
+      "packages": [
+        "FSD Included"
+      ],
+      "hardware": null,
+      "evidence": "Description says: \u201c\u2026id until Nov.15/2030!! Comes with the Following: -Full Self-Driving ($11,000 option included) -PPF Protection on vehicle -75 kW\u2026\u201d",
+      "evidence_type": "Description match",
+      "first_seen": "2026-11-14",
+      "demo": false,
+      "missing_runs": 0
+    },
+    {
+      "id": "a9cf63671f2a",
+      "title": "2021 Tesla Model S",
+      "year": 2021,
+      "model": "Model S",
+      "trim": "",
+      "price_cad": 79000,
+      "mileage_km": 60000,
+      "city": "Saint-Philippe",
+      "province": "QC",
+      "lat": null,
+      "lon": null,
+      "seller_type": "Private",
+      "seller_name": "",
+      "source": "AutoTrader.ca",
+      "url": "https://www.autotrader.ca/offers/tesla-model-s-plaid-electric-grey-cat_ma51520gr201430tr15325-5d2c50d2-0328-45f9-8b3b-5ea22e8efa38",
+      "packages": [
+        "FSD Included"
+      ],
+      "hardware": null,
+      "evidence": "Description says: \u201c\u2026eurs offrant une acc\u00e9l\u00e9ration incroyable - Pack \u00ab Full Self-Driving \u00bb inclus - Deux jeux complets de pneus et de jantes \u2014 8 pne\u2026\u201d",
+      "evidence_type": "Description match",
+      "first_seen": "2026-11-14",
       "demo": false,
       "missing_runs": 0
     }
